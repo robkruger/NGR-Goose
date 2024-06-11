@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>gazebo_sensor_collection</name>
+  <version>0.1.0</version>
+  <maintainer email="huntery.lw.young@gmail.com">Hunter Young</maintainer>
+  <maintainer email="J.C.vanBrakel@student.tudelft.nl">Jasper van Brakel</maintainer>
+
+  <description>
+       A ROS Package containing a collection of Gazebo sensor URDF models
+       that can easily be re-configured and attached to any simulated model.
+  </description>
+
+
+  <license>MIT</license>
+  <license>BSD</license>
+
+
+  <!-- The *depend tags are used to specify dependencies -->
+  <!-- Dependencies can be catkin packages or system dependencies -->
+  <buildtool_depend>catkin</buildtool_depend>
+  <exec_depend>gazebo_sensor_collection_description</exec_depend>
+  <exec_depend>gazebo_sensor_collection_plugins</exec_depend>
+
+
+  <!-- The export tag contains other, unspecified, tags -->
+  <export>
+    <metapackage/>
+    <architecture_independent/>
+  </export>
+</package>
