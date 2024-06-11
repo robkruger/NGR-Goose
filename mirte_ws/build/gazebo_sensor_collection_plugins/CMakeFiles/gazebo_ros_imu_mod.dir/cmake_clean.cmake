@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/lib/libgazebo_ros_imu_mod.pdb"
-  "/home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/lib/libgazebo_ros_imu_mod.so"
+  "/home/rob/NGR-Goose/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/lib/libgazebo_ros_imu_mod.pdb"
+  "/home/rob/NGR-Goose/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/lib/libgazebo_ros_imu_mod.so"
   "CMakeFiles/gazebo_ros_imu_mod.dir/plugins/motion/gazebo_ros_imu_mod.cpp.o"
 )
 

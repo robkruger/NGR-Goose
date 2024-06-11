@@ -1,8 +1,8 @@
-prefix=/home/rob/mirte_ws/devel/.private/ridgeback_msgs
+prefix=/home/rob/NGR-Goose/mirte_ws/devel/.private/ridgeback_msgs
 
 Name: ridgeback_msgs
 Description: Description of ridgeback_msgs
 Version: 0.3.4
-Cflags: -I/home/rob/mirte_ws/devel/.private/ridgeback_msgs/include
+Cflags: -I/home/rob/NGR-Goose/mirte_ws/devel/.private/ridgeback_msgs/include
 Libs: -L${prefix}/lib 
 Requires: std_msgs message_runtime

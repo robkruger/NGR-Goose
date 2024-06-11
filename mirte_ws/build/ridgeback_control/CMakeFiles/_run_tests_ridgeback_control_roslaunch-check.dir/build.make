@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rob/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_control
+CMAKE_SOURCE_DIR = /home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_control
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rob/mirte_ws/build/ridgeback_control
+CMAKE_BINARY_DIR = /home/rob/NGR-Goose/mirte_ws/build/ridgeback_control
 
 # Utility rule file for _run_tests_ridgeback_control_roslaunch-check.
 
@@ -67,6 +67,6 @@ CMakeFiles/_run_tests_ridgeback_control_roslaunch-check.dir/clean:
 .PHONY : CMakeFiles/_run_tests_ridgeback_control_roslaunch-check.dir/clean
 
 CMakeFiles/_run_tests_ridgeback_control_roslaunch-check.dir/depend:
-	cd /home/rob/mirte_ws/build/ridgeback_control && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rob/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_control /home/rob/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_control /home/rob/mirte_ws/build/ridgeback_control /home/rob/mirte_ws/build/ridgeback_control /home/rob/mirte_ws/build/ridgeback_control/CMakeFiles/_run_tests_ridgeback_control_roslaunch-check.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/rob/NGR-Goose/mirte_ws/build/ridgeback_control && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_control /home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_control /home/rob/NGR-Goose/mirte_ws/build/ridgeback_control /home/rob/NGR-Goose/mirte_ws/build/ridgeback_control /home/rob/NGR-Goose/mirte_ws/build/ridgeback_control/CMakeFiles/_run_tests_ridgeback_control_roslaunch-check.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/_run_tests_ridgeback_control_roslaunch-check.dir/depend
 

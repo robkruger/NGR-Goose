@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/rob/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/include/vision/gazebo_ros_realsense.h
+/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/include/vision/gazebo_ros_realsense.h
 sdf/sdf.hh
 -
 ros/ros.h
@@ -38,9 +38,9 @@ string
 memory
 -
 
-/home/rob/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/plugins/vision/gazebo_ros_realsense.cpp
+/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/plugins/vision/gazebo_ros_realsense.cpp
 vision/gazebo_ros_realsense.h
-/home/rob/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/plugins/vision/vision/gazebo_ros_realsense.h
+/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/plugins/vision/vision/gazebo_ros_realsense.h
 sensor_msgs/fill_image.h
 -
 gazebo/physics/physics.hh

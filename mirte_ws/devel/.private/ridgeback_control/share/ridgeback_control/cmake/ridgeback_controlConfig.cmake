@@ -67,14 +67,14 @@ set(ridgeback_control_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(ridgeback_control_SOURCE_PREFIX /home/rob/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_control)
-  set(ridgeback_control_DEVEL_PREFIX /home/rob/mirte_ws/devel/.private/ridgeback_control)
+  set(ridgeback_control_SOURCE_PREFIX /home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_control)
+  set(ridgeback_control_DEVEL_PREFIX /home/rob/NGR-Goose/mirte_ws/devel/.private/ridgeback_control)
   set(ridgeback_control_INSTALL_PREFIX "")
   set(ridgeback_control_PREFIX ${ridgeback_control_DEVEL_PREFIX})
 else()
   set(ridgeback_control_SOURCE_PREFIX "")
   set(ridgeback_control_DEVEL_PREFIX "")
-  set(ridgeback_control_INSTALL_PREFIX /home/rob/mirte_ws/install)
+  set(ridgeback_control_INSTALL_PREFIX /home/rob/NGR-Goose/mirte_ws/install)
   set(ridgeback_control_PREFIX ${ridgeback_control_INSTALL_PREFIX})
 endif()
 
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(ridgeback_control_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/rob/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_control/include " STREQUAL " ")
+if(NOT "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_control/include " STREQUAL " ")
   set(ridgeback_control_INCLUDE_DIRS "")
-  set(_include_dirs "/home/rob/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_control/include")
+  set(_include_dirs "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_control/include")
   if(NOT " " STREQUAL " ")
     set(_report "Check the issue tracker '' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT "http://wiki.ros.org/ridgeback_control " STREQUAL " ")
@@ -110,7 +110,7 @@ if(NOT "/home/rob/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_control/in
         message(FATAL_ERROR "Project 'ridgeback_control' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
-      message(FATAL_ERROR "Project 'ridgeback_control' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/rob/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_control/${idir}'.  ${_report}")
+      message(FATAL_ERROR "Project 'ridgeback_control' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_control/${idir}'.  ${_report}")
     endif()
     _list_append_unique(ridgeback_control_INCLUDE_DIRS ${include})
   endforeach()
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/rob/mirte_ws/devel/.private/ridgeback_control/lib;/home/rob/mirte_ws/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/rob/NGR-Goose/mirte_ws/devel/.private/ridgeback_control/lib;/home/rob/NGR-Goose/mirte_ws/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

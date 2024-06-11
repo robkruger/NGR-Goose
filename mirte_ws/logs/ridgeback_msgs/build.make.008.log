@@ -1,0 +1,30 @@
+[35m[1mScanning dependencies of target _ridgeback_msgs_generate_messages_check_deps_Status[0m
+[35m[1mScanning dependencies of target std_msgs_generate_messages_cpp[0m
+[35m[1mScanning dependencies of target std_msgs_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target _ridgeback_msgs_generate_messages_check_deps_RGB[0m
+[35m[1mScanning dependencies of target _ridgeback_msgs_generate_messages_check_deps_Lights[0m
+[35m[1mScanning dependencies of target std_msgs_generate_messages_eus[0m
+[35m[1mScanning dependencies of target _ridgeback_msgs_generate_messages_check_deps_Fans[0m
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target std_msgs_generate_messages_eus
+[  0%] Built target std_msgs_generate_messages_lisp
+[35m[1mScanning dependencies of target std_msgs_generate_messages_py[0m
+[35m[1mScanning dependencies of target std_msgs_generate_messages_nodejs[0m
+[  0%] Built target std_msgs_generate_messages_nodejs
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target _ridgeback_msgs_generate_messages_check_deps_RGB
+[  0%] Built target _ridgeback_msgs_generate_messages_check_deps_Lights
+[  0%] Built target _ridgeback_msgs_generate_messages_check_deps_Status
+[  0%] Built target _ridgeback_msgs_generate_messages_check_deps_Fans
+[35m[1mScanning dependencies of target ridgeback_msgs_generate_messages_eus[0m
+[35m[1mScanning dependencies of target ridgeback_msgs_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target ridgeback_msgs_generate_messages_py[0m
+[35m[1mScanning dependencies of target ridgeback_msgs_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target ridgeback_msgs_generate_messages_cpp[0m
+[ 18%] Built target ridgeback_msgs_generate_messages_nodejs
+[ 63%] Built target ridgeback_msgs_generate_messages_eus
+[ 63%] Built target ridgeback_msgs_generate_messages_py
+[ 81%] Built target ridgeback_msgs_generate_messages_lisp
+[100%] Built target ridgeback_msgs_generate_messages_cpp
+[35m[1mScanning dependencies of target ridgeback_msgs_generate_messages[0m
+[100%] Built target ridgeback_msgs_generate_messages

@@ -1,0 +1,8 @@
+prefix=/home/rob/NGR-Goose/mirte_ws/devel/.private/image_recognition
+
+Name: image_recognition
+Description: Description of image_recognition
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

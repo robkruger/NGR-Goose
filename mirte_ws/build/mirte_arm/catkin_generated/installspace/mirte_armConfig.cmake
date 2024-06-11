@@ -67,14 +67,14 @@ set(mirte_arm_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(mirte_arm_SOURCE_PREFIX /home/rob/mirte_ws/src/mirte-ros-packages/mirte_arm)
-  set(mirte_arm_DEVEL_PREFIX /home/rob/mirte_ws/devel/.private/mirte_arm)
+  set(mirte_arm_SOURCE_PREFIX /home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/mirte_arm)
+  set(mirte_arm_DEVEL_PREFIX /home/rob/NGR-Goose/mirte_ws/devel/.private/mirte_arm)
   set(mirte_arm_INSTALL_PREFIX "")
   set(mirte_arm_PREFIX ${mirte_arm_DEVEL_PREFIX})
 else()
   set(mirte_arm_SOURCE_PREFIX "")
   set(mirte_arm_DEVEL_PREFIX "")
-  set(mirte_arm_INSTALL_PREFIX /home/rob/mirte_ws/install)
+  set(mirte_arm_INSTALL_PREFIX /home/rob/NGR-Goose/mirte_ws/install)
   set(mirte_arm_PREFIX ${mirte_arm_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/rob/mirte_ws/install/lib;/home/rob/mirte_ws/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/rob/NGR-Goose/mirte_ws/install/lib;/home/rob/NGR-Goose/mirte_ws/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/rob/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/plugins/vision/gazebo_ros_realsense.cpp" "/home/rob/mirte_ws/build/gazebo_sensor_collection_plugins/CMakeFiles/gazebo_ros_realsense.dir/plugins/vision/gazebo_ros_realsense.cpp.o"
+  "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/plugins/vision/gazebo_ros_realsense.cpp" "/home/rob/NGR-Goose/mirte_ws/build/gazebo_sensor_collection_plugins/CMakeFiles/gazebo_ros_realsense.dir/plugins/vision/gazebo_ros_realsense.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -30,8 +30,8 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/include"
-  "/home/rob/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/include"
+  "/home/rob/NGR-Goose/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/include"
+  "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/include"
   "/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
   "/usr/include/gazebo-11"
   "/usr/include/bullet"

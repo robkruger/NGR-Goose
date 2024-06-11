@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "".split(';') if "" != "" else []
 PROJECT_CATKIN_DEPENDS = "".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "mirte_arm"
-PROJECT_SPACE_DIR = "/home/rob/mirte_ws/devel/.private/mirte_arm"
+PROJECT_SPACE_DIR = "/home/rob/NGR-Goose/mirte_ws/devel/.private/mirte_arm"
 PROJECT_VERSION = "0.0.0"

@@ -1,4 +1,4 @@
-prefix=/home/rob/mirte_ws/devel/.private/ridgeback_navigation
+prefix=/home/rob/NGR-Goose/mirte_ws/devel/.private/ridgeback_navigation
 
 Name: ridgeback_navigation
 Description: Description of ridgeback_navigation

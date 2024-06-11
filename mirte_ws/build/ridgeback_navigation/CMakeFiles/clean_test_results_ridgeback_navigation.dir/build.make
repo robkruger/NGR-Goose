@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rob/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_navigation
+CMAKE_SOURCE_DIR = /home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_navigation
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rob/mirte_ws/build/ridgeback_navigation
+CMAKE_BINARY_DIR = /home/rob/NGR-Goose/mirte_ws/build/ridgeback_navigation
 
 # Utility rule file for clean_test_results_ridgeback_navigation.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/rob/mirte_ws/build/ridgeback_navigation
 include CMakeFiles/clean_test_results_ridgeback_navigation.dir/progress.make
 
 CMakeFiles/clean_test_results_ridgeback_navigation:
-	/usr/bin/python3 /opt/ros/noetic/share/catkin/cmake/test/remove_test_results.py /home/rob/mirte_ws/build/ridgeback_navigation/test_results/ridgeback_navigation
+	/usr/bin/python3 /opt/ros/noetic/share/catkin/cmake/test/remove_test_results.py /home/rob/NGR-Goose/mirte_ws/build/ridgeback_navigation/test_results/ridgeback_navigation
 
 clean_test_results_ridgeback_navigation: CMakeFiles/clean_test_results_ridgeback_navigation
 clean_test_results_ridgeback_navigation: CMakeFiles/clean_test_results_ridgeback_navigation.dir/build.make
@@ -71,6 +71,6 @@ CMakeFiles/clean_test_results_ridgeback_navigation.dir/clean:
 .PHONY : CMakeFiles/clean_test_results_ridgeback_navigation.dir/clean
 
 CMakeFiles/clean_test_results_ridgeback_navigation.dir/depend:
-	cd /home/rob/mirte_ws/build/ridgeback_navigation && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rob/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_navigation /home/rob/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_navigation /home/rob/mirte_ws/build/ridgeback_navigation /home/rob/mirte_ws/build/ridgeback_navigation /home/rob/mirte_ws/build/ridgeback_navigation/CMakeFiles/clean_test_results_ridgeback_navigation.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/rob/NGR-Goose/mirte_ws/build/ridgeback_navigation && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_navigation /home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_navigation /home/rob/NGR-Goose/mirte_ws/build/ridgeback_navigation /home/rob/NGR-Goose/mirte_ws/build/ridgeback_navigation /home/rob/NGR-Goose/mirte_ws/build/ridgeback_navigation/CMakeFiles/clean_test_results_ridgeback_navigation.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/clean_test_results_ridgeback_navigation.dir/depend
 

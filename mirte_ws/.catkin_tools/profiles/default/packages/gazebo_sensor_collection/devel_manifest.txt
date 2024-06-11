@@ -1,2 +1,2 @@
 mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection
-/home/rob/mirte_ws/devel/.private/gazebo_sensor_collection/cmake.lock /home/rob/mirte_ws/devel/./cmake.lock
+/home/rob/NGR-Goose/mirte_ws/devel/.private/gazebo_sensor_collection/cmake.lock /home/rob/NGR-Goose/mirte_ws/devel/./cmake.lock

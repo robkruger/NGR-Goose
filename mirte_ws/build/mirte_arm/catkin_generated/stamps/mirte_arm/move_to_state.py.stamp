@@ -72,18 +72,38 @@ def pickup(start_state):
 
     move_to_joint_state(idle_angles)
 
-pick_up_angles = [0, -np.pi/3, -np.pi/3, -np.pi/6]
-idle_angles = [0, np.pi/8, np.pi/8, np.pi/8] # [0, np.pi/6, np.pi/6, np.pi/6]
+def place(start_state):
+    if start_state != "Idle":
+        move_to_joint_state(idle_angles)
 
-print("Start state:")
-start_state = input()
-# print("Goal state:")
-# goal_state = input()
+    set_gripper_angle(-0.2)
+
+    move_to_joint_state(pick_up_angles)
+
+    set_gripper_angle(0.7)
+
+    move_to_joint_state(idle_angles)
+
+def idle():
+    move_to_joint_state(idle_angles)
+
+pick_up_angles = [0, -13*np.pi/36, -13*np.pi/36, -13*np.pi/72] # [0, -np.pi/3, -np.pi/3, -np.pi/6] #
+idle_angles = [0, np.pi/8, np.pi/8, np.pi/8] # [0, np.pi/6, np.pi/6, np.pi/6]
 
 if __name__ == '__main__':
     try:        
         init()
-        pickup(start_state)
+        while True:
+            print("Start state:")
+            start_state = input()
+            print("Goal:")
+            goal = input()
+            if goal == "Pickup":
+                pickup(start_state)
+            elif goal == "Place":
+                place(start_state)
+            elif goal == "Idle":
+                idle()
     except rospy.ROSInterruptException:
         pass
 

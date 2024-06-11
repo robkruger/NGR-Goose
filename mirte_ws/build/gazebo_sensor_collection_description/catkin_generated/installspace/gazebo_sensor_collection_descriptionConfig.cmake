@@ -67,14 +67,14 @@ set(gazebo_sensor_collection_description_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(gazebo_sensor_collection_description_SOURCE_PREFIX /home/rob/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_description)
-  set(gazebo_sensor_collection_description_DEVEL_PREFIX /home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_description)
+  set(gazebo_sensor_collection_description_SOURCE_PREFIX /home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_description)
+  set(gazebo_sensor_collection_description_DEVEL_PREFIX /home/rob/NGR-Goose/mirte_ws/devel/.private/gazebo_sensor_collection_description)
   set(gazebo_sensor_collection_description_INSTALL_PREFIX "")
   set(gazebo_sensor_collection_description_PREFIX ${gazebo_sensor_collection_description_DEVEL_PREFIX})
 else()
   set(gazebo_sensor_collection_description_SOURCE_PREFIX "")
   set(gazebo_sensor_collection_description_DEVEL_PREFIX "")
-  set(gazebo_sensor_collection_description_INSTALL_PREFIX /home/rob/mirte_ws/install)
+  set(gazebo_sensor_collection_description_INSTALL_PREFIX /home/rob/NGR-Goose/mirte_ws/install)
   set(gazebo_sensor_collection_description_PREFIX ${gazebo_sensor_collection_description_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/rob/mirte_ws/install/lib;/home/rob/mirte_ws/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/rob/NGR-Goose/mirte_ws/install/lib;/home/rob/NGR-Goose/mirte_ws/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

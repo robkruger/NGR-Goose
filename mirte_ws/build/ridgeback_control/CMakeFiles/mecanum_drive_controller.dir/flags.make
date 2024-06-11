@@ -6,5 +6,5 @@ CXX_FLAGS = -fPIC
 
 CXX_DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"ridgeback_control\" -Dmecanum_drive_controller_EXPORTS
 
-CXX_INCLUDES = -I/home/rob/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_control/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp 
+CXX_INCLUDES = -I/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_control/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp 
 

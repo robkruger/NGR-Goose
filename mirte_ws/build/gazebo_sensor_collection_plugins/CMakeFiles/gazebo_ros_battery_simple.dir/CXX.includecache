@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/include/gazebo_sensor_collection_plugins/BatteryData.h
+/home/rob/NGR-Goose/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/include/gazebo_sensor_collection_plugins/BatteryData.h
 string
 -
 vector
@@ -22,7 +22,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/rob/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/include/misc/gazebo_ros_battery_simple.h
+/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/include/misc/gazebo_ros_battery_simple.h
 map
 -
 string
@@ -32,19 +32,19 @@ sdf/sdf.hh
 gazebo/common/common.hh
 -
 gazebo/common/Plugin.hh
-/home/rob/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/include/misc/gazebo/common/Plugin.hh
+/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/include/misc/gazebo/common/Plugin.hh
 gazebo/common/CommonTypes.hh
-/home/rob/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/include/misc/gazebo/common/CommonTypes.hh
+/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/include/misc/gazebo/common/CommonTypes.hh
 gazebo/physics/physics.hh
-/home/rob/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/include/misc/gazebo/physics/physics.hh
+/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/include/misc/gazebo/physics/physics.hh
 ros/ros.h
 -
 ros/subscribe_options.h
-/home/rob/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/include/misc/ros/subscribe_options.h
+/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/include/misc/ros/subscribe_options.h
 ros/advertise_options.h
 -
 ros/callback_queue.h
-/home/rob/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/include/misc/ros/callback_queue.h
+/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/include/misc/ros/callback_queue.h
 tf/transform_broadcaster.h
 -
 tf/transform_listener.h
@@ -56,19 +56,19 @@ boost/thread.hpp
 boost/thread/mutex.hpp
 -
 std_msgs/Bool.h
-/home/rob/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/include/misc/std_msgs/Bool.h
+/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/include/misc/std_msgs/Bool.h
 geometry_msgs/Twist.h
 -
 gazebo_sensor_collection_plugins/BatteryData.h
 -
 ../ros_debug.h
-/home/rob/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/include/ros_debug.h
+/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/include/ros_debug.h
 
-/home/rob/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/include/ros_debug.h
+/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/include/ros_debug.h
 
-/home/rob/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/plugins/misc/gazebo_ros_battery_simple.cpp
+/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/plugins/misc/gazebo_ros_battery_simple.cpp
 ../include/misc/gazebo_ros_battery_simple.h
-/home/rob/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/plugins/include/misc/gazebo_ros_battery_simple.h
+/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/plugins/include/misc/gazebo_ros_battery_simple.h
 ros/ros.h
 -
 sdf/sdf.hh
@@ -78,13 +78,13 @@ boost/bind.hpp
 boost/thread/mutex.hpp
 -
 gazebo/physics/physics.hh
-/home/rob/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/plugins/misc/gazebo/physics/physics.hh
+/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/plugins/misc/gazebo/physics/physics.hh
 gazebo/common/Time.hh
-/home/rob/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/plugins/misc/gazebo/common/Time.hh
+/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/plugins/misc/gazebo/common/Time.hh
 gazebo/common/Plugin.hh
-/home/rob/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/plugins/misc/gazebo/common/Plugin.hh
+/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/plugins/misc/gazebo/common/Plugin.hh
 gazebo/common/Battery.hh
-/home/rob/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/plugins/misc/gazebo/common/Battery.hh
+/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/plugins/misc/gazebo/common/Battery.hh
 algorithm
 -
 assert.h

@@ -1,0 +1,175 @@
+Warning: Cannot symlink from /home/rob/NGR-Goose/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/lib/libgazebo_ros_gps_with_dropout.so to existing file /home/rob/NGR-Goose/mirte_ws/devel/lib/libgazebo_ros_gps_with_dropout.so
+Warning: Source hash: 97957e72e4cf912ac46e5c2bb766fd80
+Warning: Dest hash: 7f62ea4a0bb184b79efbee1641220a7c
+Warning: Cannot symlink from /home/rob/NGR-Goose/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/lib/libgazebo_ros_battery_simple.so to existing file /home/rob/NGR-Goose/mirte_ws/devel/lib/libgazebo_ros_battery_simple.so
+Warning: Source hash: c803c4c7a387c7c9e31f2fa183226d6f
+Warning: Dest hash: 5f7ef484a08599f1f3dbe07c7fa521cb
+Warning: Cannot symlink from /home/rob/NGR-Goose/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/lib/libgazebo_ros_realsense.so to existing file /home/rob/NGR-Goose/mirte_ws/devel/lib/libgazebo_ros_realsense.so
+Warning: Source hash: e801223cb56aa1458d10b7bb4f1e586a
+Warning: Dest hash: 94c3f1aebe54390017a2b4c5ca5b43d7
+Warning: Cannot symlink from /home/rob/NGR-Goose/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/lib/libgazebo_ros_skid_steer_w_encoder.so to existing file /home/rob/NGR-Goose/mirte_ws/devel/lib/libgazebo_ros_skid_steer_w_encoder.so
+Warning: Source hash: 154479d80ac0a9c3ff896bd454747316
+Warning: Dest hash: fc12607d9d07c54cd7ad2d72eb71d03a
+Warning: Cannot symlink from /home/rob/NGR-Goose/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/lib/libgazebo_ros_encoder.so to existing file /home/rob/NGR-Goose/mirte_ws/devel/lib/libgazebo_ros_encoder.so
+Warning: Source hash: 199e49faac026576febd4ba217c75e0d
+Warning: Dest hash: 57372a50e616d182c7139130608676b5
+Warning: Cannot symlink from /home/rob/NGR-Goose/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/lib/libgazebo_ros_imu_mod.so to existing file /home/rob/NGR-Goose/mirte_ws/devel/lib/libgazebo_ros_imu_mod.so
+Warning: Source hash: a675eb714218d1c529266fcea4189cff
+Warning: Dest hash: 3fd2fc6e2fe26a47d8e989e6cd4d5db0
+Warning: Cannot symlink from /home/rob/NGR-Goose/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/lib/pkgconfig/gazebo_sensor_collection_plugins.pc to existing file /home/rob/NGR-Goose/mirte_ws/devel/lib/pkgconfig/gazebo_sensor_collection_plugins.pc
+Warning: Source hash: 04d4f9c716eef610ab08b85b9690bd43
+Warning: Dest hash: 635099e863b9ab3221964c84817b05cf
+Warning: Cannot symlink from /home/rob/NGR-Goose/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/share/gazebo_sensor_collection_plugins/cmake/gazebo_sensor_collection_plugins-msg-paths.cmake to existing file /home/rob/NGR-Goose/mirte_ws/devel/share/gazebo_sensor_collection_plugins/cmake/gazebo_sensor_collection_plugins-msg-paths.cmake
+Warning: Source hash: b035f2d0f218ac7b0e4ae6bc2b126723
+Warning: Dest hash: 4e76d51c1aba272a9b78a289577029b3
+Warning: Cannot symlink from /home/rob/NGR-Goose/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/share/gazebo_sensor_collection_plugins/cmake/gazebo_sensor_collection_plugins-msg-extras.cmake to existing file /home/rob/NGR-Goose/mirte_ws/devel/share/gazebo_sensor_collection_plugins/cmake/gazebo_sensor_collection_plugins-msg-extras.cmake
+Warning: Source hash: 784dcdab14538497516dd953aa7725e0
+Warning: Dest hash: a4dab1e7cc25d7cbfaf6e38cbe3bda27
+Warning: Cannot symlink from /home/rob/NGR-Goose/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/share/gazebo_sensor_collection_plugins/cmake/gazebo_sensor_collection_pluginsConfig.cmake to existing file /home/rob/NGR-Goose/mirte_ws/devel/share/gazebo_sensor_collection_plugins/cmake/gazebo_sensor_collection_pluginsConfig.cmake
+Warning: Source hash: 3e941d7efcace761c741e08cdcf5b0cc
+Warning: Dest hash: 7f285b0bca52176a3de54c510ad4fbb1
+Cleaning: (/home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/cmake.lock, /home/rob/mirte_ws/devel/./cmake.lock)
+Cleaning: (/home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/include/gazebo_sensor_collection_plugins/EulerData.h, /home/rob/mirte_ws/devel/include/gazebo_sensor_collection_plugins/EulerData.h)
+Cleaning: (/home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/include/gazebo_sensor_collection_plugins/SensorData3D.h, /home/rob/mirte_ws/devel/include/gazebo_sensor_collection_plugins/SensorData3D.h)
+Cleaning: (/home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/include/gazebo_sensor_collection_plugins/GpsData.h, /home/rob/mirte_ws/devel/include/gazebo_sensor_collection_plugins/GpsData.h)
+Cleaning: (/home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/include/gazebo_sensor_collection_plugins/ImuData.h, /home/rob/mirte_ws/devel/include/gazebo_sensor_collection_plugins/ImuData.h)
+Cleaning: (/home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/include/gazebo_sensor_collection_plugins/BatteryData.h, /home/rob/mirte_ws/devel/include/gazebo_sensor_collection_plugins/BatteryData.h)
+Cleaning: (/home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/include/gazebo_sensor_collection_plugins/OrientationSensorData.h, /home/rob/mirte_ws/devel/include/gazebo_sensor_collection_plugins/OrientationSensorData.h)
+Cleaning: (/home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/include/gazebo_sensor_collection_plugins/EncoderData.h, /home/rob/mirte_ws/devel/include/gazebo_sensor_collection_plugins/EncoderData.h)
+Cleaning: (/home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/include/gazebo_sensor_collection_plugins/DataXYZ.h, /home/rob/mirte_ws/devel/include/gazebo_sensor_collection_plugins/DataXYZ.h)
+Cleaning: (/home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/include/gazebo_sensor_collection_plugins/QuaternionData.h, /home/rob/mirte_ws/devel/include/gazebo_sensor_collection_plugins/QuaternionData.h)
+Cleaning: (/home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/lib/libgazebo_ros_gps_with_dropout.so, /home/rob/mirte_ws/devel/lib/libgazebo_ros_gps_with_dropout.so)
+Cleaning: (/home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/lib/libgazebo_ros_battery_simple.so, /home/rob/mirte_ws/devel/lib/libgazebo_ros_battery_simple.so)
+Cleaning: (/home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/lib/libgazebo_ros_realsense.so, /home/rob/mirte_ws/devel/lib/libgazebo_ros_realsense.so)
+Cleaning: (/home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/lib/libgazebo_ros_skid_steer_w_encoder.so, /home/rob/mirte_ws/devel/lib/libgazebo_ros_skid_steer_w_encoder.so)
+Cleaning: (/home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/lib/libgazebo_ros_encoder.so, /home/rob/mirte_ws/devel/lib/libgazebo_ros_encoder.so)
+Cleaning: (/home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/lib/libgazebo_ros_imu_mod.so, /home/rob/mirte_ws/devel/lib/libgazebo_ros_imu_mod.so)
+Cleaning: (/home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/lib/python3/dist-packages/gazebo_sensor_collection_plugins/__init__.py, /home/rob/mirte_ws/devel/lib/python3/dist-packages/gazebo_sensor_collection_plugins/__init__.py)
+Cleaning: (/home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/lib/python3/dist-packages/gazebo_sensor_collection_plugins/msg/_SensorData3D.py, /home/rob/mirte_ws/devel/lib/python3/dist-packages/gazebo_sensor_collection_plugins/msg/_SensorData3D.py)
+Cleaning: (/home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/lib/python3/dist-packages/gazebo_sensor_collection_plugins/msg/_EncoderData.py, /home/rob/mirte_ws/devel/lib/python3/dist-packages/gazebo_sensor_collection_plugins/msg/_EncoderData.py)
+Cleaning: (/home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/lib/python3/dist-packages/gazebo_sensor_collection_plugins/msg/_DataXYZ.py, /home/rob/mirte_ws/devel/lib/python3/dist-packages/gazebo_sensor_collection_plugins/msg/_DataXYZ.py)
+Cleaning: (/home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/lib/python3/dist-packages/gazebo_sensor_collection_plugins/msg/__init__.py, /home/rob/mirte_ws/devel/lib/python3/dist-packages/gazebo_sensor_collection_plugins/msg/__init__.py)
+Cleaning: (/home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/lib/python3/dist-packages/gazebo_sensor_collection_plugins/msg/_BatteryData.py, /home/rob/mirte_ws/devel/lib/python3/dist-packages/gazebo_sensor_collection_plugins/msg/_BatteryData.py)
+Cleaning: (/home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/lib/python3/dist-packages/gazebo_sensor_collection_plugins/msg/_QuaternionData.py, /home/rob/mirte_ws/devel/lib/python3/dist-packages/gazebo_sensor_collection_plugins/msg/_QuaternionData.py)
+Cleaning: (/home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/lib/python3/dist-packages/gazebo_sensor_collection_plugins/msg/_GpsData.py, /home/rob/mirte_ws/devel/lib/python3/dist-packages/gazebo_sensor_collection_plugins/msg/_GpsData.py)
+Cleaning: (/home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/lib/python3/dist-packages/gazebo_sensor_collection_plugins/msg/_OrientationSensorData.py, /home/rob/mirte_ws/devel/lib/python3/dist-packages/gazebo_sensor_collection_plugins/msg/_OrientationSensorData.py)
+Cleaning: (/home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/lib/python3/dist-packages/gazebo_sensor_collection_plugins/msg/_ImuData.py, /home/rob/mirte_ws/devel/lib/python3/dist-packages/gazebo_sensor_collection_plugins/msg/_ImuData.py)
+Cleaning: (/home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/lib/python3/dist-packages/gazebo_sensor_collection_plugins/msg/_EulerData.py, /home/rob/mirte_ws/devel/lib/python3/dist-packages/gazebo_sensor_collection_plugins/msg/_EulerData.py)
+Cleaning: (/home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/lib/pkgconfig/gazebo_sensor_collection_plugins.pc, /home/rob/mirte_ws/devel/lib/pkgconfig/gazebo_sensor_collection_plugins.pc)
+Cleaning: (/home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/share/roseus/ros/gazebo_sensor_collection_plugins/manifest.l, /home/rob/mirte_ws/devel/share/roseus/ros/gazebo_sensor_collection_plugins/manifest.l)
+Cleaning: (/home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/share/roseus/ros/gazebo_sensor_collection_plugins/msg/EncoderData.l, /home/rob/mirte_ws/devel/share/roseus/ros/gazebo_sensor_collection_plugins/msg/EncoderData.l)
+Cleaning: (/home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/share/roseus/ros/gazebo_sensor_collection_plugins/msg/ImuData.l, /home/rob/mirte_ws/devel/share/roseus/ros/gazebo_sensor_collection_plugins/msg/ImuData.l)
+Cleaning: (/home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/share/roseus/ros/gazebo_sensor_collection_plugins/msg/DataXYZ.l, /home/rob/mirte_ws/devel/share/roseus/ros/gazebo_sensor_collection_plugins/msg/DataXYZ.l)
+Cleaning: (/home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/share/roseus/ros/gazebo_sensor_collection_plugins/msg/QuaternionData.l, /home/rob/mirte_ws/devel/share/roseus/ros/gazebo_sensor_collection_plugins/msg/QuaternionData.l)
+Cleaning: (/home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/share/roseus/ros/gazebo_sensor_collection_plugins/msg/OrientationSensorData.l, /home/rob/mirte_ws/devel/share/roseus/ros/gazebo_sensor_collection_plugins/msg/OrientationSensorData.l)
+Cleaning: (/home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/share/roseus/ros/gazebo_sensor_collection_plugins/msg/SensorData3D.l, /home/rob/mirte_ws/devel/share/roseus/ros/gazebo_sensor_collection_plugins/msg/SensorData3D.l)
+Cleaning: (/home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/share/roseus/ros/gazebo_sensor_collection_plugins/msg/BatteryData.l, /home/rob/mirte_ws/devel/share/roseus/ros/gazebo_sensor_collection_plugins/msg/BatteryData.l)
+Cleaning: (/home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/share/roseus/ros/gazebo_sensor_collection_plugins/msg/GpsData.l, /home/rob/mirte_ws/devel/share/roseus/ros/gazebo_sensor_collection_plugins/msg/GpsData.l)
+Cleaning: (/home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/share/roseus/ros/gazebo_sensor_collection_plugins/msg/EulerData.l, /home/rob/mirte_ws/devel/share/roseus/ros/gazebo_sensor_collection_plugins/msg/EulerData.l)
+Cleaning: (/home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/share/gennodejs/ros/gazebo_sensor_collection_plugins/_index.js, /home/rob/mirte_ws/devel/share/gennodejs/ros/gazebo_sensor_collection_plugins/_index.js)
+Cleaning: (/home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/share/gennodejs/ros/gazebo_sensor_collection_plugins/msg/_index.js, /home/rob/mirte_ws/devel/share/gennodejs/ros/gazebo_sensor_collection_plugins/msg/_index.js)
+Cleaning: (/home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/share/gennodejs/ros/gazebo_sensor_collection_plugins/msg/OrientationSensorData.js, /home/rob/mirte_ws/devel/share/gennodejs/ros/gazebo_sensor_collection_plugins/msg/OrientationSensorData.js)
+Cleaning: (/home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/share/gennodejs/ros/gazebo_sensor_collection_plugins/msg/EncoderData.js, /home/rob/mirte_ws/devel/share/gennodejs/ros/gazebo_sensor_collection_plugins/msg/EncoderData.js)
+Cleaning: (/home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/share/gennodejs/ros/gazebo_sensor_collection_plugins/msg/EulerData.js, /home/rob/mirte_ws/devel/share/gennodejs/ros/gazebo_sensor_collection_plugins/msg/EulerData.js)
+Cleaning: (/home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/share/gennodejs/ros/gazebo_sensor_collection_plugins/msg/DataXYZ.js, /home/rob/mirte_ws/devel/share/gennodejs/ros/gazebo_sensor_collection_plugins/msg/DataXYZ.js)
+Cleaning: (/home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/share/gennodejs/ros/gazebo_sensor_collection_plugins/msg/GpsData.js, /home/rob/mirte_ws/devel/share/gennodejs/ros/gazebo_sensor_collection_plugins/msg/GpsData.js)
+Cleaning: (/home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/share/gennodejs/ros/gazebo_sensor_collection_plugins/msg/QuaternionData.js, /home/rob/mirte_ws/devel/share/gennodejs/ros/gazebo_sensor_collection_plugins/msg/QuaternionData.js)
+Cleaning: (/home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/share/gennodejs/ros/gazebo_sensor_collection_plugins/msg/ImuData.js, /home/rob/mirte_ws/devel/share/gennodejs/ros/gazebo_sensor_collection_plugins/msg/ImuData.js)
+Cleaning: (/home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/share/gennodejs/ros/gazebo_sensor_collection_plugins/msg/BatteryData.js, /home/rob/mirte_ws/devel/share/gennodejs/ros/gazebo_sensor_collection_plugins/msg/BatteryData.js)
+Cleaning: (/home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/share/gennodejs/ros/gazebo_sensor_collection_plugins/msg/SensorData3D.js, /home/rob/mirte_ws/devel/share/gennodejs/ros/gazebo_sensor_collection_plugins/msg/SensorData3D.js)
+Cleaning: (/home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/share/gazebo_sensor_collection_plugins/cmake/gazebo_sensor_collection_plugins-msg-paths.cmake, /home/rob/mirte_ws/devel/share/gazebo_sensor_collection_plugins/cmake/gazebo_sensor_collection_plugins-msg-paths.cmake)
+Cleaning: (/home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/share/gazebo_sensor_collection_plugins/cmake/gazebo_sensor_collection_plugins-msg-extras.cmake, /home/rob/mirte_ws/devel/share/gazebo_sensor_collection_plugins/cmake/gazebo_sensor_collection_plugins-msg-extras.cmake)
+Cleaning: (/home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/share/gazebo_sensor_collection_plugins/cmake/gazebo_sensor_collection_pluginsConfig.cmake, /home/rob/mirte_ws/devel/share/gazebo_sensor_collection_plugins/cmake/gazebo_sensor_collection_pluginsConfig.cmake)
+Cleaning: (/home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/share/gazebo_sensor_collection_plugins/cmake/gazebo_sensor_collection_pluginsConfig-version.cmake, /home/rob/mirte_ws/devel/share/gazebo_sensor_collection_plugins/cmake/gazebo_sensor_collection_pluginsConfig-version.cmake)
+Cleaning: (/home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/share/common-lisp/ros/gazebo_sensor_collection_plugins/msg/SensorData3D.lisp, /home/rob/mirte_ws/devel/share/common-lisp/ros/gazebo_sensor_collection_plugins/msg/SensorData3D.lisp)
+Cleaning: (/home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/share/common-lisp/ros/gazebo_sensor_collection_plugins/msg/_package_SensorData3D.lisp, /home/rob/mirte_ws/devel/share/common-lisp/ros/gazebo_sensor_collection_plugins/msg/_package_SensorData3D.lisp)
+Cleaning: (/home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/share/common-lisp/ros/gazebo_sensor_collection_plugins/msg/EncoderData.lisp, /home/rob/mirte_ws/devel/share/common-lisp/ros/gazebo_sensor_collection_plugins/msg/EncoderData.lisp)
+Cleaning: (/home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/share/common-lisp/ros/gazebo_sensor_collection_plugins/msg/OrientationSensorData.lisp, /home/rob/mirte_ws/devel/share/common-lisp/ros/gazebo_sensor_collection_plugins/msg/OrientationSensorData.lisp)
+Cleaning: (/home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/share/common-lisp/ros/gazebo_sensor_collection_plugins/msg/BatteryData.lisp, /home/rob/mirte_ws/devel/share/common-lisp/ros/gazebo_sensor_collection_plugins/msg/BatteryData.lisp)
+Cleaning: (/home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/share/common-lisp/ros/gazebo_sensor_collection_plugins/msg/QuaternionData.lisp, /home/rob/mirte_ws/devel/share/common-lisp/ros/gazebo_sensor_collection_plugins/msg/QuaternionData.lisp)
+Cleaning: (/home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/share/common-lisp/ros/gazebo_sensor_collection_plugins/msg/_package_ImuData.lisp, /home/rob/mirte_ws/devel/share/common-lisp/ros/gazebo_sensor_collection_plugins/msg/_package_ImuData.lisp)
+Cleaning: (/home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/share/common-lisp/ros/gazebo_sensor_collection_plugins/msg/DataXYZ.lisp, /home/rob/mirte_ws/devel/share/common-lisp/ros/gazebo_sensor_collection_plugins/msg/DataXYZ.lisp)
+Cleaning: (/home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/share/common-lisp/ros/gazebo_sensor_collection_plugins/msg/_package.lisp, /home/rob/mirte_ws/devel/share/common-lisp/ros/gazebo_sensor_collection_plugins/msg/_package.lisp)
+Cleaning: (/home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/share/common-lisp/ros/gazebo_sensor_collection_plugins/msg/ImuData.lisp, /home/rob/mirte_ws/devel/share/common-lisp/ros/gazebo_sensor_collection_plugins/msg/ImuData.lisp)
+Cleaning: (/home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/share/common-lisp/ros/gazebo_sensor_collection_plugins/msg/_package_QuaternionData.lisp, /home/rob/mirte_ws/devel/share/common-lisp/ros/gazebo_sensor_collection_plugins/msg/_package_QuaternionData.lisp)
+Cleaning: (/home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/share/common-lisp/ros/gazebo_sensor_collection_plugins/msg/_package_EulerData.lisp, /home/rob/mirte_ws/devel/share/common-lisp/ros/gazebo_sensor_collection_plugins/msg/_package_EulerData.lisp)
+Cleaning: (/home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/share/common-lisp/ros/gazebo_sensor_collection_plugins/msg/EulerData.lisp, /home/rob/mirte_ws/devel/share/common-lisp/ros/gazebo_sensor_collection_plugins/msg/EulerData.lisp)
+Cleaning: (/home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/share/common-lisp/ros/gazebo_sensor_collection_plugins/msg/_package_DataXYZ.lisp, /home/rob/mirte_ws/devel/share/common-lisp/ros/gazebo_sensor_collection_plugins/msg/_package_DataXYZ.lisp)
+Cleaning: (/home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/share/common-lisp/ros/gazebo_sensor_collection_plugins/msg/_package_OrientationSensorData.lisp, /home/rob/mirte_ws/devel/share/common-lisp/ros/gazebo_sensor_collection_plugins/msg/_package_OrientationSensorData.lisp)
+Cleaning: (/home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/share/common-lisp/ros/gazebo_sensor_collection_plugins/msg/_package_EncoderData.lisp, /home/rob/mirte_ws/devel/share/common-lisp/ros/gazebo_sensor_collection_plugins/msg/_package_EncoderData.lisp)
+Cleaning: (/home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/share/common-lisp/ros/gazebo_sensor_collection_plugins/msg/_package_BatteryData.lisp, /home/rob/mirte_ws/devel/share/common-lisp/ros/gazebo_sensor_collection_plugins/msg/_package_BatteryData.lisp)
+Cleaning: (/home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/share/common-lisp/ros/gazebo_sensor_collection_plugins/msg/_package_GpsData.lisp, /home/rob/mirte_ws/devel/share/common-lisp/ros/gazebo_sensor_collection_plugins/msg/_package_GpsData.lisp)
+Cleaning: (/home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/share/common-lisp/ros/gazebo_sensor_collection_plugins/msg/gazebo_sensor_collection_plugins-msg.asd, /home/rob/mirte_ws/devel/share/common-lisp/ros/gazebo_sensor_collection_plugins/msg/gazebo_sensor_collection_plugins-msg.asd)
+Cleaning: (/home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/share/common-lisp/ros/gazebo_sensor_collection_plugins/msg/GpsData.lisp, /home/rob/mirte_ws/devel/share/common-lisp/ros/gazebo_sensor_collection_plugins/msg/GpsData.lisp)
+Unlinking: /home/rob/mirte_ws/devel/include/gazebo_sensor_collection_plugins/EulerData.h
+Unlinking: /home/rob/mirte_ws/devel/include/gazebo_sensor_collection_plugins/SensorData3D.h
+Unlinking: /home/rob/mirte_ws/devel/include/gazebo_sensor_collection_plugins/GpsData.h
+Unlinking: /home/rob/mirte_ws/devel/include/gazebo_sensor_collection_plugins/ImuData.h
+Unlinking: /home/rob/mirte_ws/devel/include/gazebo_sensor_collection_plugins/BatteryData.h
+Unlinking: /home/rob/mirte_ws/devel/include/gazebo_sensor_collection_plugins/OrientationSensorData.h
+Unlinking: /home/rob/mirte_ws/devel/include/gazebo_sensor_collection_plugins/EncoderData.h
+Unlinking: /home/rob/mirte_ws/devel/include/gazebo_sensor_collection_plugins/DataXYZ.h
+Unlinking: /home/rob/mirte_ws/devel/include/gazebo_sensor_collection_plugins/QuaternionData.h
+Unlinking: /home/rob/mirte_ws/devel/lib/libgazebo_ros_gps_with_dropout.so
+Unlinking: /home/rob/mirte_ws/devel/lib/libgazebo_ros_battery_simple.so
+Unlinking: /home/rob/mirte_ws/devel/lib/libgazebo_ros_realsense.so
+Unlinking: /home/rob/mirte_ws/devel/lib/libgazebo_ros_skid_steer_w_encoder.so
+Unlinking: /home/rob/mirte_ws/devel/lib/libgazebo_ros_encoder.so
+Unlinking: /home/rob/mirte_ws/devel/lib/libgazebo_ros_imu_mod.so
+Unlinking: /home/rob/mirte_ws/devel/lib/python3/dist-packages/gazebo_sensor_collection_plugins/__init__.py
+Unlinking: /home/rob/mirte_ws/devel/lib/python3/dist-packages/gazebo_sensor_collection_plugins/msg/_SensorData3D.py
+Unlinking: /home/rob/mirte_ws/devel/lib/python3/dist-packages/gazebo_sensor_collection_plugins/msg/_EncoderData.py
+Unlinking: /home/rob/mirte_ws/devel/lib/python3/dist-packages/gazebo_sensor_collection_plugins/msg/_DataXYZ.py
+Unlinking: /home/rob/mirte_ws/devel/lib/python3/dist-packages/gazebo_sensor_collection_plugins/msg/__init__.py
+Unlinking: /home/rob/mirte_ws/devel/lib/python3/dist-packages/gazebo_sensor_collection_plugins/msg/_BatteryData.py
+Unlinking: /home/rob/mirte_ws/devel/lib/python3/dist-packages/gazebo_sensor_collection_plugins/msg/_QuaternionData.py
+Unlinking: /home/rob/mirte_ws/devel/lib/python3/dist-packages/gazebo_sensor_collection_plugins/msg/_GpsData.py
+Unlinking: /home/rob/mirte_ws/devel/lib/python3/dist-packages/gazebo_sensor_collection_plugins/msg/_OrientationSensorData.py
+Unlinking: /home/rob/mirte_ws/devel/lib/python3/dist-packages/gazebo_sensor_collection_plugins/msg/_ImuData.py
+Unlinking: /home/rob/mirte_ws/devel/lib/python3/dist-packages/gazebo_sensor_collection_plugins/msg/_EulerData.py
+Unlinking: /home/rob/mirte_ws/devel/lib/pkgconfig/gazebo_sensor_collection_plugins.pc
+Unlinking: /home/rob/mirte_ws/devel/share/roseus/ros/gazebo_sensor_collection_plugins/manifest.l
+Unlinking: /home/rob/mirte_ws/devel/share/roseus/ros/gazebo_sensor_collection_plugins/msg/EncoderData.l
+Unlinking: /home/rob/mirte_ws/devel/share/roseus/ros/gazebo_sensor_collection_plugins/msg/ImuData.l
+Unlinking: /home/rob/mirte_ws/devel/share/roseus/ros/gazebo_sensor_collection_plugins/msg/DataXYZ.l
+Unlinking: /home/rob/mirte_ws/devel/share/roseus/ros/gazebo_sensor_collection_plugins/msg/QuaternionData.l
+Unlinking: /home/rob/mirte_ws/devel/share/roseus/ros/gazebo_sensor_collection_plugins/msg/OrientationSensorData.l
+Unlinking: /home/rob/mirte_ws/devel/share/roseus/ros/gazebo_sensor_collection_plugins/msg/SensorData3D.l
+Unlinking: /home/rob/mirte_ws/devel/share/roseus/ros/gazebo_sensor_collection_plugins/msg/BatteryData.l
+Unlinking: /home/rob/mirte_ws/devel/share/roseus/ros/gazebo_sensor_collection_plugins/msg/GpsData.l
+Unlinking: /home/rob/mirte_ws/devel/share/roseus/ros/gazebo_sensor_collection_plugins/msg/EulerData.l
+Unlinking: /home/rob/mirte_ws/devel/share/gennodejs/ros/gazebo_sensor_collection_plugins/_index.js
+Unlinking: /home/rob/mirte_ws/devel/share/gennodejs/ros/gazebo_sensor_collection_plugins/msg/_index.js
+Unlinking: /home/rob/mirte_ws/devel/share/gennodejs/ros/gazebo_sensor_collection_plugins/msg/OrientationSensorData.js
+Unlinking: /home/rob/mirte_ws/devel/share/gennodejs/ros/gazebo_sensor_collection_plugins/msg/EncoderData.js
+Unlinking: /home/rob/mirte_ws/devel/share/gennodejs/ros/gazebo_sensor_collection_plugins/msg/EulerData.js
+Unlinking: /home/rob/mirte_ws/devel/share/gennodejs/ros/gazebo_sensor_collection_plugins/msg/DataXYZ.js
+Unlinking: /home/rob/mirte_ws/devel/share/gennodejs/ros/gazebo_sensor_collection_plugins/msg/GpsData.js
+Unlinking: /home/rob/mirte_ws/devel/share/gennodejs/ros/gazebo_sensor_collection_plugins/msg/QuaternionData.js
+Unlinking: /home/rob/mirte_ws/devel/share/gennodejs/ros/gazebo_sensor_collection_plugins/msg/ImuData.js
+Unlinking: /home/rob/mirte_ws/devel/share/gennodejs/ros/gazebo_sensor_collection_plugins/msg/BatteryData.js
+Unlinking: /home/rob/mirte_ws/devel/share/gennodejs/ros/gazebo_sensor_collection_plugins/msg/SensorData3D.js
+Unlinking: /home/rob/mirte_ws/devel/share/gazebo_sensor_collection_plugins/cmake/gazebo_sensor_collection_plugins-msg-paths.cmake
+Unlinking: /home/rob/mirte_ws/devel/share/gazebo_sensor_collection_plugins/cmake/gazebo_sensor_collection_plugins-msg-extras.cmake
+Unlinking: /home/rob/mirte_ws/devel/share/gazebo_sensor_collection_plugins/cmake/gazebo_sensor_collection_pluginsConfig.cmake
+Unlinking: /home/rob/mirte_ws/devel/share/gazebo_sensor_collection_plugins/cmake/gazebo_sensor_collection_pluginsConfig-version.cmake
+Unlinking: /home/rob/mirte_ws/devel/share/common-lisp/ros/gazebo_sensor_collection_plugins/msg/SensorData3D.lisp
+Unlinking: /home/rob/mirte_ws/devel/share/common-lisp/ros/gazebo_sensor_collection_plugins/msg/_package_SensorData3D.lisp
+Unlinking: /home/rob/mirte_ws/devel/share/common-lisp/ros/gazebo_sensor_collection_plugins/msg/EncoderData.lisp
+Unlinking: /home/rob/mirte_ws/devel/share/common-lisp/ros/gazebo_sensor_collection_plugins/msg/OrientationSensorData.lisp
+Unlinking: /home/rob/mirte_ws/devel/share/common-lisp/ros/gazebo_sensor_collection_plugins/msg/BatteryData.lisp
+Unlinking: /home/rob/mirte_ws/devel/share/common-lisp/ros/gazebo_sensor_collection_plugins/msg/QuaternionData.lisp
+Unlinking: /home/rob/mirte_ws/devel/share/common-lisp/ros/gazebo_sensor_collection_plugins/msg/_package_ImuData.lisp
+Unlinking: /home/rob/mirte_ws/devel/share/common-lisp/ros/gazebo_sensor_collection_plugins/msg/DataXYZ.lisp
+Unlinking: /home/rob/mirte_ws/devel/share/common-lisp/ros/gazebo_sensor_collection_plugins/msg/_package.lisp
+Unlinking: /home/rob/mirte_ws/devel/share/common-lisp/ros/gazebo_sensor_collection_plugins/msg/ImuData.lisp
+Unlinking: /home/rob/mirte_ws/devel/share/common-lisp/ros/gazebo_sensor_collection_plugins/msg/_package_QuaternionData.lisp
+Unlinking: /home/rob/mirte_ws/devel/share/common-lisp/ros/gazebo_sensor_collection_plugins/msg/_package_EulerData.lisp
+Unlinking: /home/rob/mirte_ws/devel/share/common-lisp/ros/gazebo_sensor_collection_plugins/msg/EulerData.lisp
+Unlinking: /home/rob/mirte_ws/devel/share/common-lisp/ros/gazebo_sensor_collection_plugins/msg/_package_DataXYZ.lisp
+Unlinking: /home/rob/mirte_ws/devel/share/common-lisp/ros/gazebo_sensor_collection_plugins/msg/_package_OrientationSensorData.lisp
+Unlinking: /home/rob/mirte_ws/devel/share/common-lisp/ros/gazebo_sensor_collection_plugins/msg/_package_EncoderData.lisp
+Unlinking: /home/rob/mirte_ws/devel/share/common-lisp/ros/gazebo_sensor_collection_plugins/msg/_package_BatteryData.lisp
+Unlinking: /home/rob/mirte_ws/devel/share/common-lisp/ros/gazebo_sensor_collection_plugins/msg/_package_GpsData.lisp
+Unlinking: /home/rob/mirte_ws/devel/share/common-lisp/ros/gazebo_sensor_collection_plugins/msg/gazebo_sensor_collection_plugins-msg.asd
+Unlinking: /home/rob/mirte_ws/devel/share/common-lisp/ros/gazebo_sensor_collection_plugins/msg/GpsData.lisp

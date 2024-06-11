@@ -44,10 +44,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rob/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_navigation
+CMAKE_SOURCE_DIR = /home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_navigation
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rob/mirte_ws/build/ridgeback_navigation
+CMAKE_BINARY_DIR = /home/rob/NGR-Goose/mirte_ws/build/ridgeback_navigation
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -159,14 +159,14 @@ CMakeFiles/run_tests_ridgeback_navigation_roslaunch-check.dir/all: CMakeFiles/ru
 CMakeFiles/run_tests_ridgeback_navigation_roslaunch-check.dir/all: CMakeFiles/run_tests_ridgeback_navigation_roslaunch-check_launch_odom_navigation_demo.launch.dir/all
 	$(MAKE) -f CMakeFiles/run_tests_ridgeback_navigation_roslaunch-check.dir/build.make CMakeFiles/run_tests_ridgeback_navigation_roslaunch-check.dir/depend
 	$(MAKE) -f CMakeFiles/run_tests_ridgeback_navigation_roslaunch-check.dir/build.make CMakeFiles/run_tests_ridgeback_navigation_roslaunch-check.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rob/mirte_ws/build/ridgeback_navigation/CMakeFiles --progress-num= "Built target run_tests_ridgeback_navigation_roslaunch-check"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rob/NGR-Goose/mirte_ws/build/ridgeback_navigation/CMakeFiles --progress-num= "Built target run_tests_ridgeback_navigation_roslaunch-check"
 .PHONY : CMakeFiles/run_tests_ridgeback_navigation_roslaunch-check.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/run_tests_ridgeback_navigation_roslaunch-check.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/NGR-Goose/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/run_tests_ridgeback_navigation_roslaunch-check.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/NGR-Goose/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
 .PHONY : CMakeFiles/run_tests_ridgeback_navigation_roslaunch-check.dir/rule
 
 # Convenience name for target.
@@ -186,14 +186,14 @@ CMakeFiles/run_tests_ridgeback_navigation_roslaunch-check.dir/clean:
 CMakeFiles/run_tests_ridgeback_navigation_roslaunch-check_launch_include_gmapping.launch.dir/all:
 	$(MAKE) -f CMakeFiles/run_tests_ridgeback_navigation_roslaunch-check_launch_include_gmapping.launch.dir/build.make CMakeFiles/run_tests_ridgeback_navigation_roslaunch-check_launch_include_gmapping.launch.dir/depend
 	$(MAKE) -f CMakeFiles/run_tests_ridgeback_navigation_roslaunch-check_launch_include_gmapping.launch.dir/build.make CMakeFiles/run_tests_ridgeback_navigation_roslaunch-check_launch_include_gmapping.launch.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rob/mirte_ws/build/ridgeback_navigation/CMakeFiles --progress-num= "Built target run_tests_ridgeback_navigation_roslaunch-check_launch_include_gmapping.launch"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rob/NGR-Goose/mirte_ws/build/ridgeback_navigation/CMakeFiles --progress-num= "Built target run_tests_ridgeback_navigation_roslaunch-check_launch_include_gmapping.launch"
 .PHONY : CMakeFiles/run_tests_ridgeback_navigation_roslaunch-check_launch_include_gmapping.launch.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/run_tests_ridgeback_navigation_roslaunch-check_launch_include_gmapping.launch.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/NGR-Goose/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/run_tests_ridgeback_navigation_roslaunch-check_launch_include_gmapping.launch.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/NGR-Goose/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
 .PHONY : CMakeFiles/run_tests_ridgeback_navigation_roslaunch-check_launch_include_gmapping.launch.dir/rule
 
 # Convenience name for target.
@@ -213,14 +213,14 @@ CMakeFiles/run_tests_ridgeback_navigation_roslaunch-check_launch_include_gmappin
 CMakeFiles/run_tests_ridgeback_navigation_roslaunch-check_launch_gmapping_demo.launch.dir/all:
 	$(MAKE) -f CMakeFiles/run_tests_ridgeback_navigation_roslaunch-check_launch_gmapping_demo.launch.dir/build.make CMakeFiles/run_tests_ridgeback_navigation_roslaunch-check_launch_gmapping_demo.launch.dir/depend
 	$(MAKE) -f CMakeFiles/run_tests_ridgeback_navigation_roslaunch-check_launch_gmapping_demo.launch.dir/build.make CMakeFiles/run_tests_ridgeback_navigation_roslaunch-check_launch_gmapping_demo.launch.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rob/mirte_ws/build/ridgeback_navigation/CMakeFiles --progress-num= "Built target run_tests_ridgeback_navigation_roslaunch-check_launch_gmapping_demo.launch"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rob/NGR-Goose/mirte_ws/build/ridgeback_navigation/CMakeFiles --progress-num= "Built target run_tests_ridgeback_navigation_roslaunch-check_launch_gmapping_demo.launch"
 .PHONY : CMakeFiles/run_tests_ridgeback_navigation_roslaunch-check_launch_gmapping_demo.launch.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/run_tests_ridgeback_navigation_roslaunch-check_launch_gmapping_demo.launch.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/NGR-Goose/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/run_tests_ridgeback_navigation_roslaunch-check_launch_gmapping_demo.launch.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/NGR-Goose/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
 .PHONY : CMakeFiles/run_tests_ridgeback_navigation_roslaunch-check_launch_gmapping_demo.launch.dir/rule
 
 # Convenience name for target.
@@ -240,14 +240,14 @@ CMakeFiles/run_tests_ridgeback_navigation_roslaunch-check_launch_gmapping_demo.l
 CMakeFiles/clean_test_results_ridgeback_navigation.dir/all:
 	$(MAKE) -f CMakeFiles/clean_test_results_ridgeback_navigation.dir/build.make CMakeFiles/clean_test_results_ridgeback_navigation.dir/depend
 	$(MAKE) -f CMakeFiles/clean_test_results_ridgeback_navigation.dir/build.make CMakeFiles/clean_test_results_ridgeback_navigation.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rob/mirte_ws/build/ridgeback_navigation/CMakeFiles --progress-num= "Built target clean_test_results_ridgeback_navigation"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rob/NGR-Goose/mirte_ws/build/ridgeback_navigation/CMakeFiles --progress-num= "Built target clean_test_results_ridgeback_navigation"
 .PHONY : CMakeFiles/clean_test_results_ridgeback_navigation.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/clean_test_results_ridgeback_navigation.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/NGR-Goose/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/clean_test_results_ridgeback_navigation.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/NGR-Goose/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
 .PHONY : CMakeFiles/clean_test_results_ridgeback_navigation.dir/rule
 
 # Convenience name for target.
@@ -267,14 +267,14 @@ CMakeFiles/clean_test_results_ridgeback_navigation.dir/clean:
 CMakeFiles/doxygen.dir/all:
 	$(MAKE) -f CMakeFiles/doxygen.dir/build.make CMakeFiles/doxygen.dir/depend
 	$(MAKE) -f CMakeFiles/doxygen.dir/build.make CMakeFiles/doxygen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rob/mirte_ws/build/ridgeback_navigation/CMakeFiles --progress-num= "Built target doxygen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rob/NGR-Goose/mirte_ws/build/ridgeback_navigation/CMakeFiles --progress-num= "Built target doxygen"
 .PHONY : CMakeFiles/doxygen.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/doxygen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/NGR-Goose/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/doxygen.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/NGR-Goose/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
 .PHONY : CMakeFiles/doxygen.dir/rule
 
 # Convenience name for target.
@@ -294,14 +294,14 @@ CMakeFiles/doxygen.dir/clean:
 CMakeFiles/download_extra_data.dir/all:
 	$(MAKE) -f CMakeFiles/download_extra_data.dir/build.make CMakeFiles/download_extra_data.dir/depend
 	$(MAKE) -f CMakeFiles/download_extra_data.dir/build.make CMakeFiles/download_extra_data.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rob/mirte_ws/build/ridgeback_navigation/CMakeFiles --progress-num= "Built target download_extra_data"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rob/NGR-Goose/mirte_ws/build/ridgeback_navigation/CMakeFiles --progress-num= "Built target download_extra_data"
 .PHONY : CMakeFiles/download_extra_data.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/download_extra_data.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/NGR-Goose/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/download_extra_data.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/NGR-Goose/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
 .PHONY : CMakeFiles/download_extra_data.dir/rule
 
 # Convenience name for target.
@@ -326,14 +326,14 @@ CMakeFiles/_run_tests_ridgeback_navigation_roslaunch-check.dir/all: CMakeFiles/_
 CMakeFiles/_run_tests_ridgeback_navigation_roslaunch-check.dir/all: CMakeFiles/_run_tests_ridgeback_navigation_roslaunch-check_launch_odom_navigation_demo.launch.dir/all
 	$(MAKE) -f CMakeFiles/_run_tests_ridgeback_navigation_roslaunch-check.dir/build.make CMakeFiles/_run_tests_ridgeback_navigation_roslaunch-check.dir/depend
 	$(MAKE) -f CMakeFiles/_run_tests_ridgeback_navigation_roslaunch-check.dir/build.make CMakeFiles/_run_tests_ridgeback_navigation_roslaunch-check.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rob/mirte_ws/build/ridgeback_navigation/CMakeFiles --progress-num= "Built target _run_tests_ridgeback_navigation_roslaunch-check"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rob/NGR-Goose/mirte_ws/build/ridgeback_navigation/CMakeFiles --progress-num= "Built target _run_tests_ridgeback_navigation_roslaunch-check"
 .PHONY : CMakeFiles/_run_tests_ridgeback_navigation_roslaunch-check.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/_run_tests_ridgeback_navigation_roslaunch-check.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/NGR-Goose/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/_run_tests_ridgeback_navigation_roslaunch-check.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/NGR-Goose/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
 .PHONY : CMakeFiles/_run_tests_ridgeback_navigation_roslaunch-check.dir/rule
 
 # Convenience name for target.
@@ -353,14 +353,14 @@ CMakeFiles/_run_tests_ridgeback_navigation_roslaunch-check.dir/clean:
 CMakeFiles/run_tests_ridgeback_navigation.dir/all: CMakeFiles/run_tests_ridgeback_navigation_roslaunch-check.dir/all
 	$(MAKE) -f CMakeFiles/run_tests_ridgeback_navigation.dir/build.make CMakeFiles/run_tests_ridgeback_navigation.dir/depend
 	$(MAKE) -f CMakeFiles/run_tests_ridgeback_navigation.dir/build.make CMakeFiles/run_tests_ridgeback_navigation.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rob/mirte_ws/build/ridgeback_navigation/CMakeFiles --progress-num= "Built target run_tests_ridgeback_navigation"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rob/NGR-Goose/mirte_ws/build/ridgeback_navigation/CMakeFiles --progress-num= "Built target run_tests_ridgeback_navigation"
 .PHONY : CMakeFiles/run_tests_ridgeback_navigation.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/run_tests_ridgeback_navigation.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/NGR-Goose/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/run_tests_ridgeback_navigation.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/NGR-Goose/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
 .PHONY : CMakeFiles/run_tests_ridgeback_navigation.dir/rule
 
 # Convenience name for target.
@@ -380,14 +380,14 @@ CMakeFiles/run_tests_ridgeback_navigation.dir/clean:
 CMakeFiles/_run_tests_ridgeback_navigation.dir/all: CMakeFiles/_run_tests_ridgeback_navigation_roslaunch-check.dir/all
 	$(MAKE) -f CMakeFiles/_run_tests_ridgeback_navigation.dir/build.make CMakeFiles/_run_tests_ridgeback_navigation.dir/depend
 	$(MAKE) -f CMakeFiles/_run_tests_ridgeback_navigation.dir/build.make CMakeFiles/_run_tests_ridgeback_navigation.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rob/mirte_ws/build/ridgeback_navigation/CMakeFiles --progress-num= "Built target _run_tests_ridgeback_navigation"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rob/NGR-Goose/mirte_ws/build/ridgeback_navigation/CMakeFiles --progress-num= "Built target _run_tests_ridgeback_navigation"
 .PHONY : CMakeFiles/_run_tests_ridgeback_navigation.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/_run_tests_ridgeback_navigation.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/NGR-Goose/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/_run_tests_ridgeback_navigation.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/NGR-Goose/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
 .PHONY : CMakeFiles/_run_tests_ridgeback_navigation.dir/rule
 
 # Convenience name for target.
@@ -407,14 +407,14 @@ CMakeFiles/_run_tests_ridgeback_navigation.dir/clean:
 CMakeFiles/run_tests_ridgeback_navigation_roslaunch-check_launch_amcl_demo.launch.dir/all:
 	$(MAKE) -f CMakeFiles/run_tests_ridgeback_navigation_roslaunch-check_launch_amcl_demo.launch.dir/build.make CMakeFiles/run_tests_ridgeback_navigation_roslaunch-check_launch_amcl_demo.launch.dir/depend
 	$(MAKE) -f CMakeFiles/run_tests_ridgeback_navigation_roslaunch-check_launch_amcl_demo.launch.dir/build.make CMakeFiles/run_tests_ridgeback_navigation_roslaunch-check_launch_amcl_demo.launch.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rob/mirte_ws/build/ridgeback_navigation/CMakeFiles --progress-num= "Built target run_tests_ridgeback_navigation_roslaunch-check_launch_amcl_demo.launch"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rob/NGR-Goose/mirte_ws/build/ridgeback_navigation/CMakeFiles --progress-num= "Built target run_tests_ridgeback_navigation_roslaunch-check_launch_amcl_demo.launch"
 .PHONY : CMakeFiles/run_tests_ridgeback_navigation_roslaunch-check_launch_amcl_demo.launch.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/run_tests_ridgeback_navigation_roslaunch-check_launch_amcl_demo.launch.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/NGR-Goose/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/run_tests_ridgeback_navigation_roslaunch-check_launch_amcl_demo.launch.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/NGR-Goose/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
 .PHONY : CMakeFiles/run_tests_ridgeback_navigation_roslaunch-check_launch_amcl_demo.launch.dir/rule
 
 # Convenience name for target.
@@ -434,14 +434,14 @@ CMakeFiles/run_tests_ridgeback_navigation_roslaunch-check_launch_amcl_demo.launc
 CMakeFiles/run_tests.dir/all: CMakeFiles/_run_tests_ridgeback_navigation.dir/all
 	$(MAKE) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/depend
 	$(MAKE) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rob/mirte_ws/build/ridgeback_navigation/CMakeFiles --progress-num= "Built target run_tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rob/NGR-Goose/mirte_ws/build/ridgeback_navigation/CMakeFiles --progress-num= "Built target run_tests"
 .PHONY : CMakeFiles/run_tests.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/run_tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/NGR-Goose/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/run_tests.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/NGR-Goose/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
 .PHONY : CMakeFiles/run_tests.dir/rule
 
 # Convenience name for target.
@@ -462,14 +462,14 @@ CMakeFiles/_run_tests_ridgeback_navigation_roslaunch-check_launch_include_amcl.l
 CMakeFiles/_run_tests_ridgeback_navigation_roslaunch-check_launch_include_amcl.launch.dir/all: CMakeFiles/tests.dir/all
 	$(MAKE) -f CMakeFiles/_run_tests_ridgeback_navigation_roslaunch-check_launch_include_amcl.launch.dir/build.make CMakeFiles/_run_tests_ridgeback_navigation_roslaunch-check_launch_include_amcl.launch.dir/depend
 	$(MAKE) -f CMakeFiles/_run_tests_ridgeback_navigation_roslaunch-check_launch_include_amcl.launch.dir/build.make CMakeFiles/_run_tests_ridgeback_navigation_roslaunch-check_launch_include_amcl.launch.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rob/mirte_ws/build/ridgeback_navigation/CMakeFiles --progress-num= "Built target _run_tests_ridgeback_navigation_roslaunch-check_launch_include_amcl.launch"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rob/NGR-Goose/mirte_ws/build/ridgeback_navigation/CMakeFiles --progress-num= "Built target _run_tests_ridgeback_navigation_roslaunch-check_launch_include_amcl.launch"
 .PHONY : CMakeFiles/_run_tests_ridgeback_navigation_roslaunch-check_launch_include_amcl.launch.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/_run_tests_ridgeback_navigation_roslaunch-check_launch_include_amcl.launch.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/NGR-Goose/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/_run_tests_ridgeback_navigation_roslaunch-check_launch_include_amcl.launch.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/NGR-Goose/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
 .PHONY : CMakeFiles/_run_tests_ridgeback_navigation_roslaunch-check_launch_include_amcl.launch.dir/rule
 
 # Convenience name for target.
@@ -489,14 +489,14 @@ CMakeFiles/_run_tests_ridgeback_navigation_roslaunch-check_launch_include_amcl.l
 CMakeFiles/_catkin_empty_exported_target.dir/all:
 	$(MAKE) -f CMakeFiles/_catkin_empty_exported_target.dir/build.make CMakeFiles/_catkin_empty_exported_target.dir/depend
 	$(MAKE) -f CMakeFiles/_catkin_empty_exported_target.dir/build.make CMakeFiles/_catkin_empty_exported_target.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rob/mirte_ws/build/ridgeback_navigation/CMakeFiles --progress-num= "Built target _catkin_empty_exported_target"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rob/NGR-Goose/mirte_ws/build/ridgeback_navigation/CMakeFiles --progress-num= "Built target _catkin_empty_exported_target"
 .PHONY : CMakeFiles/_catkin_empty_exported_target.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/_catkin_empty_exported_target.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/NGR-Goose/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/_catkin_empty_exported_target.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/NGR-Goose/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
 .PHONY : CMakeFiles/_catkin_empty_exported_target.dir/rule
 
 # Convenience name for target.
@@ -516,14 +516,14 @@ CMakeFiles/_catkin_empty_exported_target.dir/clean:
 CMakeFiles/clean_test_results.dir/all:
 	$(MAKE) -f CMakeFiles/clean_test_results.dir/build.make CMakeFiles/clean_test_results.dir/depend
 	$(MAKE) -f CMakeFiles/clean_test_results.dir/build.make CMakeFiles/clean_test_results.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rob/mirte_ws/build/ridgeback_navigation/CMakeFiles --progress-num= "Built target clean_test_results"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rob/NGR-Goose/mirte_ws/build/ridgeback_navigation/CMakeFiles --progress-num= "Built target clean_test_results"
 .PHONY : CMakeFiles/clean_test_results.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/clean_test_results.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/NGR-Goose/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/clean_test_results.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/NGR-Goose/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
 .PHONY : CMakeFiles/clean_test_results.dir/rule
 
 # Convenience name for target.
@@ -543,14 +543,14 @@ CMakeFiles/clean_test_results.dir/clean:
 CMakeFiles/tests.dir/all:
 	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/depend
 	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rob/mirte_ws/build/ridgeback_navigation/CMakeFiles --progress-num= "Built target tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rob/NGR-Goose/mirte_ws/build/ridgeback_navigation/CMakeFiles --progress-num= "Built target tests"
 .PHONY : CMakeFiles/tests.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/NGR-Goose/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/tests.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/NGR-Goose/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
 .PHONY : CMakeFiles/tests.dir/rule
 
 # Convenience name for target.
@@ -571,14 +571,14 @@ CMakeFiles/_run_tests_ridgeback_navigation_roslaunch-check_launch_amcl_demo.laun
 CMakeFiles/_run_tests_ridgeback_navigation_roslaunch-check_launch_amcl_demo.launch.dir/all: CMakeFiles/tests.dir/all
 	$(MAKE) -f CMakeFiles/_run_tests_ridgeback_navigation_roslaunch-check_launch_amcl_demo.launch.dir/build.make CMakeFiles/_run_tests_ridgeback_navigation_roslaunch-check_launch_amcl_demo.launch.dir/depend
 	$(MAKE) -f CMakeFiles/_run_tests_ridgeback_navigation_roslaunch-check_launch_amcl_demo.launch.dir/build.make CMakeFiles/_run_tests_ridgeback_navigation_roslaunch-check_launch_amcl_demo.launch.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rob/mirte_ws/build/ridgeback_navigation/CMakeFiles --progress-num= "Built target _run_tests_ridgeback_navigation_roslaunch-check_launch_amcl_demo.launch"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rob/NGR-Goose/mirte_ws/build/ridgeback_navigation/CMakeFiles --progress-num= "Built target _run_tests_ridgeback_navigation_roslaunch-check_launch_amcl_demo.launch"
 .PHONY : CMakeFiles/_run_tests_ridgeback_navigation_roslaunch-check_launch_amcl_demo.launch.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/_run_tests_ridgeback_navigation_roslaunch-check_launch_amcl_demo.launch.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/NGR-Goose/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/_run_tests_ridgeback_navigation_roslaunch-check_launch_amcl_demo.launch.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/NGR-Goose/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
 .PHONY : CMakeFiles/_run_tests_ridgeback_navigation_roslaunch-check_launch_amcl_demo.launch.dir/rule
 
 # Convenience name for target.
@@ -599,14 +599,14 @@ CMakeFiles/_run_tests_ridgeback_navigation_roslaunch-check_launch_include_gmappi
 CMakeFiles/_run_tests_ridgeback_navigation_roslaunch-check_launch_include_gmapping.launch.dir/all: CMakeFiles/tests.dir/all
 	$(MAKE) -f CMakeFiles/_run_tests_ridgeback_navigation_roslaunch-check_launch_include_gmapping.launch.dir/build.make CMakeFiles/_run_tests_ridgeback_navigation_roslaunch-check_launch_include_gmapping.launch.dir/depend
 	$(MAKE) -f CMakeFiles/_run_tests_ridgeback_navigation_roslaunch-check_launch_include_gmapping.launch.dir/build.make CMakeFiles/_run_tests_ridgeback_navigation_roslaunch-check_launch_include_gmapping.launch.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rob/mirte_ws/build/ridgeback_navigation/CMakeFiles --progress-num= "Built target _run_tests_ridgeback_navigation_roslaunch-check_launch_include_gmapping.launch"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rob/NGR-Goose/mirte_ws/build/ridgeback_navigation/CMakeFiles --progress-num= "Built target _run_tests_ridgeback_navigation_roslaunch-check_launch_include_gmapping.launch"
 .PHONY : CMakeFiles/_run_tests_ridgeback_navigation_roslaunch-check_launch_include_gmapping.launch.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/_run_tests_ridgeback_navigation_roslaunch-check_launch_include_gmapping.launch.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/NGR-Goose/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/_run_tests_ridgeback_navigation_roslaunch-check_launch_include_gmapping.launch.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/NGR-Goose/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
 .PHONY : CMakeFiles/_run_tests_ridgeback_navigation_roslaunch-check_launch_include_gmapping.launch.dir/rule
 
 # Convenience name for target.
@@ -627,14 +627,14 @@ CMakeFiles/_run_tests_ridgeback_navigation_roslaunch-check_launch_gmapping_demo.
 CMakeFiles/_run_tests_ridgeback_navigation_roslaunch-check_launch_gmapping_demo.launch.dir/all: CMakeFiles/tests.dir/all
 	$(MAKE) -f CMakeFiles/_run_tests_ridgeback_navigation_roslaunch-check_launch_gmapping_demo.launch.dir/build.make CMakeFiles/_run_tests_ridgeback_navigation_roslaunch-check_launch_gmapping_demo.launch.dir/depend
 	$(MAKE) -f CMakeFiles/_run_tests_ridgeback_navigation_roslaunch-check_launch_gmapping_demo.launch.dir/build.make CMakeFiles/_run_tests_ridgeback_navigation_roslaunch-check_launch_gmapping_demo.launch.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rob/mirte_ws/build/ridgeback_navigation/CMakeFiles --progress-num= "Built target _run_tests_ridgeback_navigation_roslaunch-check_launch_gmapping_demo.launch"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rob/NGR-Goose/mirte_ws/build/ridgeback_navigation/CMakeFiles --progress-num= "Built target _run_tests_ridgeback_navigation_roslaunch-check_launch_gmapping_demo.launch"
 .PHONY : CMakeFiles/_run_tests_ridgeback_navigation_roslaunch-check_launch_gmapping_demo.launch.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/_run_tests_ridgeback_navigation_roslaunch-check_launch_gmapping_demo.launch.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/NGR-Goose/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/_run_tests_ridgeback_navigation_roslaunch-check_launch_gmapping_demo.launch.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/NGR-Goose/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
 .PHONY : CMakeFiles/_run_tests_ridgeback_navigation_roslaunch-check_launch_gmapping_demo.launch.dir/rule
 
 # Convenience name for target.
@@ -654,14 +654,14 @@ CMakeFiles/_run_tests_ridgeback_navigation_roslaunch-check_launch_gmapping_demo.
 CMakeFiles/run_tests_ridgeback_navigation_roslaunch-check_launch_include_amcl.launch.dir/all:
 	$(MAKE) -f CMakeFiles/run_tests_ridgeback_navigation_roslaunch-check_launch_include_amcl.launch.dir/build.make CMakeFiles/run_tests_ridgeback_navigation_roslaunch-check_launch_include_amcl.launch.dir/depend
 	$(MAKE) -f CMakeFiles/run_tests_ridgeback_navigation_roslaunch-check_launch_include_amcl.launch.dir/build.make CMakeFiles/run_tests_ridgeback_navigation_roslaunch-check_launch_include_amcl.launch.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rob/mirte_ws/build/ridgeback_navigation/CMakeFiles --progress-num= "Built target run_tests_ridgeback_navigation_roslaunch-check_launch_include_amcl.launch"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rob/NGR-Goose/mirte_ws/build/ridgeback_navigation/CMakeFiles --progress-num= "Built target run_tests_ridgeback_navigation_roslaunch-check_launch_include_amcl.launch"
 .PHONY : CMakeFiles/run_tests_ridgeback_navigation_roslaunch-check_launch_include_amcl.launch.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/run_tests_ridgeback_navigation_roslaunch-check_launch_include_amcl.launch.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/NGR-Goose/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/run_tests_ridgeback_navigation_roslaunch-check_launch_include_amcl.launch.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/NGR-Goose/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
 .PHONY : CMakeFiles/run_tests_ridgeback_navigation_roslaunch-check_launch_include_amcl.launch.dir/rule
 
 # Convenience name for target.
@@ -681,14 +681,14 @@ CMakeFiles/run_tests_ridgeback_navigation_roslaunch-check_launch_include_amcl.la
 CMakeFiles/run_tests_ridgeback_navigation_roslaunch-check_launch_include_move_base.launch.dir/all:
 	$(MAKE) -f CMakeFiles/run_tests_ridgeback_navigation_roslaunch-check_launch_include_move_base.launch.dir/build.make CMakeFiles/run_tests_ridgeback_navigation_roslaunch-check_launch_include_move_base.launch.dir/depend
 	$(MAKE) -f CMakeFiles/run_tests_ridgeback_navigation_roslaunch-check_launch_include_move_base.launch.dir/build.make CMakeFiles/run_tests_ridgeback_navigation_roslaunch-check_launch_include_move_base.launch.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rob/mirte_ws/build/ridgeback_navigation/CMakeFiles --progress-num= "Built target run_tests_ridgeback_navigation_roslaunch-check_launch_include_move_base.launch"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rob/NGR-Goose/mirte_ws/build/ridgeback_navigation/CMakeFiles --progress-num= "Built target run_tests_ridgeback_navigation_roslaunch-check_launch_include_move_base.launch"
 .PHONY : CMakeFiles/run_tests_ridgeback_navigation_roslaunch-check_launch_include_move_base.launch.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/run_tests_ridgeback_navigation_roslaunch-check_launch_include_move_base.launch.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/NGR-Goose/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/run_tests_ridgeback_navigation_roslaunch-check_launch_include_move_base.launch.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/NGR-Goose/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
 .PHONY : CMakeFiles/run_tests_ridgeback_navigation_roslaunch-check_launch_include_move_base.launch.dir/rule
 
 # Convenience name for target.
@@ -709,14 +709,14 @@ CMakeFiles/_run_tests_ridgeback_navigation_roslaunch-check_launch_include_move_b
 CMakeFiles/_run_tests_ridgeback_navigation_roslaunch-check_launch_include_move_base.launch.dir/all: CMakeFiles/tests.dir/all
 	$(MAKE) -f CMakeFiles/_run_tests_ridgeback_navigation_roslaunch-check_launch_include_move_base.launch.dir/build.make CMakeFiles/_run_tests_ridgeback_navigation_roslaunch-check_launch_include_move_base.launch.dir/depend
 	$(MAKE) -f CMakeFiles/_run_tests_ridgeback_navigation_roslaunch-check_launch_include_move_base.launch.dir/build.make CMakeFiles/_run_tests_ridgeback_navigation_roslaunch-check_launch_include_move_base.launch.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rob/mirte_ws/build/ridgeback_navigation/CMakeFiles --progress-num= "Built target _run_tests_ridgeback_navigation_roslaunch-check_launch_include_move_base.launch"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rob/NGR-Goose/mirte_ws/build/ridgeback_navigation/CMakeFiles --progress-num= "Built target _run_tests_ridgeback_navigation_roslaunch-check_launch_include_move_base.launch"
 .PHONY : CMakeFiles/_run_tests_ridgeback_navigation_roslaunch-check_launch_include_move_base.launch.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/_run_tests_ridgeback_navigation_roslaunch-check_launch_include_move_base.launch.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/NGR-Goose/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/_run_tests_ridgeback_navigation_roslaunch-check_launch_include_move_base.launch.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/NGR-Goose/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
 .PHONY : CMakeFiles/_run_tests_ridgeback_navigation_roslaunch-check_launch_include_move_base.launch.dir/rule
 
 # Convenience name for target.
@@ -736,14 +736,14 @@ CMakeFiles/_run_tests_ridgeback_navigation_roslaunch-check_launch_include_move_b
 CMakeFiles/run_tests_ridgeback_navigation_roslaunch-check_launch_odom_navigation_demo.launch.dir/all:
 	$(MAKE) -f CMakeFiles/run_tests_ridgeback_navigation_roslaunch-check_launch_odom_navigation_demo.launch.dir/build.make CMakeFiles/run_tests_ridgeback_navigation_roslaunch-check_launch_odom_navigation_demo.launch.dir/depend
 	$(MAKE) -f CMakeFiles/run_tests_ridgeback_navigation_roslaunch-check_launch_odom_navigation_demo.launch.dir/build.make CMakeFiles/run_tests_ridgeback_navigation_roslaunch-check_launch_odom_navigation_demo.launch.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rob/mirte_ws/build/ridgeback_navigation/CMakeFiles --progress-num= "Built target run_tests_ridgeback_navigation_roslaunch-check_launch_odom_navigation_demo.launch"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rob/NGR-Goose/mirte_ws/build/ridgeback_navigation/CMakeFiles --progress-num= "Built target run_tests_ridgeback_navigation_roslaunch-check_launch_odom_navigation_demo.launch"
 .PHONY : CMakeFiles/run_tests_ridgeback_navigation_roslaunch-check_launch_odom_navigation_demo.launch.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/run_tests_ridgeback_navigation_roslaunch-check_launch_odom_navigation_demo.launch.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/NGR-Goose/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/run_tests_ridgeback_navigation_roslaunch-check_launch_odom_navigation_demo.launch.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/NGR-Goose/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
 .PHONY : CMakeFiles/run_tests_ridgeback_navigation_roslaunch-check_launch_odom_navigation_demo.launch.dir/rule
 
 # Convenience name for target.
@@ -764,14 +764,14 @@ CMakeFiles/_run_tests_ridgeback_navigation_roslaunch-check_launch_odom_navigatio
 CMakeFiles/_run_tests_ridgeback_navigation_roslaunch-check_launch_odom_navigation_demo.launch.dir/all: CMakeFiles/tests.dir/all
 	$(MAKE) -f CMakeFiles/_run_tests_ridgeback_navigation_roslaunch-check_launch_odom_navigation_demo.launch.dir/build.make CMakeFiles/_run_tests_ridgeback_navigation_roslaunch-check_launch_odom_navigation_demo.launch.dir/depend
 	$(MAKE) -f CMakeFiles/_run_tests_ridgeback_navigation_roslaunch-check_launch_odom_navigation_demo.launch.dir/build.make CMakeFiles/_run_tests_ridgeback_navigation_roslaunch-check_launch_odom_navigation_demo.launch.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rob/mirte_ws/build/ridgeback_navigation/CMakeFiles --progress-num= "Built target _run_tests_ridgeback_navigation_roslaunch-check_launch_odom_navigation_demo.launch"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rob/NGR-Goose/mirte_ws/build/ridgeback_navigation/CMakeFiles --progress-num= "Built target _run_tests_ridgeback_navigation_roslaunch-check_launch_odom_navigation_demo.launch"
 .PHONY : CMakeFiles/_run_tests_ridgeback_navigation_roslaunch-check_launch_odom_navigation_demo.launch.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/_run_tests_ridgeback_navigation_roslaunch-check_launch_odom_navigation_demo.launch.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/NGR-Goose/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/_run_tests_ridgeback_navigation_roslaunch-check_launch_odom_navigation_demo.launch.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/NGR-Goose/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
 .PHONY : CMakeFiles/_run_tests_ridgeback_navigation_roslaunch-check_launch_odom_navigation_demo.launch.dir/rule
 
 # Convenience name for target.
@@ -792,14 +792,14 @@ gtest/googlemock/CMakeFiles/gmock_main.dir/all: gtest/googlemock/CMakeFiles/gmoc
 gtest/googlemock/CMakeFiles/gmock_main.dir/all: gtest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock_main.dir/build.make gtest/googlemock/CMakeFiles/gmock_main.dir/depend
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock_main.dir/build.make gtest/googlemock/CMakeFiles/gmock_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rob/mirte_ws/build/ridgeback_navigation/CMakeFiles --progress-num=3,4 "Built target gmock_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rob/NGR-Goose/mirte_ws/build/ridgeback_navigation/CMakeFiles --progress-num=3,4 "Built target gmock_main"
 .PHONY : gtest/googlemock/CMakeFiles/gmock_main.dir/all
 
 # Build rule for subdir invocation for target.
 gtest/googlemock/CMakeFiles/gmock_main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/mirte_ws/build/ridgeback_navigation/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/NGR-Goose/mirte_ws/build/ridgeback_navigation/CMakeFiles 6
 	$(MAKE) -f CMakeFiles/Makefile2 gtest/googlemock/CMakeFiles/gmock_main.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/NGR-Goose/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
 .PHONY : gtest/googlemock/CMakeFiles/gmock_main.dir/rule
 
 # Convenience name for target.
@@ -819,14 +819,14 @@ gtest/googlemock/CMakeFiles/gmock_main.dir/clean:
 gtest/googlemock/CMakeFiles/gmock.dir/all: gtest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock.dir/build.make gtest/googlemock/CMakeFiles/gmock.dir/depend
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock.dir/build.make gtest/googlemock/CMakeFiles/gmock.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rob/mirte_ws/build/ridgeback_navigation/CMakeFiles --progress-num=1,2 "Built target gmock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rob/NGR-Goose/mirte_ws/build/ridgeback_navigation/CMakeFiles --progress-num=1,2 "Built target gmock"
 .PHONY : gtest/googlemock/CMakeFiles/gmock.dir/all
 
 # Build rule for subdir invocation for target.
 gtest/googlemock/CMakeFiles/gmock.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/mirte_ws/build/ridgeback_navigation/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/NGR-Goose/mirte_ws/build/ridgeback_navigation/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 gtest/googlemock/CMakeFiles/gmock.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/NGR-Goose/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
 .PHONY : gtest/googlemock/CMakeFiles/gmock.dir/rule
 
 # Convenience name for target.
@@ -846,14 +846,14 @@ gtest/googlemock/CMakeFiles/gmock.dir/clean:
 gtest/googletest/CMakeFiles/gtest_main.dir/all: gtest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/googletest/CMakeFiles/gtest_main.dir/build.make gtest/googletest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) -f gtest/googletest/CMakeFiles/gtest_main.dir/build.make gtest/googletest/CMakeFiles/gtest_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rob/mirte_ws/build/ridgeback_navigation/CMakeFiles --progress-num=7,8 "Built target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rob/NGR-Goose/mirte_ws/build/ridgeback_navigation/CMakeFiles --progress-num=7,8 "Built target gtest_main"
 .PHONY : gtest/googletest/CMakeFiles/gtest_main.dir/all
 
 # Build rule for subdir invocation for target.
 gtest/googletest/CMakeFiles/gtest_main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/mirte_ws/build/ridgeback_navigation/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/NGR-Goose/mirte_ws/build/ridgeback_navigation/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 gtest/googletest/CMakeFiles/gtest_main.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/NGR-Goose/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
 .PHONY : gtest/googletest/CMakeFiles/gtest_main.dir/rule
 
 # Convenience name for target.
@@ -873,14 +873,14 @@ gtest/googletest/CMakeFiles/gtest_main.dir/clean:
 gtest/googletest/CMakeFiles/gtest.dir/all:
 	$(MAKE) -f gtest/googletest/CMakeFiles/gtest.dir/build.make gtest/googletest/CMakeFiles/gtest.dir/depend
 	$(MAKE) -f gtest/googletest/CMakeFiles/gtest.dir/build.make gtest/googletest/CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rob/mirte_ws/build/ridgeback_navigation/CMakeFiles --progress-num=5,6 "Built target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rob/NGR-Goose/mirte_ws/build/ridgeback_navigation/CMakeFiles --progress-num=5,6 "Built target gtest"
 .PHONY : gtest/googletest/CMakeFiles/gtest.dir/all
 
 # Build rule for subdir invocation for target.
 gtest/googletest/CMakeFiles/gtest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/mirte_ws/build/ridgeback_navigation/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/NGR-Goose/mirte_ws/build/ridgeback_navigation/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 gtest/googletest/CMakeFiles/gtest.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rob/NGR-Goose/mirte_ws/build/ridgeback_navigation/CMakeFiles 0
 .PHONY : gtest/googletest/CMakeFiles/gtest.dir/rule
 
 # Convenience name for target.

@@ -1,0 +1,1 @@
+/home/rob/NGR-Goose/mirte_ws/devel/.private/goose_control/share/goose_control/cmake/goose_controlConfig.cmake

@@ -11,7 +11,7 @@
 
 # since this file is sourced either use the provided _CATKIN_SETUP_DIR
 # or fall back to the destination set at configure time
-: ${_CATKIN_SETUP_DIR:=/home/rob/mirte_ws/devel/.private/mirte_master_description}
+: ${_CATKIN_SETUP_DIR:=/home/rob/NGR-Goose/mirte_ws/devel/.private/mirte_master_description}
 _SETUP_UTIL="$_CATKIN_SETUP_DIR/_setup_util.py"
 unset _CATKIN_SETUP_DIR
 

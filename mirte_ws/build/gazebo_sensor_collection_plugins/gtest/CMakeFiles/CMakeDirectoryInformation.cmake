@@ -3,7 +3,7 @@
 
 # Relative path conversion top directories.
 set(CMAKE_RELATIVE_PATH_TOP_SOURCE "/usr/src/googletest")
-set(CMAKE_RELATIVE_PATH_TOP_BINARY "/home/rob/mirte_ws/build/gazebo_sensor_collection_plugins")
+set(CMAKE_RELATIVE_PATH_TOP_BINARY "/home/rob/NGR-Goose/mirte_ws/build/gazebo_sensor_collection_plugins")
 
 # Force unix paths in dependencies.
 set(CMAKE_FORCE_UNIX_PATHS 1)

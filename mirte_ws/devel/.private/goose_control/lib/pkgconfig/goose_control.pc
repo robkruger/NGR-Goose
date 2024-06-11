@@ -1,0 +1,8 @@
+prefix=/home/rob/NGR-Goose/mirte_ws/devel/.private/goose_control
+
+Name: goose_control
+Description: Description of goose_control
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

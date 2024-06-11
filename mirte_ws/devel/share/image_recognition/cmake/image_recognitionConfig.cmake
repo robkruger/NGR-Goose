@@ -1,0 +1,1 @@
+/home/rob/NGR-Goose/mirte_ws/devel/.private/image_recognition/share/image_recognition/cmake/image_recognitionConfig.cmake

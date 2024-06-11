@@ -1,0 +1,13 @@
+Warning: Cannot symlink from /home/rob/NGR-Goose/mirte_ws/devel/.private/ridgeback_description/lib/pkgconfig/ridgeback_description.pc to existing file /home/rob/NGR-Goose/mirte_ws/devel/lib/pkgconfig/ridgeback_description.pc
+Warning: Source hash: d3b973b14fbe71ff7c1465fc9143db9b
+Warning: Dest hash: bd73cc740897b2b2e4cc5c71d1146357
+Warning: Cannot symlink from /home/rob/NGR-Goose/mirte_ws/devel/.private/ridgeback_description/share/ridgeback_description/cmake/ridgeback_descriptionConfig.cmake to existing file /home/rob/NGR-Goose/mirte_ws/devel/share/ridgeback_description/cmake/ridgeback_descriptionConfig.cmake
+Warning: Source hash: 9cf57a44aa5194d19be1c28a9fb0d706
+Warning: Dest hash: f2273fd6013ad1c16bf92f6aff9797ae
+Cleaning: (/home/rob/mirte_ws/devel/.private/ridgeback_description/cmake.lock, /home/rob/mirte_ws/devel/./cmake.lock)
+Cleaning: (/home/rob/mirte_ws/devel/.private/ridgeback_description/lib/pkgconfig/ridgeback_description.pc, /home/rob/mirte_ws/devel/lib/pkgconfig/ridgeback_description.pc)
+Cleaning: (/home/rob/mirte_ws/devel/.private/ridgeback_description/share/ridgeback_description/cmake/ridgeback_descriptionConfig-version.cmake, /home/rob/mirte_ws/devel/share/ridgeback_description/cmake/ridgeback_descriptionConfig-version.cmake)
+Cleaning: (/home/rob/mirte_ws/devel/.private/ridgeback_description/share/ridgeback_description/cmake/ridgeback_descriptionConfig.cmake, /home/rob/mirte_ws/devel/share/ridgeback_description/cmake/ridgeback_descriptionConfig.cmake)
+Unlinking: /home/rob/mirte_ws/devel/lib/pkgconfig/ridgeback_description.pc
+Unlinking: /home/rob/mirte_ws/devel/share/ridgeback_description/cmake/ridgeback_descriptionConfig-version.cmake
+Unlinking: /home/rob/mirte_ws/devel/share/ridgeback_description/cmake/ridgeback_descriptionConfig.cmake

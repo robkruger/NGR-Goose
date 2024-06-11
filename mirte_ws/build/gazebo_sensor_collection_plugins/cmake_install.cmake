@@ -1,8 +1,8 @@
-# Install script for directory: /home/rob/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins
+# Install script for directory: /home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/rob/mirte_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/rob/NGR-Goose/mirte_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -49,149 +49,149 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/rob/mirte_ws/install/_setup_util.py")
+   "/home/rob/NGR-Goose/mirte_ws/install/_setup_util.py")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/rob/mirte_ws/install" TYPE PROGRAM FILES "/home/rob/mirte_ws/build/gazebo_sensor_collection_plugins/catkin_generated/installspace/_setup_util.py")
+file(INSTALL DESTINATION "/home/rob/NGR-Goose/mirte_ws/install" TYPE PROGRAM FILES "/home/rob/NGR-Goose/mirte_ws/build/gazebo_sensor_collection_plugins/catkin_generated/installspace/_setup_util.py")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/rob/mirte_ws/install/env.sh")
+   "/home/rob/NGR-Goose/mirte_ws/install/env.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/rob/mirte_ws/install" TYPE PROGRAM FILES "/home/rob/mirte_ws/build/gazebo_sensor_collection_plugins/catkin_generated/installspace/env.sh")
+file(INSTALL DESTINATION "/home/rob/NGR-Goose/mirte_ws/install" TYPE PROGRAM FILES "/home/rob/NGR-Goose/mirte_ws/build/gazebo_sensor_collection_plugins/catkin_generated/installspace/env.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/rob/mirte_ws/install/setup.bash;/home/rob/mirte_ws/install/local_setup.bash")
+   "/home/rob/NGR-Goose/mirte_ws/install/setup.bash;/home/rob/NGR-Goose/mirte_ws/install/local_setup.bash")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/rob/mirte_ws/install" TYPE FILE FILES
-    "/home/rob/mirte_ws/build/gazebo_sensor_collection_plugins/catkin_generated/installspace/setup.bash"
-    "/home/rob/mirte_ws/build/gazebo_sensor_collection_plugins/catkin_generated/installspace/local_setup.bash"
+file(INSTALL DESTINATION "/home/rob/NGR-Goose/mirte_ws/install" TYPE FILE FILES
+    "/home/rob/NGR-Goose/mirte_ws/build/gazebo_sensor_collection_plugins/catkin_generated/installspace/setup.bash"
+    "/home/rob/NGR-Goose/mirte_ws/build/gazebo_sensor_collection_plugins/catkin_generated/installspace/local_setup.bash"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/rob/mirte_ws/install/setup.sh;/home/rob/mirte_ws/install/local_setup.sh")
+   "/home/rob/NGR-Goose/mirte_ws/install/setup.sh;/home/rob/NGR-Goose/mirte_ws/install/local_setup.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/rob/mirte_ws/install" TYPE FILE FILES
-    "/home/rob/mirte_ws/build/gazebo_sensor_collection_plugins/catkin_generated/installspace/setup.sh"
-    "/home/rob/mirte_ws/build/gazebo_sensor_collection_plugins/catkin_generated/installspace/local_setup.sh"
+file(INSTALL DESTINATION "/home/rob/NGR-Goose/mirte_ws/install" TYPE FILE FILES
+    "/home/rob/NGR-Goose/mirte_ws/build/gazebo_sensor_collection_plugins/catkin_generated/installspace/setup.sh"
+    "/home/rob/NGR-Goose/mirte_ws/build/gazebo_sensor_collection_plugins/catkin_generated/installspace/local_setup.sh"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/rob/mirte_ws/install/setup.zsh;/home/rob/mirte_ws/install/local_setup.zsh")
+   "/home/rob/NGR-Goose/mirte_ws/install/setup.zsh;/home/rob/NGR-Goose/mirte_ws/install/local_setup.zsh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/rob/mirte_ws/install" TYPE FILE FILES
-    "/home/rob/mirte_ws/build/gazebo_sensor_collection_plugins/catkin_generated/installspace/setup.zsh"
-    "/home/rob/mirte_ws/build/gazebo_sensor_collection_plugins/catkin_generated/installspace/local_setup.zsh"
+file(INSTALL DESTINATION "/home/rob/NGR-Goose/mirte_ws/install" TYPE FILE FILES
+    "/home/rob/NGR-Goose/mirte_ws/build/gazebo_sensor_collection_plugins/catkin_generated/installspace/setup.zsh"
+    "/home/rob/NGR-Goose/mirte_ws/build/gazebo_sensor_collection_plugins/catkin_generated/installspace/local_setup.zsh"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/rob/mirte_ws/install/.rosinstall")
+   "/home/rob/NGR-Goose/mirte_ws/install/.rosinstall")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/rob/mirte_ws/install" TYPE FILE FILES "/home/rob/mirte_ws/build/gazebo_sensor_collection_plugins/catkin_generated/installspace/.rosinstall")
+file(INSTALL DESTINATION "/home/rob/NGR-Goose/mirte_ws/install" TYPE FILE FILES "/home/rob/NGR-Goose/mirte_ws/build/gazebo_sensor_collection_plugins/catkin_generated/installspace/.rosinstall")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gazebo_sensor_collection_plugins/msg" TYPE FILE FILES
-    "/home/rob/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/DataXYZ.msg"
-    "/home/rob/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/EulerData.msg"
-    "/home/rob/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/QuaternionData.msg"
-    "/home/rob/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/SensorData3D.msg"
-    "/home/rob/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/OrientationSensorData.msg"
-    "/home/rob/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/ImuData.msg"
-    "/home/rob/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/GpsData.msg"
-    "/home/rob/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/EncoderData.msg"
-    "/home/rob/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/BatteryData.msg"
+    "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/DataXYZ.msg"
+    "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/EulerData.msg"
+    "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/QuaternionData.msg"
+    "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/SensorData3D.msg"
+    "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/OrientationSensorData.msg"
+    "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/ImuData.msg"
+    "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/GpsData.msg"
+    "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/EncoderData.msg"
+    "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/BatteryData.msg"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gazebo_sensor_collection_plugins/cmake" TYPE FILE FILES "/home/rob/mirte_ws/build/gazebo_sensor_collection_plugins/catkin_generated/installspace/gazebo_sensor_collection_plugins-msg-paths.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gazebo_sensor_collection_plugins/cmake" TYPE FILE FILES "/home/rob/NGR-Goose/mirte_ws/build/gazebo_sensor_collection_plugins/catkin_generated/installspace/gazebo_sensor_collection_plugins-msg-paths.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/include/gazebo_sensor_collection_plugins")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/rob/NGR-Goose/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/include/gazebo_sensor_collection_plugins")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/share/roseus/ros/gazebo_sensor_collection_plugins")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/rob/NGR-Goose/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/share/roseus/ros/gazebo_sensor_collection_plugins")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/share/common-lisp/ros/gazebo_sensor_collection_plugins")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/rob/NGR-Goose/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/share/common-lisp/ros/gazebo_sensor_collection_plugins")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/share/gennodejs/ros/gazebo_sensor_collection_plugins")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/rob/NGR-Goose/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/share/gennodejs/ros/gazebo_sensor_collection_plugins")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  execute_process(COMMAND "/usr/bin/python3" -m compileall "/home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/lib/python3/dist-packages/gazebo_sensor_collection_plugins")
+  execute_process(COMMAND "/usr/bin/python3" -m compileall "/home/rob/NGR-Goose/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/lib/python3/dist-packages/gazebo_sensor_collection_plugins")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages" TYPE DIRECTORY FILES "/home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/lib/python3/dist-packages/gazebo_sensor_collection_plugins")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages" TYPE DIRECTORY FILES "/home/rob/NGR-Goose/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/lib/python3/dist-packages/gazebo_sensor_collection_plugins")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/rob/mirte_ws/build/gazebo_sensor_collection_plugins/catkin_generated/installspace/gazebo_sensor_collection_plugins.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/rob/NGR-Goose/mirte_ws/build/gazebo_sensor_collection_plugins/catkin_generated/installspace/gazebo_sensor_collection_plugins.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gazebo_sensor_collection_plugins/cmake" TYPE FILE FILES "/home/rob/mirte_ws/build/gazebo_sensor_collection_plugins/catkin_generated/installspace/gazebo_sensor_collection_plugins-msg-extras.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gazebo_sensor_collection_plugins/cmake" TYPE FILE FILES "/home/rob/NGR-Goose/mirte_ws/build/gazebo_sensor_collection_plugins/catkin_generated/installspace/gazebo_sensor_collection_plugins-msg-extras.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gazebo_sensor_collection_plugins/cmake" TYPE FILE FILES
-    "/home/rob/mirte_ws/build/gazebo_sensor_collection_plugins/catkin_generated/installspace/gazebo_sensor_collection_pluginsConfig.cmake"
-    "/home/rob/mirte_ws/build/gazebo_sensor_collection_plugins/catkin_generated/installspace/gazebo_sensor_collection_pluginsConfig-version.cmake"
+    "/home/rob/NGR-Goose/mirte_ws/build/gazebo_sensor_collection_plugins/catkin_generated/installspace/gazebo_sensor_collection_pluginsConfig.cmake"
+    "/home/rob/NGR-Goose/mirte_ws/build/gazebo_sensor_collection_plugins/catkin_generated/installspace/gazebo_sensor_collection_pluginsConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gazebo_sensor_collection_plugins" TYPE FILE FILES "/home/rob/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gazebo_sensor_collection_plugins" TYPE FILE FILES "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/package.xml")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/rob/mirte_ws/build/gazebo_sensor_collection_plugins/gtest/cmake_install.cmake")
+  include("/home/rob/NGR-Goose/mirte_ws/build/gazebo_sensor_collection_plugins/gtest/cmake_install.cmake")
 
 endif()
 
@@ -203,5 +203,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/rob/mirte_ws/build/gazebo_sensor_collection_plugins/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/rob/NGR-Goose/mirte_ws/build/gazebo_sensor_collection_plugins/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

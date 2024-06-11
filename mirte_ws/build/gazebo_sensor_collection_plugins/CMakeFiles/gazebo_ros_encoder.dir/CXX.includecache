@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/include/gazebo_sensor_collection_plugins/EncoderData.h
+/home/rob/NGR-Goose/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/include/gazebo_sensor_collection_plugins/EncoderData.h
 string
 -
 vector
@@ -22,7 +22,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/rob/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/include/motion/gazebo_encoder.h
+/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/include/motion/gazebo_encoder.h
 map
 -
 gazebo/common/common.hh
@@ -52,13 +52,13 @@ boost/bind.hpp
 gazebo_sensor_collection_plugins/EncoderData.h
 -
 
-/home/rob/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/plugins/motion/gazebo_encoder.cpp
+/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/plugins/motion/gazebo_encoder.cpp
 algorithm
 -
 assert.h
 -
 ../include/motion/gazebo_encoder.h
-/home/rob/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/plugins/include/motion/gazebo_encoder.h
+/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/plugins/include/motion/gazebo_encoder.h
 ignition/math/Pose3.hh
 -
 ignition/math/Vector3.hh

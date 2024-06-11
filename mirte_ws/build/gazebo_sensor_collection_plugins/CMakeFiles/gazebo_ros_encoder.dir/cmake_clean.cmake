@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/lib/libgazebo_ros_encoder.pdb"
-  "/home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/lib/libgazebo_ros_encoder.so"
+  "/home/rob/NGR-Goose/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/lib/libgazebo_ros_encoder.pdb"
+  "/home/rob/NGR-Goose/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/lib/libgazebo_ros_encoder.so"
   "CMakeFiles/gazebo_ros_encoder.dir/plugins/motion/gazebo_encoder.cpp.o"
 )
 

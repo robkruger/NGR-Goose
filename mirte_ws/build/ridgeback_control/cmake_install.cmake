@@ -1,8 +1,8 @@
-# Install script for directory: /home/rob/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_control
+# Install script for directory: /home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_control
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/rob/mirte_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/rob/NGR-Goose/mirte_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -49,98 +49,98 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/rob/mirte_ws/install/_setup_util.py")
+   "/home/rob/NGR-Goose/mirte_ws/install/_setup_util.py")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/rob/mirte_ws/install" TYPE PROGRAM FILES "/home/rob/mirte_ws/build/ridgeback_control/catkin_generated/installspace/_setup_util.py")
+file(INSTALL DESTINATION "/home/rob/NGR-Goose/mirte_ws/install" TYPE PROGRAM FILES "/home/rob/NGR-Goose/mirte_ws/build/ridgeback_control/catkin_generated/installspace/_setup_util.py")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/rob/mirte_ws/install/env.sh")
+   "/home/rob/NGR-Goose/mirte_ws/install/env.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/rob/mirte_ws/install" TYPE PROGRAM FILES "/home/rob/mirte_ws/build/ridgeback_control/catkin_generated/installspace/env.sh")
+file(INSTALL DESTINATION "/home/rob/NGR-Goose/mirte_ws/install" TYPE PROGRAM FILES "/home/rob/NGR-Goose/mirte_ws/build/ridgeback_control/catkin_generated/installspace/env.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/rob/mirte_ws/install/setup.bash;/home/rob/mirte_ws/install/local_setup.bash")
+   "/home/rob/NGR-Goose/mirte_ws/install/setup.bash;/home/rob/NGR-Goose/mirte_ws/install/local_setup.bash")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/rob/mirte_ws/install" TYPE FILE FILES
-    "/home/rob/mirte_ws/build/ridgeback_control/catkin_generated/installspace/setup.bash"
-    "/home/rob/mirte_ws/build/ridgeback_control/catkin_generated/installspace/local_setup.bash"
+file(INSTALL DESTINATION "/home/rob/NGR-Goose/mirte_ws/install" TYPE FILE FILES
+    "/home/rob/NGR-Goose/mirte_ws/build/ridgeback_control/catkin_generated/installspace/setup.bash"
+    "/home/rob/NGR-Goose/mirte_ws/build/ridgeback_control/catkin_generated/installspace/local_setup.bash"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/rob/mirte_ws/install/setup.sh;/home/rob/mirte_ws/install/local_setup.sh")
+   "/home/rob/NGR-Goose/mirte_ws/install/setup.sh;/home/rob/NGR-Goose/mirte_ws/install/local_setup.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/rob/mirte_ws/install" TYPE FILE FILES
-    "/home/rob/mirte_ws/build/ridgeback_control/catkin_generated/installspace/setup.sh"
-    "/home/rob/mirte_ws/build/ridgeback_control/catkin_generated/installspace/local_setup.sh"
+file(INSTALL DESTINATION "/home/rob/NGR-Goose/mirte_ws/install" TYPE FILE FILES
+    "/home/rob/NGR-Goose/mirte_ws/build/ridgeback_control/catkin_generated/installspace/setup.sh"
+    "/home/rob/NGR-Goose/mirte_ws/build/ridgeback_control/catkin_generated/installspace/local_setup.sh"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/rob/mirte_ws/install/setup.zsh;/home/rob/mirte_ws/install/local_setup.zsh")
+   "/home/rob/NGR-Goose/mirte_ws/install/setup.zsh;/home/rob/NGR-Goose/mirte_ws/install/local_setup.zsh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/rob/mirte_ws/install" TYPE FILE FILES
-    "/home/rob/mirte_ws/build/ridgeback_control/catkin_generated/installspace/setup.zsh"
-    "/home/rob/mirte_ws/build/ridgeback_control/catkin_generated/installspace/local_setup.zsh"
+file(INSTALL DESTINATION "/home/rob/NGR-Goose/mirte_ws/install" TYPE FILE FILES
+    "/home/rob/NGR-Goose/mirte_ws/build/ridgeback_control/catkin_generated/installspace/setup.zsh"
+    "/home/rob/NGR-Goose/mirte_ws/build/ridgeback_control/catkin_generated/installspace/local_setup.zsh"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/rob/mirte_ws/install/.rosinstall")
+   "/home/rob/NGR-Goose/mirte_ws/install/.rosinstall")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/rob/mirte_ws/install" TYPE FILE FILES "/home/rob/mirte_ws/build/ridgeback_control/catkin_generated/installspace/.rosinstall")
+file(INSTALL DESTINATION "/home/rob/NGR-Goose/mirte_ws/install" TYPE FILE FILES "/home/rob/NGR-Goose/mirte_ws/build/ridgeback_control/catkin_generated/installspace/.rosinstall")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/rob/mirte_ws/build/ridgeback_control/catkin_generated/installspace/ridgeback_control.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/rob/NGR-Goose/mirte_ws/build/ridgeback_control/catkin_generated/installspace/ridgeback_control.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ridgeback_control/cmake" TYPE FILE FILES
-    "/home/rob/mirte_ws/build/ridgeback_control/catkin_generated/installspace/ridgeback_controlConfig.cmake"
-    "/home/rob/mirte_ws/build/ridgeback_control/catkin_generated/installspace/ridgeback_controlConfig-version.cmake"
+    "/home/rob/NGR-Goose/mirte_ws/build/ridgeback_control/catkin_generated/installspace/ridgeback_controlConfig.cmake"
+    "/home/rob/NGR-Goose/mirte_ws/build/ridgeback_control/catkin_generated/installspace/ridgeback_controlConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ridgeback_control" TYPE FILE FILES "/home/rob/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_control/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ridgeback_control" TYPE FILE FILES "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_control/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -150,7 +150,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmecanum_drive_controller.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/rob/mirte_ws/devel/.private/ridgeback_control/lib/libmecanum_drive_controller.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/rob/NGR-Goose/mirte_ws/devel/.private/ridgeback_control/lib/libmecanum_drive_controller.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmecanum_drive_controller.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmecanum_drive_controller.so")
     file(RPATH_CHANGE
@@ -167,19 +167,19 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ridgeback_control" TYPE FILE FILES "/home/rob/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_control/mecanum_drive_controller_plugins.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ridgeback_control" TYPE FILE FILES "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_control/mecanum_drive_controller_plugins.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ridgeback_control" TYPE DIRECTORY FILES
-    "/home/rob/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_control/config"
-    "/home/rob/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_control/launch"
+    "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_control/config"
+    "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_control/launch"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/rob/mirte_ws/build/ridgeback_control/gtest/cmake_install.cmake")
+  include("/home/rob/NGR-Goose/mirte_ws/build/ridgeback_control/gtest/cmake_install.cmake")
 
 endif()
 
@@ -191,5 +191,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/rob/mirte_ws/build/ridgeback_control/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/rob/NGR-Goose/mirte_ws/build/ridgeback_control/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

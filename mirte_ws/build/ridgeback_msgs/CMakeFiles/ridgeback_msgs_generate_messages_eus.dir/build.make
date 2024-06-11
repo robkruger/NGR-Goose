@@ -43,55 +43,55 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rob/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs
+CMAKE_SOURCE_DIR = /home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rob/mirte_ws/build/ridgeback_msgs
+CMAKE_BINARY_DIR = /home/rob/NGR-Goose/mirte_ws/build/ridgeback_msgs
 
 # Utility rule file for ridgeback_msgs_generate_messages_eus.
 
 # Include the progress variables for this target.
 include CMakeFiles/ridgeback_msgs_generate_messages_eus.dir/progress.make
 
-CMakeFiles/ridgeback_msgs_generate_messages_eus: /home/rob/mirte_ws/devel/.private/ridgeback_msgs/share/roseus/ros/ridgeback_msgs/msg/Fans.l
-CMakeFiles/ridgeback_msgs_generate_messages_eus: /home/rob/mirte_ws/devel/.private/ridgeback_msgs/share/roseus/ros/ridgeback_msgs/msg/Lights.l
-CMakeFiles/ridgeback_msgs_generate_messages_eus: /home/rob/mirte_ws/devel/.private/ridgeback_msgs/share/roseus/ros/ridgeback_msgs/msg/RGB.l
-CMakeFiles/ridgeback_msgs_generate_messages_eus: /home/rob/mirte_ws/devel/.private/ridgeback_msgs/share/roseus/ros/ridgeback_msgs/msg/Status.l
-CMakeFiles/ridgeback_msgs_generate_messages_eus: /home/rob/mirte_ws/devel/.private/ridgeback_msgs/share/roseus/ros/ridgeback_msgs/manifest.l
+CMakeFiles/ridgeback_msgs_generate_messages_eus: /home/rob/NGR-Goose/mirte_ws/devel/.private/ridgeback_msgs/share/roseus/ros/ridgeback_msgs/msg/Fans.l
+CMakeFiles/ridgeback_msgs_generate_messages_eus: /home/rob/NGR-Goose/mirte_ws/devel/.private/ridgeback_msgs/share/roseus/ros/ridgeback_msgs/msg/Lights.l
+CMakeFiles/ridgeback_msgs_generate_messages_eus: /home/rob/NGR-Goose/mirte_ws/devel/.private/ridgeback_msgs/share/roseus/ros/ridgeback_msgs/msg/RGB.l
+CMakeFiles/ridgeback_msgs_generate_messages_eus: /home/rob/NGR-Goose/mirte_ws/devel/.private/ridgeback_msgs/share/roseus/ros/ridgeback_msgs/msg/Status.l
+CMakeFiles/ridgeback_msgs_generate_messages_eus: /home/rob/NGR-Goose/mirte_ws/devel/.private/ridgeback_msgs/share/roseus/ros/ridgeback_msgs/manifest.l
 
 
-/home/rob/mirte_ws/devel/.private/ridgeback_msgs/share/roseus/ros/ridgeback_msgs/msg/Fans.l: /opt/ros/noetic/lib/geneus/gen_eus.py
-/home/rob/mirte_ws/devel/.private/ridgeback_msgs/share/roseus/ros/ridgeback_msgs/msg/Fans.l: /home/rob/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/Fans.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/rob/mirte_ws/build/ridgeback_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating EusLisp code from ridgeback_msgs/Fans.msg"
-	catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/rob/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/Fans.msg -Iridgeback_msgs:/home/rob/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p ridgeback_msgs -o /home/rob/mirte_ws/devel/.private/ridgeback_msgs/share/roseus/ros/ridgeback_msgs/msg
+/home/rob/NGR-Goose/mirte_ws/devel/.private/ridgeback_msgs/share/roseus/ros/ridgeback_msgs/msg/Fans.l: /opt/ros/noetic/lib/geneus/gen_eus.py
+/home/rob/NGR-Goose/mirte_ws/devel/.private/ridgeback_msgs/share/roseus/ros/ridgeback_msgs/msg/Fans.l: /home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/Fans.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/rob/NGR-Goose/mirte_ws/build/ridgeback_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating EusLisp code from ridgeback_msgs/Fans.msg"
+	catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/Fans.msg -Iridgeback_msgs:/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p ridgeback_msgs -o /home/rob/NGR-Goose/mirte_ws/devel/.private/ridgeback_msgs/share/roseus/ros/ridgeback_msgs/msg
 
-/home/rob/mirte_ws/devel/.private/ridgeback_msgs/share/roseus/ros/ridgeback_msgs/msg/Lights.l: /opt/ros/noetic/lib/geneus/gen_eus.py
-/home/rob/mirte_ws/devel/.private/ridgeback_msgs/share/roseus/ros/ridgeback_msgs/msg/Lights.l: /home/rob/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/Lights.msg
-/home/rob/mirte_ws/devel/.private/ridgeback_msgs/share/roseus/ros/ridgeback_msgs/msg/Lights.l: /home/rob/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/RGB.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/rob/mirte_ws/build/ridgeback_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating EusLisp code from ridgeback_msgs/Lights.msg"
-	catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/rob/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/Lights.msg -Iridgeback_msgs:/home/rob/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p ridgeback_msgs -o /home/rob/mirte_ws/devel/.private/ridgeback_msgs/share/roseus/ros/ridgeback_msgs/msg
+/home/rob/NGR-Goose/mirte_ws/devel/.private/ridgeback_msgs/share/roseus/ros/ridgeback_msgs/msg/Lights.l: /opt/ros/noetic/lib/geneus/gen_eus.py
+/home/rob/NGR-Goose/mirte_ws/devel/.private/ridgeback_msgs/share/roseus/ros/ridgeback_msgs/msg/Lights.l: /home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/Lights.msg
+/home/rob/NGR-Goose/mirte_ws/devel/.private/ridgeback_msgs/share/roseus/ros/ridgeback_msgs/msg/Lights.l: /home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/RGB.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/rob/NGR-Goose/mirte_ws/build/ridgeback_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating EusLisp code from ridgeback_msgs/Lights.msg"
+	catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/Lights.msg -Iridgeback_msgs:/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p ridgeback_msgs -o /home/rob/NGR-Goose/mirte_ws/devel/.private/ridgeback_msgs/share/roseus/ros/ridgeback_msgs/msg
 
-/home/rob/mirte_ws/devel/.private/ridgeback_msgs/share/roseus/ros/ridgeback_msgs/msg/RGB.l: /opt/ros/noetic/lib/geneus/gen_eus.py
-/home/rob/mirte_ws/devel/.private/ridgeback_msgs/share/roseus/ros/ridgeback_msgs/msg/RGB.l: /home/rob/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/RGB.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/rob/mirte_ws/build/ridgeback_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating EusLisp code from ridgeback_msgs/RGB.msg"
-	catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/rob/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/RGB.msg -Iridgeback_msgs:/home/rob/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p ridgeback_msgs -o /home/rob/mirte_ws/devel/.private/ridgeback_msgs/share/roseus/ros/ridgeback_msgs/msg
+/home/rob/NGR-Goose/mirte_ws/devel/.private/ridgeback_msgs/share/roseus/ros/ridgeback_msgs/msg/RGB.l: /opt/ros/noetic/lib/geneus/gen_eus.py
+/home/rob/NGR-Goose/mirte_ws/devel/.private/ridgeback_msgs/share/roseus/ros/ridgeback_msgs/msg/RGB.l: /home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/RGB.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/rob/NGR-Goose/mirte_ws/build/ridgeback_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating EusLisp code from ridgeback_msgs/RGB.msg"
+	catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/RGB.msg -Iridgeback_msgs:/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p ridgeback_msgs -o /home/rob/NGR-Goose/mirte_ws/devel/.private/ridgeback_msgs/share/roseus/ros/ridgeback_msgs/msg
 
-/home/rob/mirte_ws/devel/.private/ridgeback_msgs/share/roseus/ros/ridgeback_msgs/msg/Status.l: /opt/ros/noetic/lib/geneus/gen_eus.py
-/home/rob/mirte_ws/devel/.private/ridgeback_msgs/share/roseus/ros/ridgeback_msgs/msg/Status.l: /home/rob/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/Status.msg
-/home/rob/mirte_ws/devel/.private/ridgeback_msgs/share/roseus/ros/ridgeback_msgs/msg/Status.l: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/rob/mirte_ws/build/ridgeback_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating EusLisp code from ridgeback_msgs/Status.msg"
-	catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/rob/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/Status.msg -Iridgeback_msgs:/home/rob/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p ridgeback_msgs -o /home/rob/mirte_ws/devel/.private/ridgeback_msgs/share/roseus/ros/ridgeback_msgs/msg
+/home/rob/NGR-Goose/mirte_ws/devel/.private/ridgeback_msgs/share/roseus/ros/ridgeback_msgs/msg/Status.l: /opt/ros/noetic/lib/geneus/gen_eus.py
+/home/rob/NGR-Goose/mirte_ws/devel/.private/ridgeback_msgs/share/roseus/ros/ridgeback_msgs/msg/Status.l: /home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/Status.msg
+/home/rob/NGR-Goose/mirte_ws/devel/.private/ridgeback_msgs/share/roseus/ros/ridgeback_msgs/msg/Status.l: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/rob/NGR-Goose/mirte_ws/build/ridgeback_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating EusLisp code from ridgeback_msgs/Status.msg"
+	catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/Status.msg -Iridgeback_msgs:/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p ridgeback_msgs -o /home/rob/NGR-Goose/mirte_ws/devel/.private/ridgeback_msgs/share/roseus/ros/ridgeback_msgs/msg
 
-/home/rob/mirte_ws/devel/.private/ridgeback_msgs/share/roseus/ros/ridgeback_msgs/manifest.l: /opt/ros/noetic/lib/geneus/gen_eus.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/rob/mirte_ws/build/ridgeback_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating EusLisp manifest code for ridgeback_msgs"
-	catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py -m -o /home/rob/mirte_ws/devel/.private/ridgeback_msgs/share/roseus/ros/ridgeback_msgs ridgeback_msgs std_msgs
+/home/rob/NGR-Goose/mirte_ws/devel/.private/ridgeback_msgs/share/roseus/ros/ridgeback_msgs/manifest.l: /opt/ros/noetic/lib/geneus/gen_eus.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/rob/NGR-Goose/mirte_ws/build/ridgeback_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating EusLisp manifest code for ridgeback_msgs"
+	catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py -m -o /home/rob/NGR-Goose/mirte_ws/devel/.private/ridgeback_msgs/share/roseus/ros/ridgeback_msgs ridgeback_msgs std_msgs
 
 ridgeback_msgs_generate_messages_eus: CMakeFiles/ridgeback_msgs_generate_messages_eus
-ridgeback_msgs_generate_messages_eus: /home/rob/mirte_ws/devel/.private/ridgeback_msgs/share/roseus/ros/ridgeback_msgs/msg/Fans.l
-ridgeback_msgs_generate_messages_eus: /home/rob/mirte_ws/devel/.private/ridgeback_msgs/share/roseus/ros/ridgeback_msgs/msg/Lights.l
-ridgeback_msgs_generate_messages_eus: /home/rob/mirte_ws/devel/.private/ridgeback_msgs/share/roseus/ros/ridgeback_msgs/msg/RGB.l
-ridgeback_msgs_generate_messages_eus: /home/rob/mirte_ws/devel/.private/ridgeback_msgs/share/roseus/ros/ridgeback_msgs/msg/Status.l
-ridgeback_msgs_generate_messages_eus: /home/rob/mirte_ws/devel/.private/ridgeback_msgs/share/roseus/ros/ridgeback_msgs/manifest.l
+ridgeback_msgs_generate_messages_eus: /home/rob/NGR-Goose/mirte_ws/devel/.private/ridgeback_msgs/share/roseus/ros/ridgeback_msgs/msg/Fans.l
+ridgeback_msgs_generate_messages_eus: /home/rob/NGR-Goose/mirte_ws/devel/.private/ridgeback_msgs/share/roseus/ros/ridgeback_msgs/msg/Lights.l
+ridgeback_msgs_generate_messages_eus: /home/rob/NGR-Goose/mirte_ws/devel/.private/ridgeback_msgs/share/roseus/ros/ridgeback_msgs/msg/RGB.l
+ridgeback_msgs_generate_messages_eus: /home/rob/NGR-Goose/mirte_ws/devel/.private/ridgeback_msgs/share/roseus/ros/ridgeback_msgs/msg/Status.l
+ridgeback_msgs_generate_messages_eus: /home/rob/NGR-Goose/mirte_ws/devel/.private/ridgeback_msgs/share/roseus/ros/ridgeback_msgs/manifest.l
 ridgeback_msgs_generate_messages_eus: CMakeFiles/ridgeback_msgs_generate_messages_eus.dir/build.make
 
 .PHONY : ridgeback_msgs_generate_messages_eus
@@ -106,6 +106,6 @@ CMakeFiles/ridgeback_msgs_generate_messages_eus.dir/clean:
 .PHONY : CMakeFiles/ridgeback_msgs_generate_messages_eus.dir/clean
 
 CMakeFiles/ridgeback_msgs_generate_messages_eus.dir/depend:
-	cd /home/rob/mirte_ws/build/ridgeback_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rob/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs /home/rob/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs /home/rob/mirte_ws/build/ridgeback_msgs /home/rob/mirte_ws/build/ridgeback_msgs /home/rob/mirte_ws/build/ridgeback_msgs/CMakeFiles/ridgeback_msgs_generate_messages_eus.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/rob/NGR-Goose/mirte_ws/build/ridgeback_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs /home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs /home/rob/NGR-Goose/mirte_ws/build/ridgeback_msgs /home/rob/NGR-Goose/mirte_ws/build/ridgeback_msgs /home/rob/NGR-Goose/mirte_ws/build/ridgeback_msgs/CMakeFiles/ridgeback_msgs_generate_messages_eus.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ridgeback_msgs_generate_messages_eus.dir/depend
 

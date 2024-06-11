@@ -2,7 +2,7 @@
 
 message(STATUS "ridgeback_msgs: 4 messages, 0 services")
 
-set(MSG_I_FLAGS "-Iridgeback_msgs:/home/rob/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg;-Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg")
+set(MSG_I_FLAGS "-Iridgeback_msgs:/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg;-Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg")
 
 # Find all generators
 find_package(gencpp REQUIRED)
@@ -17,24 +17,24 @@ add_custom_target(ridgeback_msgs_generate_messages ALL)
 
 
 
-get_filename_component(_filename "/home/rob/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/Fans.msg" NAME_WE)
+get_filename_component(_filename "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/Fans.msg" NAME_WE)
 add_custom_target(_ridgeback_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "ridgeback_msgs" "/home/rob/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/Fans.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "ridgeback_msgs" "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/Fans.msg" ""
 )
 
-get_filename_component(_filename "/home/rob/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/Lights.msg" NAME_WE)
+get_filename_component(_filename "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/Lights.msg" NAME_WE)
 add_custom_target(_ridgeback_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "ridgeback_msgs" "/home/rob/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/Lights.msg" "ridgeback_msgs/RGB"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "ridgeback_msgs" "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/Lights.msg" "ridgeback_msgs/RGB"
 )
 
-get_filename_component(_filename "/home/rob/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/RGB.msg" NAME_WE)
+get_filename_component(_filename "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/RGB.msg" NAME_WE)
 add_custom_target(_ridgeback_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "ridgeback_msgs" "/home/rob/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/RGB.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "ridgeback_msgs" "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/RGB.msg" ""
 )
 
-get_filename_component(_filename "/home/rob/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/Status.msg" NAME_WE)
+get_filename_component(_filename "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/Status.msg" NAME_WE)
 add_custom_target(_ridgeback_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "ridgeback_msgs" "/home/rob/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/Status.msg" "std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "ridgeback_msgs" "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/Status.msg" "std_msgs/Header"
 )
 
 #
@@ -44,25 +44,25 @@ add_custom_target(_ridgeback_msgs_generate_messages_check_deps_${_filename}
 ### Section generating for lang: gencpp
 ### Generating Messages
 _generate_msg_cpp(ridgeback_msgs
-  "/home/rob/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/Fans.msg"
+  "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/Fans.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/ridgeback_msgs
 )
 _generate_msg_cpp(ridgeback_msgs
-  "/home/rob/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/Lights.msg"
+  "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/Lights.msg"
   "${MSG_I_FLAGS}"
-  "/home/rob/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/RGB.msg"
+  "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/RGB.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/ridgeback_msgs
 )
 _generate_msg_cpp(ridgeback_msgs
-  "/home/rob/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/RGB.msg"
+  "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/RGB.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/ridgeback_msgs
 )
 _generate_msg_cpp(ridgeback_msgs
-  "/home/rob/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/Status.msg"
+  "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/Status.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/ridgeback_msgs
@@ -82,13 +82,13 @@ add_custom_target(ridgeback_msgs_generate_messages_cpp
 add_dependencies(ridgeback_msgs_generate_messages ridgeback_msgs_generate_messages_cpp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/rob/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/Fans.msg" NAME_WE)
+get_filename_component(_filename "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/Fans.msg" NAME_WE)
 add_dependencies(ridgeback_msgs_generate_messages_cpp _ridgeback_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/rob/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/Lights.msg" NAME_WE)
+get_filename_component(_filename "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/Lights.msg" NAME_WE)
 add_dependencies(ridgeback_msgs_generate_messages_cpp _ridgeback_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/rob/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/RGB.msg" NAME_WE)
+get_filename_component(_filename "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/RGB.msg" NAME_WE)
 add_dependencies(ridgeback_msgs_generate_messages_cpp _ridgeback_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/rob/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/Status.msg" NAME_WE)
+get_filename_component(_filename "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/Status.msg" NAME_WE)
 add_dependencies(ridgeback_msgs_generate_messages_cpp _ridgeback_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -101,25 +101,25 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS ridgeback_msgs_generate_messages_cp
 ### Section generating for lang: geneus
 ### Generating Messages
 _generate_msg_eus(ridgeback_msgs
-  "/home/rob/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/Fans.msg"
+  "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/Fans.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/ridgeback_msgs
 )
 _generate_msg_eus(ridgeback_msgs
-  "/home/rob/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/Lights.msg"
+  "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/Lights.msg"
   "${MSG_I_FLAGS}"
-  "/home/rob/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/RGB.msg"
+  "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/RGB.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/ridgeback_msgs
 )
 _generate_msg_eus(ridgeback_msgs
-  "/home/rob/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/RGB.msg"
+  "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/RGB.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/ridgeback_msgs
 )
 _generate_msg_eus(ridgeback_msgs
-  "/home/rob/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/Status.msg"
+  "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/Status.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/ridgeback_msgs
@@ -139,13 +139,13 @@ add_custom_target(ridgeback_msgs_generate_messages_eus
 add_dependencies(ridgeback_msgs_generate_messages ridgeback_msgs_generate_messages_eus)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/rob/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/Fans.msg" NAME_WE)
+get_filename_component(_filename "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/Fans.msg" NAME_WE)
 add_dependencies(ridgeback_msgs_generate_messages_eus _ridgeback_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/rob/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/Lights.msg" NAME_WE)
+get_filename_component(_filename "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/Lights.msg" NAME_WE)
 add_dependencies(ridgeback_msgs_generate_messages_eus _ridgeback_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/rob/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/RGB.msg" NAME_WE)
+get_filename_component(_filename "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/RGB.msg" NAME_WE)
 add_dependencies(ridgeback_msgs_generate_messages_eus _ridgeback_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/rob/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/Status.msg" NAME_WE)
+get_filename_component(_filename "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/Status.msg" NAME_WE)
 add_dependencies(ridgeback_msgs_generate_messages_eus _ridgeback_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -158,25 +158,25 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS ridgeback_msgs_generate_messages_eu
 ### Section generating for lang: genlisp
 ### Generating Messages
 _generate_msg_lisp(ridgeback_msgs
-  "/home/rob/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/Fans.msg"
+  "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/Fans.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/ridgeback_msgs
 )
 _generate_msg_lisp(ridgeback_msgs
-  "/home/rob/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/Lights.msg"
+  "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/Lights.msg"
   "${MSG_I_FLAGS}"
-  "/home/rob/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/RGB.msg"
+  "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/RGB.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/ridgeback_msgs
 )
 _generate_msg_lisp(ridgeback_msgs
-  "/home/rob/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/RGB.msg"
+  "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/RGB.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/ridgeback_msgs
 )
 _generate_msg_lisp(ridgeback_msgs
-  "/home/rob/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/Status.msg"
+  "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/Status.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/ridgeback_msgs
@@ -196,13 +196,13 @@ add_custom_target(ridgeback_msgs_generate_messages_lisp
 add_dependencies(ridgeback_msgs_generate_messages ridgeback_msgs_generate_messages_lisp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/rob/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/Fans.msg" NAME_WE)
+get_filename_component(_filename "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/Fans.msg" NAME_WE)
 add_dependencies(ridgeback_msgs_generate_messages_lisp _ridgeback_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/rob/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/Lights.msg" NAME_WE)
+get_filename_component(_filename "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/Lights.msg" NAME_WE)
 add_dependencies(ridgeback_msgs_generate_messages_lisp _ridgeback_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/rob/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/RGB.msg" NAME_WE)
+get_filename_component(_filename "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/RGB.msg" NAME_WE)
 add_dependencies(ridgeback_msgs_generate_messages_lisp _ridgeback_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/rob/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/Status.msg" NAME_WE)
+get_filename_component(_filename "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/Status.msg" NAME_WE)
 add_dependencies(ridgeback_msgs_generate_messages_lisp _ridgeback_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -215,25 +215,25 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS ridgeback_msgs_generate_messages_li
 ### Section generating for lang: gennodejs
 ### Generating Messages
 _generate_msg_nodejs(ridgeback_msgs
-  "/home/rob/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/Fans.msg"
+  "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/Fans.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/ridgeback_msgs
 )
 _generate_msg_nodejs(ridgeback_msgs
-  "/home/rob/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/Lights.msg"
+  "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/Lights.msg"
   "${MSG_I_FLAGS}"
-  "/home/rob/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/RGB.msg"
+  "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/RGB.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/ridgeback_msgs
 )
 _generate_msg_nodejs(ridgeback_msgs
-  "/home/rob/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/RGB.msg"
+  "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/RGB.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/ridgeback_msgs
 )
 _generate_msg_nodejs(ridgeback_msgs
-  "/home/rob/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/Status.msg"
+  "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/Status.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/ridgeback_msgs
@@ -253,13 +253,13 @@ add_custom_target(ridgeback_msgs_generate_messages_nodejs
 add_dependencies(ridgeback_msgs_generate_messages ridgeback_msgs_generate_messages_nodejs)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/rob/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/Fans.msg" NAME_WE)
+get_filename_component(_filename "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/Fans.msg" NAME_WE)
 add_dependencies(ridgeback_msgs_generate_messages_nodejs _ridgeback_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/rob/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/Lights.msg" NAME_WE)
+get_filename_component(_filename "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/Lights.msg" NAME_WE)
 add_dependencies(ridgeback_msgs_generate_messages_nodejs _ridgeback_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/rob/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/RGB.msg" NAME_WE)
+get_filename_component(_filename "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/RGB.msg" NAME_WE)
 add_dependencies(ridgeback_msgs_generate_messages_nodejs _ridgeback_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/rob/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/Status.msg" NAME_WE)
+get_filename_component(_filename "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/Status.msg" NAME_WE)
 add_dependencies(ridgeback_msgs_generate_messages_nodejs _ridgeback_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -272,25 +272,25 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS ridgeback_msgs_generate_messages_no
 ### Section generating for lang: genpy
 ### Generating Messages
 _generate_msg_py(ridgeback_msgs
-  "/home/rob/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/Fans.msg"
+  "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/Fans.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/ridgeback_msgs
 )
 _generate_msg_py(ridgeback_msgs
-  "/home/rob/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/Lights.msg"
+  "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/Lights.msg"
   "${MSG_I_FLAGS}"
-  "/home/rob/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/RGB.msg"
+  "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/RGB.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/ridgeback_msgs
 )
 _generate_msg_py(ridgeback_msgs
-  "/home/rob/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/RGB.msg"
+  "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/RGB.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/ridgeback_msgs
 )
 _generate_msg_py(ridgeback_msgs
-  "/home/rob/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/Status.msg"
+  "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/Status.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/ridgeback_msgs
@@ -310,13 +310,13 @@ add_custom_target(ridgeback_msgs_generate_messages_py
 add_dependencies(ridgeback_msgs_generate_messages ridgeback_msgs_generate_messages_py)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/rob/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/Fans.msg" NAME_WE)
+get_filename_component(_filename "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/Fans.msg" NAME_WE)
 add_dependencies(ridgeback_msgs_generate_messages_py _ridgeback_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/rob/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/Lights.msg" NAME_WE)
+get_filename_component(_filename "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/Lights.msg" NAME_WE)
 add_dependencies(ridgeback_msgs_generate_messages_py _ridgeback_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/rob/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/RGB.msg" NAME_WE)
+get_filename_component(_filename "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/RGB.msg" NAME_WE)
 add_dependencies(ridgeback_msgs_generate_messages_py _ridgeback_msgs_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/rob/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/Status.msg" NAME_WE)
+get_filename_component(_filename "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/ridgeback/ridgeback_msgs/msg/Status.msg" NAME_WE)
 add_dependencies(ridgeback_msgs_generate_messages_py _ridgeback_msgs_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
