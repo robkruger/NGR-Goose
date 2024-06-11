@@ -1,0 +1,328 @@
+[35m[1mScanning dependencies of target gazebo_msgs_generate_messages_eus[0m
+[35m[1mScanning dependencies of target bond_generate_messages_eus[0m
+[35m[1mScanning dependencies of target geometry_msgs_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target dynamic_reconfigure_generate_messages_eus[0m
+[35m[1mScanning dependencies of target gazebo_msgs_generate_messages_cpp[0m
+[35m[1mScanning dependencies of target std_srvs_generate_messages_eus[0m
+[35m[1mScanning dependencies of target nav_msgs_generate_messages_eus[0m
+[35m[1mScanning dependencies of target dynamic_reconfigure_generate_messages_cpp[0m
+[35m[1mScanning dependencies of target nav_msgs_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target hector_gazebo_plugins_generate_messages_eus[0m
+[35m[1mScanning dependencies of target dynamic_reconfigure_gencfg[0m
+[35m[1mScanning dependencies of target tf2_msgs_generate_messages_cpp[0m
+[35m[1mScanning dependencies of target rosgraph_msgs_generate_messages_eus[0m
+[35m[1mScanning dependencies of target visualization_msgs_generate_messages_eus[0m
+[35m[1mScanning dependencies of target actionlib_msgs_generate_messages_cpp[0m
+[35m[1mScanning dependencies of target rosgraph_msgs_generate_messages_cpp[0m
+[35m[1mScanning dependencies of target tf_generate_messages_py[0m
+[35m[1mScanning dependencies of target nav_msgs_generate_messages_cpp[0m
+[35m[1mScanning dependencies of target sensor_msgs_generate_messages_eus[0m
+[  0%] Built target bond_generate_messages_eus
+[  0%] Built target gazebo_msgs_generate_messages_eus
+[  0%] Built target dynamic_reconfigure_generate_messages_eus
+[  0%] Built target gazebo_msgs_generate_messages_cpp
+[35m[1mScanning dependencies of target visualization_msgs_generate_messages_py[0m
+[  0%] Built target dynamic_reconfigure_generate_messages_cpp
+[  0%] Built target geometry_msgs_generate_messages_nodejs
+[  0%] Built target nav_msgs_generate_messages_lisp
+[  0%] Built target nav_msgs_generate_messages_eus
+[  0%] Built target std_srvs_generate_messages_eus
+[  0%] Built target dynamic_reconfigure_gencfg
+[  0%] Built target tf2_msgs_generate_messages_cpp
+[  0%] Built target visualization_msgs_generate_messages_eus
+[  0%] Built target hector_gazebo_plugins_generate_messages_eus
+[  0%] Built target tf_generate_messages_py
+[  0%] Built target rosgraph_msgs_generate_messages_eus
+[  0%] Built target rosgraph_msgs_generate_messages_cpp
+[  0%] Built target sensor_msgs_generate_messages_eus
+[  0%] Built target actionlib_msgs_generate_messages_cpp
+[  0%] Built target nav_msgs_generate_messages_cpp
+[  0%] Built target visualization_msgs_generate_messages_py
+[35m[1mScanning dependencies of target nav_msgs_generate_messages_py[0m
+[35m[1mScanning dependencies of target trajectory_msgs_generate_messages_py[0m
+[35m[1mScanning dependencies of target tf_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target visualization_msgs_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target actionlib_generate_messages_eus[0m
+[35m[1mScanning dependencies of target sensor_msgs_generate_messages_py[0m
+[35m[1mScanning dependencies of target tf2_msgs_generate_messages_eus[0m
+[35m[1mScanning dependencies of target hector_gazebo_plugins_generate_messages_py[0m
+[35m[1mScanning dependencies of target hector_gazebo_plugins_gencfg[0m
+[35m[1mScanning dependencies of target geometry_msgs_generate_messages_py[0m
+[35m[1mScanning dependencies of target geometry_msgs_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target geometry_msgs_generate_messages_cpp[0m
+[35m[1mScanning dependencies of target roscpp_generate_messages_eus[0m
+[35m[1mScanning dependencies of target uuid_msgs_generate_messages_cpp[0m
+[35m[1mScanning dependencies of target visualization_msgs_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target actionlib_msgs_generate_messages_eus[0m
+[35m[1mScanning dependencies of target dynamic_reconfigure_generate_messages_py[0m
+[35m[1mScanning dependencies of target nav_msgs_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target uuid_msgs_generate_messages_eus[0m
+[  0%] Built target trajectory_msgs_generate_messages_py
+[  0%] Built target nav_msgs_generate_messages_py
+[  0%] Built target tf_generate_messages_lisp
+[  0%] Built target tf2_msgs_generate_messages_eus
+[  0%] Built target geometry_msgs_generate_messages_cpp
+[  0%] Built target hector_gazebo_plugins_generate_messages_py
+[  0%] Built target geometry_msgs_generate_messages_py
+[35m[1mScanning dependencies of target rosgraph_msgs_generate_messages_py[0m
+[  0%] Built target visualization_msgs_generate_messages_lisp
+[  0%] Built target actionlib_generate_messages_eus
+[  0%] Built target sensor_msgs_generate_messages_py
+[  0%] Built target hector_gazebo_plugins_gencfg
+[  0%] Built target actionlib_msgs_generate_messages_eus
+[  0%] Built target roscpp_generate_messages_eus
+[  0%] Built target visualization_msgs_generate_messages_nodejs
+[  0%] Built target geometry_msgs_generate_messages_lisp
+[  0%] Built target uuid_msgs_generate_messages_cpp
+[  0%] Built target dynamic_reconfigure_generate_messages_py
+[  0%] Built target rosgraph_msgs_generate_messages_py
+[  0%] Built target nav_msgs_generate_messages_nodejs
+[  0%] Built target uuid_msgs_generate_messages_eus
+[35m[1mScanning dependencies of target rosgraph_msgs_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target sensor_msgs_generate_messages_cpp[0m
+[35m[1mScanning dependencies of target geographic_msgs_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target trajectory_msgs_generate_messages_eus[0m
+[35m[1mScanning dependencies of target roscpp_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target std_srvs_generate_messages_cpp[0m
+[35m[1mScanning dependencies of target nodelet_generate_messages_py[0m
+[35m[1mScanning dependencies of target std_srvs_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target gazebo_plugins_gencfg[0m
+[35m[1mScanning dependencies of target std_msgs_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target geographic_msgs_generate_messages_cpp[0m
+[35m[1mScanning dependencies of target std_msgs_generate_messages_eus[0m
+[35m[1mScanning dependencies of target actionlib_msgs_generate_messages_py[0m
+[35m[1mScanning dependencies of target roscpp_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target hector_gazebo_plugins_generate_messages_cpp[0m
+[35m[1mScanning dependencies of target std_msgs_generate_messages_cpp[0m
+[35m[1mScanning dependencies of target gazebo_msgs_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target dynamic_reconfigure_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target std_msgs_generate_messages_py[0m
+[  0%] Built target rosgraph_msgs_generate_messages_lisp
+[  0%] Built target nodelet_generate_messages_py
+[  0%] Built target geographic_msgs_generate_messages_lisp
+[  0%] Built target sensor_msgs_generate_messages_cpp
+[  0%] Built target gazebo_plugins_gencfg
+[35m[1mScanning dependencies of target rosgraph_msgs_generate_messages_nodejs[0m
+[  0%] Built target trajectory_msgs_generate_messages_eus
+[  0%] Built target actionlib_msgs_generate_messages_py
+[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] Built target std_srvs_generate_messages_cpp
+[  0%] Built target std_srvs_generate_messages_lisp
+[  0%] Built target geographic_msgs_generate_messages_cpp
+[  0%] Built target std_msgs_generate_messages_eus
+[  0%] Built target hector_gazebo_plugins_generate_messages_cpp
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target gazebo_msgs_generate_messages_lisp
+[  0%] Built target dynamic_reconfigure_generate_messages_nodejs
+[  0%] Built target roscpp_generate_messages_nodejs
+[35m[1mScanning dependencies of target bond_generate_messages_cpp[0m
+[  0%] Built target roscpp_generate_messages_lisp
+[35m[1mScanning dependencies of target tf2_msgs_generate_messages_py[0m
+[35m[1mScanning dependencies of target nodelet_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target std_srvs_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target std_msgs_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target gazebo_msgs_generate_messages_py[0m
+[35m[1mScanning dependencies of target geometry_msgs_generate_messages_eus[0m
+[  0%] Built target rosgraph_msgs_generate_messages_nodejs
+[35m[1mScanning dependencies of target trajectory_msgs_generate_messages_cpp[0m
+[35m[1mScanning dependencies of target nodelet_generate_messages_eus[0m
+[35m[1mScanning dependencies of target gazebo_msgs_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target trajectory_msgs_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target nodelet_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target trajectory_msgs_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target bond_generate_messages_py[0m
+[  0%] Built target bond_generate_messages_cpp
+[35m[1mScanning dependencies of target bond_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target actionlib_msgs_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target dynamic_reconfigure_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target uuid_msgs_generate_messages_py[0m
+[  0%] Built target tf2_msgs_generate_messages_py
+[35m[1mScanning dependencies of target bond_generate_messages_nodejs[0m
+[  0%] Built target gazebo_msgs_generate_messages_nodejs
+[  0%] Built target gazebo_msgs_generate_messages_py
+[  0%] Built target nodelet_generate_messages_eus
+[35m[1mScanning dependencies of target tf_generate_messages_nodejs[0m
+[  0%] Built target std_srvs_generate_messages_nodejs
+[  0%] Built target trajectory_msgs_generate_messages_lisp
+[  0%] Built target trajectory_msgs_generate_messages_cpp
+[  0%] Built target nodelet_generate_messages_nodejs
+[  0%] Built target nodelet_generate_messages_lisp
+[  0%] Built target geometry_msgs_generate_messages_eus
+[  0%] Built target std_msgs_generate_messages_nodejs
+[35m[1mScanning dependencies of target actionlib_generate_messages_cpp[0m
+[  0%] Built target trajectory_msgs_generate_messages_nodejs
+[  0%] Built target bond_generate_messages_py
+[  0%] Built target actionlib_msgs_generate_messages_nodejs
+[  0%] Built target bond_generate_messages_lisp
+[  0%] Built target dynamic_reconfigure_generate_messages_lisp
+[  0%] Built target uuid_msgs_generate_messages_py
+[35m[1mScanning dependencies of target actionlib_generate_messages_py[0m
+[  0%] Built target bond_generate_messages_nodejs
+[35m[1mScanning dependencies of target std_srvs_generate_messages_py[0m
+[  0%] Built target tf_generate_messages_nodejs
+[35m[1mScanning dependencies of target tf2_msgs_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target actionlib_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target geographic_msgs_generate_messages_py[0m
+[35m[1mScanning dependencies of target tf2_msgs_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target actionlib_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target hector_gazebo_plugins_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target sensor_msgs_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target nodelet_generate_messages_cpp[0m
+[35m[1mScanning dependencies of target tf_generate_messages_cpp[0m
+[35m[1mScanning dependencies of target sensor_msgs_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target hector_gazebo_plugins_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target geographic_msgs_generate_messages_eus[0m
+[35m[1mScanning dependencies of target roscpp_generate_messages_py[0m
+[35m[1mScanning dependencies of target geographic_msgs_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target actionlib_msgs_generate_messages_lisp[0m
+[  0%] Built target actionlib_generate_messages_cpp
+[  0%] Built target actionlib_generate_messages_py
+[35m[1mScanning dependencies of target gazebo_ros_gencfg[0m
+[  0%] Built target std_srvs_generate_messages_py
+[  0%] Built target tf2_msgs_generate_messages_lisp
+[  0%] Built target geographic_msgs_generate_messages_py
+[  0%] Built target actionlib_generate_messages_nodejs
+[35m[1mScanning dependencies of target uuid_msgs_generate_messages_lisp[0m
+[  0%] Built target tf2_msgs_generate_messages_nodejs
+[  0%] Built target actionlib_generate_messages_lisp
+[  0%] Built target nodelet_generate_messages_cpp
+[  0%] Built target hector_gazebo_plugins_generate_messages_lisp
+[  0%] Built target hector_gazebo_plugins_generate_messages_nodejs
+[  0%] Built target geographic_msgs_generate_messages_eus
+[  0%] Built target sensor_msgs_generate_messages_nodejs
+[  0%] Built target sensor_msgs_generate_messages_lisp
+[  0%] Built target roscpp_generate_messages_py
+[  0%] Built target tf_generate_messages_cpp
+[  0%] Built target actionlib_msgs_generate_messages_lisp
+[35m[1mScanning dependencies of target visualization_msgs_generate_messages_cpp[0m
+[35m[1mScanning dependencies of target uuid_msgs_generate_messages_nodejs[0m
+[  0%] Built target geographic_msgs_generate_messages_nodejs
+[  0%] Built target gazebo_ros_gencfg
+[35m[1mScanning dependencies of target tf_generate_messages_eus[0m
+[35m[1mScanning dependencies of target _gazebo_sensor_collection_plugins_generate_messages_check_deps_ImuData[0m
+[35m[1mScanning dependencies of target _gazebo_sensor_collection_plugins_generate_messages_check_deps_SensorData3D[0m
+[35m[1mScanning dependencies of target _gazebo_sensor_collection_plugins_generate_messages_check_deps_GpsData[0m
+[35m[1mScanning dependencies of target _gazebo_sensor_collection_plugins_generate_messages_check_deps_OrientationSensorData[0m
+[35m[1mScanning dependencies of target _gazebo_sensor_collection_plugins_generate_messages_check_deps_BatteryData[0m
+[35m[1mScanning dependencies of target _gazebo_sensor_collection_plugins_generate_messages_check_deps_DataXYZ[0m
+[35m[1mScanning dependencies of target _gazebo_sensor_collection_plugins_generate_messages_check_deps_QuaternionData[0m
+[  0%] Built target uuid_msgs_generate_messages_lisp
+[35m[1mScanning dependencies of target gazebo_sensor_collection_plugins_xacro_generated_to_devel_space_[0m
+[35m[1mScanning dependencies of target _gazebo_sensor_collection_plugins_generate_messages_check_deps_EulerData[0m
+[35m[1mScanning dependencies of target _gazebo_sensor_collection_plugins_generate_messages_check_deps_EncoderData[0m
+[  0%] Built target uuid_msgs_generate_messages_nodejs
+[  0%] Built target tf_generate_messages_eus
+[  0%] Built target visualization_msgs_generate_messages_cpp
+[  0%] Built target gazebo_sensor_collection_plugins_xacro_generated_to_devel_space_
+[35m[1mScanning dependencies of target roscpp_generate_messages_cpp[0m
+[  0%] Built target roscpp_generate_messages_cpp
+[  0%] Built target _gazebo_sensor_collection_plugins_generate_messages_check_deps_GpsData
+[  0%] Built target _gazebo_sensor_collection_plugins_generate_messages_check_deps_SensorData3D
+[  0%] Built target _gazebo_sensor_collection_plugins_generate_messages_check_deps_OrientationSensorData
+[  0%] Built target _gazebo_sensor_collection_plugins_generate_messages_check_deps_DataXYZ
+[35m[1mScanning dependencies of target gazebo_ros_realsense[0m
+[  0%] Built target _gazebo_sensor_collection_plugins_generate_messages_check_deps_EulerData
+[  0%] Built target _gazebo_sensor_collection_plugins_generate_messages_check_deps_BatteryData
+[  0%] Built target _gazebo_sensor_collection_plugins_generate_messages_check_deps_ImuData
+[  0%] Built target _gazebo_sensor_collection_plugins_generate_messages_check_deps_QuaternionData
+[  0%] Built target _gazebo_sensor_collection_plugins_generate_messages_check_deps_EncoderData
+[35m[1mScanning dependencies of target gazebo_sensor_collection_plugins_generate_messages_cpp[0m
+[35m[1mScanning dependencies of target gazebo_sensor_collection_plugins_generate_messages_eus[0m
+[35m[1mScanning dependencies of target gazebo_sensor_collection_plugins_generate_messages_py[0m
+[35m[1mScanning dependencies of target gazebo_sensor_collection_plugins_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target gazebo_sensor_collection_plugins_generate_messages_nodejs[0m
+[  1%] [34m[1mGenerating EusLisp code from gazebo_sensor_collection_plugins/EulerData.msg[0m
+[  3%] [34m[1mGenerating C++ code from gazebo_sensor_collection_plugins/EulerData.msg[0m
+[  6%] [34m[1mGenerating EusLisp code from gazebo_sensor_collection_plugins/DataXYZ.msg[0m
+[  6%] [34m[1mGenerating C++ code from gazebo_sensor_collection_plugins/DataXYZ.msg[0m
+[  8%] [34m[1mGenerating C++ code from gazebo_sensor_collection_plugins/QuaternionData.msg[0m
+[ 13%] [34m[1mGenerating Javascript code from gazebo_sensor_collection_plugins/DataXYZ.msg[0m
+[ 13%] [34m[1mGenerating Lisp code from gazebo_sensor_collection_plugins/EulerData.msg[0m
+[ 13%] [34m[1mGenerating EusLisp code from gazebo_sensor_collection_plugins/OrientationSensorData.msg[0m
+[ 15%] [34m[1mGenerating Python from MSG gazebo_sensor_collection_plugins/QuaternionData[0m
+[ 16%] [34m[1mGenerating EusLisp code from gazebo_sensor_collection_plugins/ImuData.msg[0m
+[ 18%] [34m[1mGenerating C++ code from gazebo_sensor_collection_plugins/SensorData3D.msg[0m
+[ 20%] [34m[1mGenerating Lisp code from gazebo_sensor_collection_plugins/DataXYZ.msg[0m
+[ 23%] [34m[1mGenerating Python from MSG gazebo_sensor_collection_plugins/DataXYZ[0m
+[ 23%] [34m[1mGenerating Python from MSG gazebo_sensor_collection_plugins/EulerData[0m
+[ 25%] [34m[1mGenerating Python from MSG gazebo_sensor_collection_plugins/SensorData3D[0m
+[ 28%] [34m[1mGenerating EusLisp code from gazebo_sensor_collection_plugins/SensorData3D.msg[0m
+[ 28%] [34m[1mGenerating Lisp code from gazebo_sensor_collection_plugins/QuaternionData.msg[0m
+[ 30%] [34m[1mGenerating C++ code from gazebo_sensor_collection_plugins/OrientationSensorData.msg[0m
+[ 32%] [34m[1mGenerating EusLisp code from gazebo_sensor_collection_plugins/QuaternionData.msg[0m
+[ 33%] [34m[1mGenerating Lisp code from gazebo_sensor_collection_plugins/SensorData3D.msg[0m
+[ 35%] [34m[1mGenerating Javascript code from gazebo_sensor_collection_plugins/EulerData.msg[0m
+[ 37%] [34m[1mGenerating Javascript code from gazebo_sensor_collection_plugins/QuaternionData.msg[0m
+[ 38%] [34m[1mGenerating Javascript code from gazebo_sensor_collection_plugins/SensorData3D.msg[0m
+[ 40%] [34m[1mGenerating Javascript code from gazebo_sensor_collection_plugins/OrientationSensorData.msg[0m
+[ 42%] [34m[1mGenerating Javascript code from gazebo_sensor_collection_plugins/ImuData.msg[0m
+[ 44%] [34m[1mGenerating C++ code from gazebo_sensor_collection_plugins/ImuData.msg[0m
+[ 45%] [34m[1mGenerating C++ code from gazebo_sensor_collection_plugins/GpsData.msg[0m
+[ 47%] [34m[1mGenerating C++ code from gazebo_sensor_collection_plugins/EncoderData.msg[0m
+[ 49%] [34m[1mGenerating Javascript code from gazebo_sensor_collection_plugins/GpsData.msg[0m
+[ 50%] [34m[1mGenerating Lisp code from gazebo_sensor_collection_plugins/OrientationSensorData.msg[0m
+[ 52%] [34m[1mGenerating EusLisp code from gazebo_sensor_collection_plugins/GpsData.msg[0m
+[ 54%] [34m[1mGenerating Lisp code from gazebo_sensor_collection_plugins/ImuData.msg[0m
+[ 55%] [34m[1mGenerating Lisp code from gazebo_sensor_collection_plugins/GpsData.msg[0m
+[ 57%] [34m[1mGenerating Javascript code from gazebo_sensor_collection_plugins/EncoderData.msg[0m
+[ 59%] [34m[1mGenerating C++ code from gazebo_sensor_collection_plugins/BatteryData.msg[0m
+[ 61%] [34m[1mGenerating Javascript code from gazebo_sensor_collection_plugins/BatteryData.msg[0m
+[ 62%] [34m[1mGenerating EusLisp code from gazebo_sensor_collection_plugins/EncoderData.msg[0m
+[ 64%] [34m[1mGenerating EusLisp code from gazebo_sensor_collection_plugins/BatteryData.msg[0m
+[ 66%] [34m[1mGenerating Lisp code from gazebo_sensor_collection_plugins/EncoderData.msg[0m
+[ 69%] [34m[1mGenerating Python from MSG gazebo_sensor_collection_plugins/OrientationSensorData[0m
+[ 69%] [34m[1mGenerating Lisp code from gazebo_sensor_collection_plugins/BatteryData.msg[0m
+[ 71%] [32mBuilding CXX object CMakeFiles/gazebo_ros_realsense.dir/plugins/vision/gazebo_ros_realsense.cpp.o[0m
+[ 72%] [34m[1mGenerating EusLisp manifest code for gazebo_sensor_collection_plugins[0m
+[ 74%] [34m[1mGenerating Python from MSG gazebo_sensor_collection_plugins/ImuData[0m
+[ 76%] [34m[1mGenerating Python from MSG gazebo_sensor_collection_plugins/GpsData[0m
+[ 77%] [34m[1mGenerating Python from MSG gazebo_sensor_collection_plugins/EncoderData[0m
+[ 79%] [34m[1mGenerating Python from MSG gazebo_sensor_collection_plugins/BatteryData[0m
+[ 79%] Built target gazebo_sensor_collection_plugins_generate_messages_nodejs
+[ 79%] Built target gazebo_sensor_collection_plugins_generate_messages_lisp
+[ 79%] Built target gazebo_sensor_collection_plugins_generate_messages_cpp
+[35m[1mScanning dependencies of target gazebo_ros_battery_simple[0m
+[35m[1mScanning dependencies of target gazebo_ros_skid_steer_w_encoder[0m
+[35m[1mScanning dependencies of target gazebo_ros_encoder[0m
+[35m[1mScanning dependencies of target gazebo_ros_imu_mod[0m
+[35m[1mScanning dependencies of target gazebo_ros_gps_with_dropout[0m
+[ 81%] [32mBuilding CXX object CMakeFiles/gazebo_ros_battery_simple.dir/plugins/misc/gazebo_ros_battery_simple.cpp.o[0m
+[ 83%] [32mBuilding CXX object CMakeFiles/gazebo_ros_skid_steer_w_encoder.dir/plugins/motion/skid_steering_with_encoder.cpp.o[0m
+[ 84%] [34m[1mGenerating Python msg __init__.py for gazebo_sensor_collection_plugins[0m
+[ 86%] [32mBuilding CXX object CMakeFiles/gazebo_ros_encoder.dir/plugins/motion/gazebo_encoder.cpp.o[0m
+[ 88%] [32mBuilding CXX object CMakeFiles/gazebo_ros_gps_with_dropout.dir/plugins/gps/gazebo_ros_gps_with_dropout.cpp.o[0m
+[ 89%] [32mBuilding CXX object CMakeFiles/gazebo_ros_imu_mod.dir/plugins/motion/gazebo_ros_imu_mod.cpp.o[0m
+[ 89%] Built target gazebo_sensor_collection_plugins_generate_messages_py
+[ 89%] Built target gazebo_sensor_collection_plugins_generate_messages_eus
+[35m[1mScanning dependencies of target gazebo_sensor_collection_plugins_generate_messages[0m
+[ 89%] Built target gazebo_sensor_collection_plugins_generate_messages
+In file included from [01m[K/opt/ros/noetic/include/ros/ros.h:40[m[K,
+                 from [01m[K/home/rob/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/include/../include/misc/gazebo_ros_battery_simple.h:13[m[K,
+                 from [01m[K/home/rob/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/plugins/misc/gazebo_ros_battery_simple.cpp:1[m[K:
+[01m[K/home/rob/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/plugins/misc/gazebo_ros_battery_simple.cpp:[m[K In member function ‘[01m[Kvirtual void gazebo::SimpleBatteryPlugin::Load(gazebo::physics::ModelPtr, sdf::v9::ElementPtr)[m[K’:
+[01m[K/home/rob/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/plugins/misc/gazebo_ros_battery_simple.cpp:80:43:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%f[m[K’ expects argument of type ‘[01m[Kdouble[m[K’, but argument 9 has type ‘[01m[Kstd::string[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} [[01;35m[K-Wformat=[m[K]
+   80 |           ROS_WARN_NAMED("SimpleBattery", [01;35m[K"SimpleBatteryPlugin Plugin (ns = %s) missing <batteryName>, defaults to value from robot_description: %f"[m[K,
+      |                                           [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/rob/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/plugins/misc/gazebo_ros_battery_simple.cpp:80:147:[m[K [01;36m[Knote: [m[Kformat string is defined here
+   80 |           ROS_WARN_NAMED("SimpleBattery", "SimpleBatteryPlugin Plugin (ns = %s) missing <batteryName>, defaults to value from robot_description: [01;36m[K%f[m[K",
+      |                                                                                                                                                  [01;36m[K~^[m[K
+      |                                                                                                                                                   [01;36m[K|[m[K
+      |                                                                                                                                                   [01;36m[Kdouble[m[K
+[ 91%] [32m[1mLinking CXX shared library /home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/lib/libgazebo_ros_encoder.so[0m
+[ 93%] [32m[1mLinking CXX shared library /home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/lib/libgazebo_ros_battery_simple.so[0m
+[ 94%] [32m[1mLinking CXX shared library /home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/lib/libgazebo_ros_skid_steer_w_encoder.so[0m
+[ 94%] Built target gazebo_ros_encoder
+[ 94%] Built target gazebo_ros_battery_simple
+[ 94%] Built target gazebo_ros_skid_steer_w_encoder
+In file included from [01m[K/home/rob/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/plugins/gps/gazebo_ros_gps_with_dropout.cpp:29[m[K:
+[01m[K/home/rob/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/include/../include/gps/gazebo_ros_gps_with_dropout.h:[m[K In member function ‘[01m[Kbool gazebo::PeriodicNoiseBox::contains(double, double, float)[m[K’:
+[01m[K/home/rob/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/include/../include/gps/gazebo_ros_gps_with_dropout.h:111:2:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+  111 |  [01;35m[K}[m[K;
+      |  [01;35m[K^[m[K
+[ 96%] [32m[1mLinking CXX shared library /home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/lib/libgazebo_ros_realsense.so[0m
+[ 96%] Built target gazebo_ros_realsense
+[ 98%] [32m[1mLinking CXX shared library /home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/lib/libgazebo_ros_imu_mod.so[0m
+[100%] [32m[1mLinking CXX shared library /home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/lib/libgazebo_ros_gps_with_dropout.so[0m
+[100%] Built target gazebo_ros_imu_mod
+[100%] Built target gazebo_ros_gps_with_dropout
