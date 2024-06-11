@@ -1,1 +1,0 @@
-/home/rob/mirte_ws/devel/.private/ridgeback_msgs/share/gennodejs/ros/ridgeback_msgs/msg/Fans.js

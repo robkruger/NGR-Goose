@@ -1,8 +1,0 @@
-prefix=/home/rob/mirte_ws/install
-
-Name: gazebo_sensor_collection_description
-Description: Description of gazebo_sensor_collection_description
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

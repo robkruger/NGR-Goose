@@ -1,1 +1,0 @@
-/home/rob/mirte_ws/devel/.private/mirte_msgs/share/roseus/ros/mirte_msgs/srv/GetIMU.l

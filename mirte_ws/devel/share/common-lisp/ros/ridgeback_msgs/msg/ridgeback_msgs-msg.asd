@@ -1,1 +1,0 @@
-/home/rob/mirte_ws/devel/.private/ridgeback_msgs/share/common-lisp/ros/ridgeback_msgs/msg/ridgeback_msgs-msg.asd
