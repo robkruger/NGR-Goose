@@ -1,1 +1,0 @@
-/home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/lib/python3/dist-packages/gazebo_sensor_collection_plugins/msg/_EulerData.py

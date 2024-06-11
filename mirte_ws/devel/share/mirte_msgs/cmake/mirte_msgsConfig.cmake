@@ -1,1 +1,0 @@
-/home/rob/mirte_ws/devel/.private/mirte_msgs/share/mirte_msgs/cmake/mirte_msgsConfig.cmake

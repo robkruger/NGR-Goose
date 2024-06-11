@@ -1,1 +1,0 @@
-/home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/share/gazebo_sensor_collection_plugins/cmake/gazebo_sensor_collection_plugins-msg-extras.cmake

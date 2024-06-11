@@ -1,1 +1,0 @@
-/home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_description/lib/pkgconfig/gazebo_sensor_collection_description.pc
