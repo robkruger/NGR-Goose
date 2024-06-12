@@ -1,0 +1,12 @@
+Warning: Cannot symlink from /home/rob/NGR-Goose/mirte_ws/devel/.private/mirte_arm/lib/mirte_arm/open_gripper.py to existing file /home/rob/NGR-Goose/mirte_ws/devel/lib/mirte_arm/open_gripper.py
+Warning: Source hash: e3df578b26643843b8dd215a08860690
+Warning: Dest hash: e35fcd6910fc8c87f8d77e16f2718c8a
+Warning: Cannot symlink from /home/rob/NGR-Goose/mirte_ws/devel/.private/mirte_arm/lib/mirte_arm/move_to_state.py to existing file /home/rob/NGR-Goose/mirte_ws/devel/lib/mirte_arm/move_to_state.py
+Warning: Source hash: 7b2581830d801f17fbf9e0ec56e83f3b
+Warning: Dest hash: 04bf785e59ae2768540ce651f051ae89
+Warning: Cannot symlink from /home/rob/NGR-Goose/mirte_ws/devel/.private/mirte_arm/lib/pkgconfig/mirte_arm.pc to existing file /home/rob/NGR-Goose/mirte_ws/devel/lib/pkgconfig/mirte_arm.pc
+Warning: Source hash: f97ab41f8a62f2ecb60d37f595b7c7ad
+Warning: Dest hash: 837fc866f80d6e66fcecb82a1eeee73c
+Warning: Cannot symlink from /home/rob/NGR-Goose/mirte_ws/devel/.private/mirte_arm/share/mirte_arm/cmake/mirte_armConfig.cmake to existing file /home/rob/NGR-Goose/mirte_ws/devel/share/mirte_arm/cmake/mirte_armConfig.cmake
+Warning: Source hash: 5581fdc054c82328a8aee04214e27012
+Warning: Dest hash: 8bab72a3c8f6a27fd735d55b945a8a35

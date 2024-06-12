@@ -1,0 +1,12 @@
+Warning: Cannot symlink from /home/rob/NGR-Goose/mirte_ws/devel/.private/ridgeback_msgs/lib/pkgconfig/ridgeback_msgs.pc to existing file /home/rob/NGR-Goose/mirte_ws/devel/lib/pkgconfig/ridgeback_msgs.pc
+Warning: Source hash: 92bcc673214df0d14e04cd955f166bc8
+Warning: Dest hash: 16fa0ddb9b90d77bd00eed8aaf8eedd2
+Warning: Cannot symlink from /home/rob/NGR-Goose/mirte_ws/devel/.private/ridgeback_msgs/share/ridgeback_msgs/cmake/ridgeback_msgsConfig.cmake to existing file /home/rob/NGR-Goose/mirte_ws/devel/share/ridgeback_msgs/cmake/ridgeback_msgsConfig.cmake
+Warning: Source hash: 4b0dfe52903f38cf629094aeaa6b2841
+Warning: Dest hash: 7d4e0947c64e1acd1ae71f1e171217ad
+Warning: Cannot symlink from /home/rob/NGR-Goose/mirte_ws/devel/.private/ridgeback_msgs/share/ridgeback_msgs/cmake/ridgeback_msgs-msg-extras.cmake to existing file /home/rob/NGR-Goose/mirte_ws/devel/share/ridgeback_msgs/cmake/ridgeback_msgs-msg-extras.cmake
+Warning: Source hash: dc0ce388f75120bf86e82f8a178180b4
+Warning: Dest hash: 953aa033f97d5a78d58f9eb4311900ca
+Warning: Cannot symlink from /home/rob/NGR-Goose/mirte_ws/devel/.private/ridgeback_msgs/share/ridgeback_msgs/cmake/ridgeback_msgs-msg-paths.cmake to existing file /home/rob/NGR-Goose/mirte_ws/devel/share/ridgeback_msgs/cmake/ridgeback_msgs-msg-paths.cmake
+Warning: Source hash: 9eec8a02f7e0644f81ae8b53d9e261e6
+Warning: Dest hash: b9f7f92bbf229252cff8b2d8f24166ca

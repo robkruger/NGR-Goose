@@ -1,0 +1,6 @@
+Warning: Cannot symlink from /home/rob/NGR-Goose/mirte_ws/devel/.private/mirte_moveit_config/lib/pkgconfig/mirte_moveit_config.pc to existing file /home/rob/NGR-Goose/mirte_ws/devel/lib/pkgconfig/mirte_moveit_config.pc
+Warning: Source hash: 32b9ef8386fe764a66885b5a2c178b2a
+Warning: Dest hash: e26d4d243c39bff426251ace0bdaa82f
+Warning: Cannot symlink from /home/rob/NGR-Goose/mirte_ws/devel/.private/mirte_moveit_config/share/mirte_moveit_config/cmake/mirte_moveit_configConfig.cmake to existing file /home/rob/NGR-Goose/mirte_ws/devel/share/mirte_moveit_config/cmake/mirte_moveit_configConfig.cmake
+Warning: Source hash: e4368445c8fbfd4f5c2c7f740a0c2e6a
+Warning: Dest hash: 687e69364b2ec31485e2b98b375d2c2c

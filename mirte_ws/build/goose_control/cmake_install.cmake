@@ -143,6 +143,10 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/goose_control" TYPE FILE FILES "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/goose_control/package.xml")
 endif()
 
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/goose_control" TYPE PROGRAM FILES "/home/rob/NGR-Goose/mirte_ws/build/goose_control/catkin_generated/installspace/goal_area.py")
+endif()
+
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/rob/NGR-Goose/mirte_ws/build/goose_control/gtest/cmake_install.cmake")

@@ -1,0 +1,6 @@
+Warning: Cannot symlink from /home/rob/NGR-Goose/mirte_ws/devel/.private/ridgeback_navigation/lib/pkgconfig/ridgeback_navigation.pc to existing file /home/rob/NGR-Goose/mirte_ws/devel/lib/pkgconfig/ridgeback_navigation.pc
+Warning: Source hash: 7d5a29a59f454559668e7db03cdfeafb
+Warning: Dest hash: 5946a5e7e556cd9bab0b6f8284dc3a90
+Warning: Cannot symlink from /home/rob/NGR-Goose/mirte_ws/devel/.private/ridgeback_navigation/share/ridgeback_navigation/cmake/ridgeback_navigationConfig.cmake to existing file /home/rob/NGR-Goose/mirte_ws/devel/share/ridgeback_navigation/cmake/ridgeback_navigationConfig.cmake
+Warning: Source hash: 5e85ef7c358733390cea8a96f0c4de77
+Warning: Dest hash: b9b937db6f8fe51c799ac61d5a18993f
