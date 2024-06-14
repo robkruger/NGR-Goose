@@ -1,5 +1,5 @@
-Symlinking /home/rob/NGR-Goose/mirte_ws/devel/lib/image_recognition/cmake.lock
-Symlinking /home/rob/NGR-Goose/mirte_ws/devel/lib/image_recognition/image_test.py
+Linked: (/home/rob/NGR-Goose/mirte_ws/devel/.private/image_recognition/lib/image_recognition/cmake.lock, /home/rob/NGR-Goose/mirte_ws/devel/lib/image_recognition/cmake.lock)
+Linked: (/home/rob/NGR-Goose/mirte_ws/devel/.private/image_recognition/lib/image_recognition/image_test.py, /home/rob/NGR-Goose/mirte_ws/devel/lib/image_recognition/image_test.py)
 Linked: (/home/rob/NGR-Goose/mirte_ws/devel/.private/image_recognition/lib/pkgconfig/image_recognition.pc, /home/rob/NGR-Goose/mirte_ws/devel/lib/pkgconfig/image_recognition.pc)
 Linked: (/home/rob/NGR-Goose/mirte_ws/devel/.private/image_recognition/share/image_recognition/cmake/image_recognitionConfig-version.cmake, /home/rob/NGR-Goose/mirte_ws/devel/share/image_recognition/cmake/image_recognitionConfig-version.cmake)
 Linked: (/home/rob/NGR-Goose/mirte_ws/devel/.private/image_recognition/share/image_recognition/cmake/image_recognitionConfig.cmake, /home/rob/NGR-Goose/mirte_ws/devel/share/image_recognition/cmake/image_recognitionConfig.cmake)

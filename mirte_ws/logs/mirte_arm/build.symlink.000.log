@@ -1,5 +1,6 @@
-Symlinking /home/rob/mirte_ws/devel/lib/mirte_arm/cmake.lock
-Symlinking /home/rob/mirte_ws/devel/lib/mirte_arm/move_to_state.py
-Symlinking /home/rob/mirte_ws/devel/lib/pkgconfig/mirte_arm.pc
-Symlinking /home/rob/mirte_ws/devel/share/mirte_arm/cmake/mirte_armConfig-version.cmake
-Symlinking /home/rob/mirte_ws/devel/share/mirte_arm/cmake/mirte_armConfig.cmake
+Symlinking /home/rob/NGR-Goose/mirte_ws/devel/lib/mirte_arm/cmake.lock
+Symlinking /home/rob/NGR-Goose/mirte_ws/devel/lib/mirte_arm/open_gripper.py
+Symlinking /home/rob/NGR-Goose/mirte_ws/devel/lib/mirte_arm/move_to_state.py
+Symlinking /home/rob/NGR-Goose/mirte_ws/devel/lib/pkgconfig/mirte_arm.pc
+Symlinking /home/rob/NGR-Goose/mirte_ws/devel/share/mirte_arm/cmake/mirte_armConfig-version.cmake
+Symlinking /home/rob/NGR-Goose/mirte_ws/devel/share/mirte_arm/cmake/mirte_armConfig.cmake

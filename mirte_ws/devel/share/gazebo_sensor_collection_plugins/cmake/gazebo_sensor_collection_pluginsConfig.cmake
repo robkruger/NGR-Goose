@@ -1,1 +1,1 @@
-/home/rob/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/share/gazebo_sensor_collection_plugins/cmake/gazebo_sensor_collection_pluginsConfig.cmake
+/home/rob/NGR-Goose/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/share/gazebo_sensor_collection_plugins/cmake/gazebo_sensor_collection_pluginsConfig.cmake

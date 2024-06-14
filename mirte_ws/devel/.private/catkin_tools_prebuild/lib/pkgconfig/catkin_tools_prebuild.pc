@@ -1,4 +1,4 @@
-prefix=/home/rob/mirte_ws/devel/.private/catkin_tools_prebuild
+prefix=/home/rob/NGR-Goose/mirte_ws/devel/.private/catkin_tools_prebuild
 
 Name: catkin_tools_prebuild
 Description: Description of catkin_tools_prebuild

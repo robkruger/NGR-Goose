@@ -1,1 +1,1 @@
-/home/rob/mirte_ws/devel/.private/ridgeback_msgs/lib/python3/dist-packages/ridgeback_msgs/msg/_RGB.py
+/home/rob/NGR-Goose/mirte_ws/devel/.private/ridgeback_msgs/lib/python3/dist-packages/ridgeback_msgs/msg/_RGB.py

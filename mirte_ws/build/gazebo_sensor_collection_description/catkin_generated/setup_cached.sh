@@ -8,8 +8,6 @@
 
 # modified environment variables
 export CMAKE_PREFIX_PATH="/home/rob/NGR-Goose/mirte_ws/devel/.private/gazebo_sensor_collection_description:$CMAKE_PREFIX_PATH"
-export LD_LIBRARY_PATH="/home/rob/NGR-Goose/mirte_ws/devel/.private/gazebo_sensor_collection_description/lib:$LD_LIBRARY_PATH"
-export PKG_CONFIG_PATH="/home/rob/NGR-Goose/mirte_ws/devel/.private/gazebo_sensor_collection_description/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PWD='/home/rob/NGR-Goose/mirte_ws/build/gazebo_sensor_collection_description'
 export ROSLISP_PACKAGE_DIRECTORIES="/home/rob/NGR-Goose/mirte_ws/devel/.private/gazebo_sensor_collection_description/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
-export ROS_PACKAGE_PATH="/home/rob/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_description:/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_description:$ROS_PACKAGE_PATH"
+export ROS_PACKAGE_PATH="/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_description:$ROS_PACKAGE_PATH"

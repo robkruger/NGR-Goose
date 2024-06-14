@@ -1,1 +1,1 @@
-/home/rob/mirte_ws/devel/.private/catkin_tools_prebuild/local_setup.bash
+/home/rob/NGR-Goose/mirte_ws/devel/.private/catkin_tools_prebuild/local_setup.bash

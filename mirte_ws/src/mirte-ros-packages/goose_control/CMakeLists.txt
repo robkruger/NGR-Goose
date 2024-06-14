@@ -120,7 +120,7 @@ include_directories(
   ${catkin_INCLUDE_DIRS}
 )
 
-catkin_install_python(PROGRAMS scripts/goal_area.py
+catkin_install_python(PROGRAMS scripts/goal_area.py scripts/pickup_wrapper.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 

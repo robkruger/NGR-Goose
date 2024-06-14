@@ -1,0 +1,6 @@
+[35m[1mScanning dependencies of target mecanum_drive_controller[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/mecanum_drive_controller.dir/src/mecanum_drive_controller.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/mecanum_drive_controller.dir/src/odometry.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/mecanum_drive_controller.dir/src/speed_limiter.cpp.o[0m
+[100%] [32m[1mLinking CXX shared library /home/rob/NGR-Goose/mirte_ws/devel/.private/ridgeback_control/lib/libmecanum_drive_controller.so[0m
+[100%] Built target mecanum_drive_controller

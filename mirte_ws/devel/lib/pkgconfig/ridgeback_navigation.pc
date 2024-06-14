@@ -1,1 +1,1 @@
-/home/rob/mirte_ws/devel/.private/ridgeback_navigation/lib/pkgconfig/ridgeback_navigation.pc
+/home/rob/NGR-Goose/mirte_ws/devel/.private/ridgeback_navigation/lib/pkgconfig/ridgeback_navigation.pc

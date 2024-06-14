@@ -1,5 +1,0 @@
-Symlinking /home/rob/NGR-Goose/mirte_ws/devel/lib/goose_control/cmake.lock
-Symlinking /home/rob/NGR-Goose/mirte_ws/devel/lib/goose_control/vis_area.py
-Linked: (/home/rob/NGR-Goose/mirte_ws/devel/.private/goose_control/lib/pkgconfig/goose_control.pc, /home/rob/NGR-Goose/mirte_ws/devel/lib/pkgconfig/goose_control.pc)
-Linked: (/home/rob/NGR-Goose/mirte_ws/devel/.private/goose_control/share/goose_control/cmake/goose_controlConfig.cmake, /home/rob/NGR-Goose/mirte_ws/devel/share/goose_control/cmake/goose_controlConfig.cmake)
-Linked: (/home/rob/NGR-Goose/mirte_ws/devel/.private/goose_control/share/goose_control/cmake/goose_controlConfig-version.cmake, /home/rob/NGR-Goose/mirte_ws/devel/share/goose_control/cmake/goose_controlConfig-version.cmake)

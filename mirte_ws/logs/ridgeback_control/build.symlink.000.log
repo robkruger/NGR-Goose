@@ -1,0 +1,4 @@
+Symlinking /home/rob/NGR-Goose/mirte_ws/devel/lib/libmecanum_drive_controller.so
+Symlinking /home/rob/NGR-Goose/mirte_ws/devel/lib/pkgconfig/ridgeback_control.pc
+Symlinking /home/rob/NGR-Goose/mirte_ws/devel/share/ridgeback_control/cmake/ridgeback_controlConfig.cmake
+Symlinking /home/rob/NGR-Goose/mirte_ws/devel/share/ridgeback_control/cmake/ridgeback_controlConfig-version.cmake
