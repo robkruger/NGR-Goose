@@ -6,7 +6,6 @@ from geometry_msgs.msg import PointStamped, PoseStamped, Point
 import random
 from tf.transformations import quaternion_from_euler
 import numpy as np
-from actionlib_msgs.msg import GoalID
 
 
 def callback(msg):
@@ -127,7 +126,7 @@ def change_marker():
     # Set the pose of the marker
     area_marker.points = points + [points[0]]
 
-    publish_goal()
+    # publish_goal()
 
 while not rospy.is_shutdown():
   marker_pub.publish(area_marker)

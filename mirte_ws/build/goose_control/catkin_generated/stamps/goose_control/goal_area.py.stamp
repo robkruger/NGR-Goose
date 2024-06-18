@@ -6,6 +6,7 @@ from geometry_msgs.msg import PointStamped, PoseStamped, Point
 import random
 from tf.transformations import quaternion_from_euler
 import numpy as np
+from actionlib_msgs.msg import GoalID
 
 
 def callback(msg):

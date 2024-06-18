@@ -10,13 +10,13 @@ Panels:
         - /Map1
         - /Map1/Status1
         - /LaserScan1
-        - /RobotModel1
-        - /Map2
+        - /RobotModel1/Status1
         - /Map2/Status1
         - /Map3
         - /Marker1
         - /Marker1/Status1
         - /Pose1
+        - /Pose1/Status1
       Splitter Ratio: 0.5
     Tree Height: 719
   - Class: rviz/Selection
@@ -220,22 +220,22 @@ Visualization Manager:
       Class: rviz/Map
       Color Scheme: costmap
       Draw Behind: false
-      Enabled: true
+      Enabled: false
       Name: Map
       Topic: /move_base/global_costmap/costmap
       Unreliable: false
       Use Timestamp: false
-      Value: true
+      Value: false
     - Alpha: 0.699999988079071
       Class: rviz/Map
       Color Scheme: costmap
       Draw Behind: false
-      Enabled: true
+      Enabled: false
       Name: Map
       Topic: /move_base/local_costmap/costmap
       Unreliable: false
       Use Timestamp: false
-      Value: true
+      Value: false
     - Class: rviz/Marker
       Enabled: true
       Marker Topic: visualization_marker
@@ -257,7 +257,7 @@ Visualization Manager:
       Shaft Length: 0.5
       Shaft Radius: 0.05000000074505806
       Shape: Arrow
-      Topic: /move_base_simple/goal
+      Topic: /move_base/current_goal
       Unreliable: false
       Value: true
   Enabled: true
@@ -288,7 +288,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 5.789289951324463
+      Distance: 6.557106018066406
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -296,17 +296,17 @@ Visualization Manager:
         Value: false
       Field of View: 0.7853981852531433
       Focal Point:
-        X: 7.349417686462402
-        Y: 10.372394561767578
-        Z: 1.916831374168396
+        X: 9.316863059997559
+        Y: 16.158510208129883
+        Z: 5.366732597351074
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 1.374796986579895
+      Pitch: 1.1597970724105835
       Target Frame: map
-      Yaw: 2.4367213249206543
+      Yaw: 2.551720380783081
     Saved: ~
 Window Geometry:
   Displays:

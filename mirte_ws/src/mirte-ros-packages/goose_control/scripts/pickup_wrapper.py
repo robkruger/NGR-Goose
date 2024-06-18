@@ -92,42 +92,42 @@ def place(start_state):
 def idle():
     move_to_joint_state(idle_angles)
 
-def callback(msg):
-    # rospy.loginfo(msg)
-    # rospy.loginfo(msg.status_list[0].status)
-    rospy.loginfo("{}, {}".format(msg.status_list[0].status, msg.status_list[0].goal_id.id))
-    if msg.status_list[0].status == 3:
-        pickup(idle)
+# def callback(msg):
+#     # rospy.loginfo(msg)
+#     # rospy.loginfo(msg.status_list[0].status)
+#     rospy.loginfo("{}, {}".format(msg.status_list[0].status, msg.status_list[0].goal_id.id))
+#     if msg.status_list[0].status == 3:
+#         pickup(idle)
 
-        goal = PoseStamped()
+#         goal = PoseStamped()
     
-        goal.header.seq = 1
-        goal.header.stamp = rospy.Time.now()
-        goal.header.frame_id = "map"
+#         goal.header.seq = 1
+#         goal.header.stamp = rospy.Time.now()
+#         goal.header.frame_id = "map"
 
-        goal.pose.position.x = 6.6 # random.uniform(point_1[0], point_2[0])
-        goal.pose.position.y = 9.0 # random.uniform(point_1[1], point_2[1])
-        goal.pose.position.z = 0.0
+#         goal.pose.position.x = 6.6 # random.uniform(point_1[0], point_2[0])
+#         goal.pose.position.y = 9.0 # random.uniform(point_1[1], point_2[1])
+#         goal.pose.position.z = 0.0
 
-        quaternion = quaternion_from_euler(0, 0, random.uniform(-np.pi, np.pi))
+#         quaternion = quaternion_from_euler(0, 0, random.uniform(-np.pi, np.pi))
 
-        goal.pose.orientation.x = quaternion[0]
-        goal.pose.orientation.y = quaternion[1]
-        goal.pose.orientation.z = quaternion[2]
-        goal.pose.orientation.w = quaternion[3]
+#         goal.pose.orientation.x = quaternion[0]
+#         goal.pose.orientation.y = quaternion[1]
+#         goal.pose.orientation.z = quaternion[2]
+#         goal.pose.orientation.w = quaternion[3]
 
-        goal_pub.publish(goal)
+#         goal_pub.publish(goal)
 
 pick_up_angles = [0, -np.pi/3, -np.pi/3, -np.pi/6] # [0, -np.pi/3, -np.pi/3, -np.pi/6] #
 idle_angles = [0, np.pi/8, np.pi/8, np.pi/8] # [0, np.pi/6, np.pi/6, np.pi/6]
 
-goal_pub = rospy.Publisher("/move_base_simple/goal", PoseStamped, queue_size = 2)
+# goal_pub = rospy.Publisher("/move_base_simple/goal", PoseStamped, queue_size = 2)
 
 if __name__ == '__main__':
     try:        
         init()
         idle()
-        pickup_listener = rospy.Subscriber('/move_base/status', GoalStatusArray, callback)
+        # pickup_listener = rospy.Subscriber('/move_base/status', GoalStatusArray, callback)
     except rospy.ROSInterruptException:
         pass
 

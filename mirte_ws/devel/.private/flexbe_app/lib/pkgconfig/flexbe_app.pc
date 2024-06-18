@@ -1,0 +1,8 @@
+prefix=/home/rob/NGR-Goose/mirte_ws/devel/.private/flexbe_app
+
+Name: flexbe_app
+Description: Description of flexbe_app
+Version: 2.4.1
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
