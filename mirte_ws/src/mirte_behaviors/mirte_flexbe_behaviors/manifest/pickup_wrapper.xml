@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<behavior name="pickup_wrapper">
+
+	<executable package_path="mirte_flexbe_behaviors.pickup_wrapper_sm" class="pickup_wrapperSM" />
+	<tagstring></tagstring>
+	<author>Rob Krüger</author>
+	<date>Tue Jun 18 2024</date>
+	<description>
+		The robot drives to an area where wrappers could be, detects one and picks it up.
+	</description>
+
+
+	<!-- Contained Behaviors -->
+
+	<!-- Available Parameters -->
+
+</behavior>
