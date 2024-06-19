@@ -15,7 +15,7 @@ from mirte_flexbe_states.define_area import DefineAreaState
 from mirte_flexbe_states.set_gripper import SetGripperState
 # Additional imports can be added inside the following tags
 # [MANUAL_IMPORT]
-
+from geometry_msgs.msg import Pose2D
 # [/MANUAL_IMPORT]
 
 
@@ -55,6 +55,7 @@ class pickup_wrapperSM(Behavior):
 		_state_machine.userdata.joint_config = [0, -1.05, -1.05, -0.52]
 		_state_machine.userdata.waypoint = []
 		_state_machine.userdata.idle_joints = [0, 0.39, 0.39, 0.39]
+		_state_machine.userdata.home = Pose2D(0, 1, 0)
 
 		# Additional creation code can be added inside the following tags
 		# [MANUAL_CREATE]
@@ -80,9 +81,23 @@ class pickup_wrapperSM(Behavior):
 			# x:1117 y:84
 			OperatableStateMachine.add('IdleArm2',
 										MoveitToJointsState(move_group=moveit_group, joint_names=joint_names, action_topic='/move_group'),
+										transitions={'reached': 'MoveHome', 'planning_failed': 'failed', 'control_failed': 'failed'},
+										autonomy={'reached': Autonomy.Off, 'planning_failed': Autonomy.Off, 'control_failed': Autonomy.Off},
+										remapping={'joint_config': 'idle_joints'})
+
+			# x:1163 y:560
+			OperatableStateMachine.add('IdleArm3',
+										MoveitToJointsState(move_group=moveit_group, joint_names=joint_names, action_topic='/move_group'),
 										transitions={'reached': 'finished', 'planning_failed': 'failed', 'control_failed': 'failed'},
 										autonomy={'reached': Autonomy.Off, 'planning_failed': Autonomy.Off, 'control_failed': Autonomy.Off},
 										remapping={'joint_config': 'idle_joints'})
+
+			# x:1104 y:260
+			OperatableStateMachine.add('MoveHome',
+										MoveBaseState(),
+										transitions={'arrived': 'Place', 'failed': 'failed'},
+										autonomy={'arrived': Autonomy.Off, 'failed': Autonomy.Off},
+										remapping={'waypoint': 'home'})
 
 			# x:575 y:142
 			OperatableStateMachine.add('MoveToArea',
@@ -97,10 +112,23 @@ class pickup_wrapperSM(Behavior):
 										transitions={'continue': 'DefineArea', 'failed': 'failed'},
 										autonomy={'continue': Autonomy.Off, 'failed': Autonomy.Off})
 
+			# x:1172 y:473
+			OperatableStateMachine.add('OpenGripper2',
+										SetGripperState(angle=0.7),
+										transitions={'continue': 'IdleArm3', 'failed': 'failed'},
+										autonomy={'continue': Autonomy.Off, 'failed': Autonomy.Off})
+
 			# x:796 y:58
 			OperatableStateMachine.add('PickUp',
 										MoveitToJointsState(move_group=moveit_group, joint_names=joint_names, action_topic='/move_group'),
 										transitions={'reached': 'CloseGripper', 'planning_failed': 'failed', 'control_failed': 'failed'},
+										autonomy={'reached': Autonomy.Off, 'planning_failed': Autonomy.Off, 'control_failed': Autonomy.Off},
+										remapping={'joint_config': 'joint_config'})
+
+			# x:1147 y:398
+			OperatableStateMachine.add('Place',
+										MoveitToJointsState(move_group=moveit_group, joint_names=joint_names, action_topic='/move_group'),
+										transitions={'reached': 'OpenGripper2', 'planning_failed': 'failed', 'control_failed': 'failed'},
 										autonomy={'reached': Autonomy.Off, 'planning_failed': Autonomy.Off, 'control_failed': Autonomy.Off},
 										remapping={'joint_config': 'joint_config'})
 
