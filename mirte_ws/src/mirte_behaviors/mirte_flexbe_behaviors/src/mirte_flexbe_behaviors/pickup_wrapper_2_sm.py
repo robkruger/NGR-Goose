@@ -10,8 +10,9 @@
 from flexbe_core import Behavior, Autonomy, OperatableStateMachine, ConcurrencyContainer, PriorityContainer, Logger
 from flexbe_manipulation_states.moveit_to_joints_state import MoveitToJointsState
 from flexbe_navigation_states.move_base_state import MoveBaseState
-from flexbe_states.wait_state import WaitState as flexbe_states__WaitState
+from flexbe_states.wait_state import WaitState
 from mirte_flexbe_states.define_area import DefineAreaState
+from mirte_flexbe_states.mirte_move_base_state import MirteMoveBaseState
 from mirte_flexbe_states.set_gripper import SetGripperState
 # Additional imports can be added inside the following tags
 # [MANUAL_IMPORT]
@@ -20,18 +21,18 @@ from geometry_msgs.msg import Pose2D
 
 
 '''
-Created on Tue Jun 18 2024
+Created on Tue Jun 19 2024
 @author: Rob Krüger
 '''
-class pickup_wrapperSM(Behavior):
+class pickup_wrapper_2SM(Behavior):
 	'''
 	The robot drives to an area where wrappers could be, detects one and picks it up.
 	'''
 
 
 	def __init__(self):
-		super(pickup_wrapperSM, self).__init__()
-		self.name = 'pickup_wrapper'
+		super(pickup_wrapper_2SM, self).__init__()
+		self.name = 'pickup_wrapper_2'
 
 		# parameters of this behavior
 
@@ -74,7 +75,7 @@ class pickup_wrapperSM(Behavior):
 			# x:587 y:60
 			OperatableStateMachine.add('DefineArea',
 										DefineAreaState(points=area),
-										transitions={'continue': 'MoveToArea', 'failed': 'failed'},
+										transitions={'continue': 'MirteMoveToArea', 'failed': 'failed'},
 										autonomy={'continue': Autonomy.Off, 'failed': Autonomy.Off},
 										remapping={'goal': 'goal'})
 
@@ -92,19 +93,19 @@ class pickup_wrapperSM(Behavior):
 										autonomy={'reached': Autonomy.Off, 'planning_failed': Autonomy.Off, 'control_failed': Autonomy.Off},
 										remapping={'joint_config': 'idle_joints'})
 
+			# x:591 y:160
+			OperatableStateMachine.add('MirteMoveToArea',
+										MirteMoveBaseState(),
+										transitions={'arrived': 'MoveHome', 'wrapper_interupted': 'PickUp', 'failed': 'failed'},
+										autonomy={'arrived': Autonomy.Off, 'wrapper_interupted': Autonomy.Off, 'failed': Autonomy.Off},
+										remapping={'waypoint': 'waypoint'})
+
 			# x:1104 y:260
 			OperatableStateMachine.add('MoveHome',
 										MoveBaseState(),
 										transitions={'arrived': 'Place', 'failed': 'failed'},
 										autonomy={'arrived': Autonomy.Off, 'failed': Autonomy.Off},
 										remapping={'waypoint': 'home'})
-
-			# x:575 y:142
-			OperatableStateMachine.add('MoveToArea',
-										MoveBaseState(),
-										transitions={'arrived': 'PickUp', 'failed': 'failed'},
-										autonomy={'arrived': Autonomy.Off, 'failed': Autonomy.Off},
-										remapping={'waypoint': 'goal'})
 
 			# x:336 y:55
 			OperatableStateMachine.add('OpenGripper1',
@@ -134,7 +135,7 @@ class pickup_wrapperSM(Behavior):
 
 			# x:986 y:90
 			OperatableStateMachine.add('Wait',
-										flexbe_states__WaitState(wait_time=1),
+										WaitState(wait_time=1),
 										transitions={'done': 'IdleArm2'},
 										autonomy={'done': Autonomy.Off})
 

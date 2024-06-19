@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 from flexbe_core import EventState, Logger
-from flexbe_core.proxy import ProxyActionClient
+from flexbe_core.proxy import ProxyActionClient, ProxySubscriberCached
 
 from actionlib_msgs.msg import GoalStatus
 from move_base_msgs.msg import *
@@ -23,14 +23,18 @@ class MirteMoveBaseState(EventState):
     def __init__(self):
         """Constructor"""
 
-        super(MoveBaseState, self).__init__(outcomes = ['arrived', 'failed'],
-                                            input_keys = ['waypoint'])
+        super(MirteMoveBaseState, self).__init__(outcomes = ['arrived', 'wrapper_interupted', 'failed'],
+                                                 input_keys = ['waypoint'])
 
         self._action_topic = "/move_base"
+        self._wrapper_detection_topic = "/wrapper_detect"
 
         self._client = ProxyActionClient({self._action_topic: MoveBaseAction})
 
+        self._sub = ProxySubscriberCached({self._wrapper_detection_topic: Pose}) # !!!! It's ofcourse not a pose, but a custom message type defined later !!!! 
+
         self._arrived = False
+        self._interupted = False
         self._failed = False
 
 
@@ -39,6 +43,9 @@ class MirteMoveBaseState(EventState):
 
         if self._arrived:
             return 'arrived'
+        if self._interupted:
+            self.cancel_active_goals()
+            return 'wrapper_interupted'
         if self._failed:
             return 'failed'
 
@@ -52,6 +59,13 @@ class MirteMoveBaseState(EventState):
                 Logger.logwarn('Navigation failed: %s' % str(status))
                 self._failed = True
                 return 'failed'
+            
+        if self._sub.has_msg(self._wrapper_detection_topic):
+            msg = self._sub.get_last_msg(self._wrapper_detection_topic)
+            self._sub.remove_last_msg(self._wrapper_detection_topic)
+            if msg.found_wrapper:
+                self._interupted = True
+                return 'wrapper_interupted'
 
 
     def on_enter(self, userdata):
