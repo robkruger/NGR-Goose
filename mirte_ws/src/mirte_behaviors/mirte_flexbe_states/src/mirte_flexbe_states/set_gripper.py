@@ -1,7 +1,7 @@
 import rospy
 
 from flexbe_core import EventState, Logger
-from mirte_msgs.srv import SetServoAngle
+from mirte_msgs_2.srv import SetServoAngle
 
 
 class SetGripperState(EventState):

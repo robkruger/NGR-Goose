@@ -1,5 +1,6 @@
 Symlinking /home/rob/NGR-Goose/mirte_ws/devel/lib/goose_control/cmake.lock
 Symlinking /home/rob/NGR-Goose/mirte_ws/devel/lib/goose_control/goal_area.py
+Symlinking /home/rob/NGR-Goose/mirte_ws/devel/lib/goose_control/pickup_wrapper.py
 Symlinking /home/rob/NGR-Goose/mirte_ws/devel/lib/pkgconfig/goose_control.pc
 Symlinking /home/rob/NGR-Goose/mirte_ws/devel/share/goose_control/cmake/goose_controlConfig.cmake
 Symlinking /home/rob/NGR-Goose/mirte_ws/devel/share/goose_control/cmake/goose_controlConfig-version.cmake

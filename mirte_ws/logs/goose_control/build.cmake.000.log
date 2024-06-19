@@ -34,6 +34,7 @@ Not searching for unused variables given on the command line.
 [36m--[0m BUILD_SHARED_LIBS is on
 [36m--[0m Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
 [36m--[0m Installing devel-space wrapper /home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/goose_control/scripts/goal_area.py to /home/rob/NGR-Goose/mirte_ws/devel/.private/goose_control/lib/goose_control
+[36m--[0m Installing devel-space wrapper /home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/goose_control/scripts/pickup_wrapper.py to /home/rob/NGR-Goose/mirte_ws/devel/.private/goose_control/lib/goose_control
 [36m--[0m Configuring done
 [36m--[0m Generating done
 [36m--[0m Build files have been written to: /home/rob/NGR-Goose/mirte_ws/build/goose_control

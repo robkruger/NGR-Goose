@@ -1,15 +1,15 @@
-[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target std_msgs_generate_messages_eus
 [  0%] Built target std_msgs_generate_messages_lisp
 [  0%] Built target std_msgs_generate_messages_nodejs
-[  0%] Built target std_msgs_generate_messages_eus
-[  0%] Built target std_msgs_generate_messages_py
-[  0%] Built target _ridgeback_msgs_generate_messages_check_deps_Status
-[  0%] Built target _ridgeback_msgs_generate_messages_check_deps_RGB
+[  0%] Built target std_msgs_generate_messages_cpp
 [  0%] Built target _ridgeback_msgs_generate_messages_check_deps_Lights
+[  0%] Built target _ridgeback_msgs_generate_messages_check_deps_RGB
+[  0%] Built target _ridgeback_msgs_generate_messages_check_deps_Status
 [  0%] Built target _ridgeback_msgs_generate_messages_check_deps_Fans
-[ 31%] Built target ridgeback_msgs_generate_messages_cpp
-[ 50%] Built target ridgeback_msgs_generate_messages_py
-[ 59%] Built target ridgeback_msgs_generate_messages_lisp
-[ 81%] Built target ridgeback_msgs_generate_messages_nodejs
-[100%] Built target ridgeback_msgs_generate_messages_eus
+[ 54%] Built target ridgeback_msgs_generate_messages_lisp
+[ 45%] Built target ridgeback_msgs_generate_messages_cpp
+[ 59%] Built target ridgeback_msgs_generate_messages_py
+[ 81%] Built target ridgeback_msgs_generate_messages_eus
+[100%] Built target ridgeback_msgs_generate_messages_nodejs
 [100%] Built target ridgeback_msgs_generate_messages

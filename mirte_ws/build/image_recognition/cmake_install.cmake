@@ -147,6 +147,10 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/image_recognition" TYPE PROGRAM FILES "/home/rob/NGR-Goose/mirte_ws/build/image_recognition/catkin_generated/installspace/image_test.py")
 endif()
 
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/image_recognition" TYPE PROGRAM FILES "/home/rob/NGR-Goose/mirte_ws/build/image_recognition/catkin_generated/installspace/Find_sheets.py")
+endif()
+
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/rob/NGR-Goose/mirte_ws/build/image_recognition/gtest/cmake_install.cmake")

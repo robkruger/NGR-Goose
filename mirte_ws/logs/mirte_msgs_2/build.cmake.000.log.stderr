@@ -1,0 +1,16 @@
+[31m[1mCMake Error[0m at /home/rob/NGR-Goose/mirte_ws/build/mirte_msgs_2/cmake/mirte_msgs_2-genmsg.cmake:3 (message):
+  Could not find messages which
+  '/home/rob/NGR-Goose/mirte_ws/src/mirte_behaviors/mirte_msgs_2/srv/get_virtual_color.srv'
+  depends on.  Did you forget to specify generate_messages(DEPENDENCIES ...)?
+
+  Cannot locate message [color]: unknown package [mirte_msgs] on search path
+  [{{'mirte_msgs_2':
+  ['/home/rob/NGR-Goose/mirte_ws/src/mirte_behaviors/mirte_msgs_2/msg'],
+  'std_msgs': ['/opt/ros/noetic/share/std_msgs/cmake/../msg'],
+  'geometry_msgs': ['/opt/ros/noetic/share/geometry_msgs/cmake/../msg'],
+  'sensor_msgs': ['/opt/ros/noetic/share/sensor_msgs/cmake/../msg']}}]
+[36mCall Stack (most recent call first):[0m
+  /opt/ros/noetic/share/genmsg/cmake/genmsg-extras.cmake:307 (include)
+  CMakeLists.txt:95 (generate_messages)
+
+

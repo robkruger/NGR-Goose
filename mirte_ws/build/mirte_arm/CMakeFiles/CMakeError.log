@@ -1,21 +1,21 @@
 Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
 Change Dir: /home/rob/NGR-Goose/mirte_ws/build/mirte_arm/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_cc904/fast && /usr/bin/make -f CMakeFiles/cmTC_cc904.dir/build.make CMakeFiles/cmTC_cc904.dir/build
+Run Build Command(s):/usr/bin/make cmTC_5e228/fast && /usr/bin/make -f CMakeFiles/cmTC_5e228.dir/build.make CMakeFiles/cmTC_5e228.dir/build
 make[1]: Entering directory '/home/rob/NGR-Goose/mirte_ws/build/mirte_arm/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_cc904.dir/src.c.o
-/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_cc904.dir/src.c.o   -c /home/rob/NGR-Goose/mirte_ws/build/mirte_arm/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_cc904
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cc904.dir/link.txt --verbose=1
-/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_cc904.dir/src.c.o  -o cmTC_cc904 
-/usr/bin/ld: CMakeFiles/cmTC_cc904.dir/src.c.o: in function `main':
+Building C object CMakeFiles/cmTC_5e228.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_5e228.dir/src.c.o   -c /home/rob/NGR-Goose/mirte_ws/build/mirte_arm/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_5e228
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5e228.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_5e228.dir/src.c.o  -o cmTC_5e228 
+/usr/bin/ld: CMakeFiles/cmTC_5e228.dir/src.c.o: in function `main':
 src.c:(.text+0x46): undefined reference to `pthread_create'
 /usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
 /usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_cc904.dir/build.make:87: cmTC_cc904] Error 1
+make[1]: *** [CMakeFiles/cmTC_5e228.dir/build.make:87: cmTC_5e228] Error 1
 make[1]: Leaving directory '/home/rob/NGR-Goose/mirte_ws/build/mirte_arm/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_cc904/fast] Error 2
+make: *** [Makefile:121: cmTC_5e228/fast] Error 2
 
 
 Source file was:
@@ -41,18 +41,18 @@ int main(void)
 Determining if the function pthread_create exists in the pthreads failed with the following output:
 Change Dir: /home/rob/NGR-Goose/mirte_ws/build/mirte_arm/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_2640c/fast && /usr/bin/make -f CMakeFiles/cmTC_2640c.dir/build.make CMakeFiles/cmTC_2640c.dir/build
+Run Build Command(s):/usr/bin/make cmTC_fcfe5/fast && /usr/bin/make -f CMakeFiles/cmTC_fcfe5.dir/build.make CMakeFiles/cmTC_fcfe5.dir/build
 make[1]: Entering directory '/home/rob/NGR-Goose/mirte_ws/build/mirte_arm/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_2640c.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_2640c.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
-Linking C executable cmTC_2640c
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2640c.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_2640c.dir/CheckFunctionExists.c.o  -o cmTC_2640c  -lpthreads 
+Building C object CMakeFiles/cmTC_fcfe5.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_fcfe5.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_fcfe5
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fcfe5.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_fcfe5.dir/CheckFunctionExists.c.o  -o cmTC_fcfe5  -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_2640c.dir/build.make:87: cmTC_2640c] Error 1
+make[1]: *** [CMakeFiles/cmTC_fcfe5.dir/build.make:87: cmTC_fcfe5] Error 1
 make[1]: Leaving directory '/home/rob/NGR-Goose/mirte_ws/build/mirte_arm/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_2640c/fast] Error 2
+make: *** [Makefile:121: cmTC_fcfe5/fast] Error 2
 
 
 

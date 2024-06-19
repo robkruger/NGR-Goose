@@ -127,7 +127,7 @@ include_directories(
   ${catkin_INCLUDE_DIRS}
 )
 
-catkin_install_python(PROGRAMS scripts/image_test.py
+catkin_install_python(PROGRAMS scripts/image_test.py scripts/Find_sheets.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 

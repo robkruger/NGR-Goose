@@ -8,8 +8,6 @@
 
 # modified environment variables
 export CMAKE_PREFIX_PATH="/home/rob/NGR-Goose/mirte_ws/devel/.private/goose_control:$CMAKE_PREFIX_PATH"
-export LD_LIBRARY_PATH="/home/rob/NGR-Goose/mirte_ws/devel/.private/goose_control/lib:$LD_LIBRARY_PATH"
-export PKG_CONFIG_PATH="/home/rob/NGR-Goose/mirte_ws/devel/.private/goose_control/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PWD='/home/rob/NGR-Goose/mirte_ws/build/goose_control'
 export ROSLISP_PACKAGE_DIRECTORIES="/home/rob/NGR-Goose/mirte_ws/devel/.private/goose_control/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
 export ROS_PACKAGE_PATH="/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/goose_control:$ROS_PACKAGE_PATH"

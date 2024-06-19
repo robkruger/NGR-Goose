@@ -39,12 +39,12 @@ add_custom_target(_gazebo_sensor_collection_plugins_generate_messages_check_deps
 
 get_filename_component(_filename "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/OrientationSensorData.msg" NAME_WE)
 add_custom_target(_gazebo_sensor_collection_plugins_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "gazebo_sensor_collection_plugins" "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/OrientationSensorData.msg" "gazebo_sensor_collection_plugins/EulerData:gazebo_sensor_collection_plugins/QuaternionData"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "gazebo_sensor_collection_plugins" "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/OrientationSensorData.msg" "gazebo_sensor_collection_plugins/QuaternionData:gazebo_sensor_collection_plugins/EulerData"
 )
 
 get_filename_component(_filename "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/ImuData.msg" NAME_WE)
 add_custom_target(_gazebo_sensor_collection_plugins_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "gazebo_sensor_collection_plugins" "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/ImuData.msg" "gazebo_sensor_collection_plugins/DataXYZ:gazebo_sensor_collection_plugins/QuaternionData:gazebo_sensor_collection_plugins/OrientationSensorData:gazebo_sensor_collection_plugins/EulerData:gazebo_sensor_collection_plugins/SensorData3D"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "gazebo_sensor_collection_plugins" "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/ImuData.msg" "gazebo_sensor_collection_plugins/DataXYZ:gazebo_sensor_collection_plugins/OrientationSensorData:gazebo_sensor_collection_plugins/QuaternionData:gazebo_sensor_collection_plugins/SensorData3D:gazebo_sensor_collection_plugins/EulerData"
 )
 
 get_filename_component(_filename "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/GpsData.msg" NAME_WE)
@@ -95,13 +95,13 @@ _generate_msg_cpp(gazebo_sensor_collection_plugins
 _generate_msg_cpp(gazebo_sensor_collection_plugins
   "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/OrientationSensorData.msg"
   "${MSG_I_FLAGS}"
-  "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/EulerData.msg;/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/QuaternionData.msg"
+  "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/QuaternionData.msg;/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/EulerData.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/gazebo_sensor_collection_plugins
 )
 _generate_msg_cpp(gazebo_sensor_collection_plugins
   "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/ImuData.msg"
   "${MSG_I_FLAGS}"
-  "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/DataXYZ.msg;/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/QuaternionData.msg;/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/OrientationSensorData.msg;/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/EulerData.msg;/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/SensorData3D.msg"
+  "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/DataXYZ.msg;/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/OrientationSensorData.msg;/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/QuaternionData.msg;/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/SensorData3D.msg;/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/EulerData.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/gazebo_sensor_collection_plugins
 )
 _generate_msg_cpp(gazebo_sensor_collection_plugins
@@ -192,13 +192,13 @@ _generate_msg_eus(gazebo_sensor_collection_plugins
 _generate_msg_eus(gazebo_sensor_collection_plugins
   "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/OrientationSensorData.msg"
   "${MSG_I_FLAGS}"
-  "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/EulerData.msg;/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/QuaternionData.msg"
+  "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/QuaternionData.msg;/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/EulerData.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/gazebo_sensor_collection_plugins
 )
 _generate_msg_eus(gazebo_sensor_collection_plugins
   "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/ImuData.msg"
   "${MSG_I_FLAGS}"
-  "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/DataXYZ.msg;/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/QuaternionData.msg;/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/OrientationSensorData.msg;/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/EulerData.msg;/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/SensorData3D.msg"
+  "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/DataXYZ.msg;/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/OrientationSensorData.msg;/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/QuaternionData.msg;/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/SensorData3D.msg;/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/EulerData.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/gazebo_sensor_collection_plugins
 )
 _generate_msg_eus(gazebo_sensor_collection_plugins
@@ -289,13 +289,13 @@ _generate_msg_lisp(gazebo_sensor_collection_plugins
 _generate_msg_lisp(gazebo_sensor_collection_plugins
   "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/OrientationSensorData.msg"
   "${MSG_I_FLAGS}"
-  "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/EulerData.msg;/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/QuaternionData.msg"
+  "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/QuaternionData.msg;/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/EulerData.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/gazebo_sensor_collection_plugins
 )
 _generate_msg_lisp(gazebo_sensor_collection_plugins
   "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/ImuData.msg"
   "${MSG_I_FLAGS}"
-  "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/DataXYZ.msg;/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/QuaternionData.msg;/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/OrientationSensorData.msg;/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/EulerData.msg;/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/SensorData3D.msg"
+  "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/DataXYZ.msg;/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/OrientationSensorData.msg;/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/QuaternionData.msg;/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/SensorData3D.msg;/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/EulerData.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/gazebo_sensor_collection_plugins
 )
 _generate_msg_lisp(gazebo_sensor_collection_plugins
@@ -386,13 +386,13 @@ _generate_msg_nodejs(gazebo_sensor_collection_plugins
 _generate_msg_nodejs(gazebo_sensor_collection_plugins
   "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/OrientationSensorData.msg"
   "${MSG_I_FLAGS}"
-  "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/EulerData.msg;/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/QuaternionData.msg"
+  "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/QuaternionData.msg;/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/EulerData.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/gazebo_sensor_collection_plugins
 )
 _generate_msg_nodejs(gazebo_sensor_collection_plugins
   "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/ImuData.msg"
   "${MSG_I_FLAGS}"
-  "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/DataXYZ.msg;/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/QuaternionData.msg;/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/OrientationSensorData.msg;/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/EulerData.msg;/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/SensorData3D.msg"
+  "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/DataXYZ.msg;/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/OrientationSensorData.msg;/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/QuaternionData.msg;/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/SensorData3D.msg;/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/EulerData.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/gazebo_sensor_collection_plugins
 )
 _generate_msg_nodejs(gazebo_sensor_collection_plugins
@@ -483,13 +483,13 @@ _generate_msg_py(gazebo_sensor_collection_plugins
 _generate_msg_py(gazebo_sensor_collection_plugins
   "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/OrientationSensorData.msg"
   "${MSG_I_FLAGS}"
-  "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/EulerData.msg;/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/QuaternionData.msg"
+  "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/QuaternionData.msg;/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/EulerData.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/gazebo_sensor_collection_plugins
 )
 _generate_msg_py(gazebo_sensor_collection_plugins
   "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/ImuData.msg"
   "${MSG_I_FLAGS}"
-  "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/DataXYZ.msg;/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/QuaternionData.msg;/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/OrientationSensorData.msg;/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/EulerData.msg;/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/SensorData3D.msg"
+  "/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/DataXYZ.msg;/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/OrientationSensorData.msg;/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/QuaternionData.msg;/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/SensorData3D.msg;/home/rob/NGR-Goose/mirte_ws/src/mirte-ros-packages/gazebo_sensor_collection/gazebo_sensor_collection_plugins/msg/EulerData.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/gazebo_sensor_collection_plugins
 )
 _generate_msg_py(gazebo_sensor_collection_plugins
