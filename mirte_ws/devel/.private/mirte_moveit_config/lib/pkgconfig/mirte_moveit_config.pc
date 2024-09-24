@@ -1,8 +1,0 @@
-prefix=/home/rob/NGR-Goose/mirte_ws/devel/.private/mirte_moveit_config
-
-Name: mirte_moveit_config
-Description: Description of mirte_moveit_config
-Version: 0.3.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

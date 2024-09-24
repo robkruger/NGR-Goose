@@ -1,6 +1,0 @@
-devel_space: /home/rob/NGR-Goose/mirte_ws/devel
-install: false
-install_space: /home/rob/NGR-Goose/mirte_ws/install
-profile: default
-source_space: /home/rob/NGR-Goose/mirte_ws/src
-workspace: /home/rob/NGR-Goose/mirte_ws

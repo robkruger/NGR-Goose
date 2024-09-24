@@ -1,1 +1,0 @@
-/home/rob/NGR-Goose/mirte_ws/devel/.private/mirte_msgs_2/share/roseus/ros/mirte_msgs_2/msg/ServoPosition.l

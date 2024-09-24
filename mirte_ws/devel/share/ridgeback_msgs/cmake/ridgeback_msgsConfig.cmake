@@ -1,1 +1,0 @@
-/home/rob/NGR-Goose/mirte_ws/devel/.private/ridgeback_msgs/share/ridgeback_msgs/cmake/ridgeback_msgsConfig.cmake

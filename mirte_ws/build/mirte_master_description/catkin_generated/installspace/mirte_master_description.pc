@@ -1,8 +1,0 @@
-prefix=/home/rob/NGR-Goose/mirte_ws/install
-
-Name: mirte_master_description
-Description: Description of mirte_master_description
-Version: 1.2.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

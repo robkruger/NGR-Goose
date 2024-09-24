@@ -1,8 +1,0 @@
-prefix=/home/rob/NGR-Goose/mirte_ws/install
-
-Name: goose_control
-Description: Description of goose_control
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

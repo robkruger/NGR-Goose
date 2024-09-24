@@ -1,1 +1,0 @@
-/home/rob/NGR-Goose/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/share/gennodejs/ros/gazebo_sensor_collection_plugins/msg/_index.js

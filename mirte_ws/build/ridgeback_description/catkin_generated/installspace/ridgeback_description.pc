@@ -1,8 +1,0 @@
-prefix=/home/rob/NGR-Goose/mirte_ws/install
-
-Name: ridgeback_description
-Description: Description of ridgeback_description
-Version: 0.3.4
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

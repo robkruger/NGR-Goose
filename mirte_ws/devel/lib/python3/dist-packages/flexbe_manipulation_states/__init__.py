@@ -1,1 +1,0 @@
-/home/rob/NGR-Goose/mirte_ws/devel/.private/flexbe_manipulation_states/lib/python3/dist-packages/flexbe_manipulation_states/__init__.py

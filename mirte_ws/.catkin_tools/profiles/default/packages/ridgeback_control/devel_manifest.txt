@@ -1,6 +1,0 @@
-mirte-ros-packages/ridgeback/ridgeback_control
-/home/rob/NGR-Goose/mirte_ws/devel/.private/ridgeback_control/cmake.lock /home/rob/NGR-Goose/mirte_ws/devel/./cmake.lock
-/home/rob/NGR-Goose/mirte_ws/devel/.private/ridgeback_control/share/ridgeback_control/cmake/ridgeback_controlConfig.cmake /home/rob/NGR-Goose/mirte_ws/devel/share/ridgeback_control/cmake/ridgeback_controlConfig.cmake
-/home/rob/NGR-Goose/mirte_ws/devel/.private/ridgeback_control/share/ridgeback_control/cmake/ridgeback_controlConfig-version.cmake /home/rob/NGR-Goose/mirte_ws/devel/share/ridgeback_control/cmake/ridgeback_controlConfig-version.cmake
-/home/rob/NGR-Goose/mirte_ws/devel/.private/ridgeback_control/lib/libmecanum_drive_controller.so /home/rob/NGR-Goose/mirte_ws/devel/lib/libmecanum_drive_controller.so
-/home/rob/NGR-Goose/mirte_ws/devel/.private/ridgeback_control/lib/pkgconfig/ridgeback_control.pc /home/rob/NGR-Goose/mirte_ws/devel/lib/pkgconfig/ridgeback_control.pc

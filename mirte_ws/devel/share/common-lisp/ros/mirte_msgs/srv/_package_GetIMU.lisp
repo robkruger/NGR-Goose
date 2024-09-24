@@ -1,1 +1,0 @@
-/home/rob/NGR-Goose/mirte_ws/devel/.private/mirte_msgs/share/common-lisp/ros/mirte_msgs/srv/_package_GetIMU.lisp
