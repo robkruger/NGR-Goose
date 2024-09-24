@@ -1,8 +1,0 @@
-prefix=/home/rob/NGR-Goose/mirte_ws/devel/.private/mirte_flexbe_behaviors
-
-Name: mirte_flexbe_behaviors
-Description: Description of mirte_flexbe_behaviors
-Version: 1.0.0
-Cflags: 
-Libs: -L${prefix}/lib -lmirte_flexbe_behaviors
-Requires: 

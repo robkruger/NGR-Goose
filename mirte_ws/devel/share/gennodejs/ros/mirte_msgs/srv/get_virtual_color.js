@@ -1,1 +1,0 @@
-/home/rob/NGR-Goose/mirte_ws/devel/.private/mirte_msgs/share/gennodejs/ros/mirte_msgs/srv/get_virtual_color.js

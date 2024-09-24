@@ -1,1 +1,0 @@
-/home/rob/NGR-Goose/mirte_ws/devel/.private/mirte_description/share/mirte_description/cmake/mirte_descriptionConfig-version.cmake

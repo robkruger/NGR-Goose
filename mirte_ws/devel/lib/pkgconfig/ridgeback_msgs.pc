@@ -1,1 +1,0 @@
-/home/rob/NGR-Goose/mirte_ws/devel/.private/ridgeback_msgs/lib/pkgconfig/ridgeback_msgs.pc

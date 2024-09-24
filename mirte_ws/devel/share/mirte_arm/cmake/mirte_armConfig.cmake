@@ -1,1 +1,0 @@
-/home/rob/NGR-Goose/mirte_ws/devel/.private/mirte_arm/share/mirte_arm/cmake/mirte_armConfig.cmake

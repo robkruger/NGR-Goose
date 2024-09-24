@@ -1,1 +1,0 @@
-/home/rob/NGR-Goose/mirte_ws/devel/.private/mirte_msgs_2/share/mirte_msgs_2/cmake/mirte_msgs_2Config.cmake

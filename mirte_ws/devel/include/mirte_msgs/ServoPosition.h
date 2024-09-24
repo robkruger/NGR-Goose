@@ -1,1 +1,0 @@
-/home/rob/NGR-Goose/mirte_ws/devel/.private/mirte_msgs/include/mirte_msgs/ServoPosition.h
