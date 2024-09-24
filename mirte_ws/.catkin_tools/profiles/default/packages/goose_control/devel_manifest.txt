@@ -1,8 +1,8 @@
 mirte-ros-packages/goose_control
 /home/rob/NGR-Goose/mirte_ws/devel/.private/goose_control/cmake.lock /home/rob/NGR-Goose/mirte_ws/devel/./cmake.lock
-/home/rob/NGR-Goose/mirte_ws/devel/.private/goose_control/lib/goose_control/cmake.lock /home/rob/NGR-Goose/mirte_ws/devel/lib/goose_control/cmake.lock
+/home/rob/NGR-Goose/mirte_ws/devel/.private/goose_control/share/goose_control/cmake/goose_controlConfig-version.cmake /home/rob/NGR-Goose/mirte_ws/devel/share/goose_control/cmake/goose_controlConfig-version.cmake
+/home/rob/NGR-Goose/mirte_ws/devel/.private/goose_control/share/goose_control/cmake/goose_controlConfig.cmake /home/rob/NGR-Goose/mirte_ws/devel/share/goose_control/cmake/goose_controlConfig.cmake
 /home/rob/NGR-Goose/mirte_ws/devel/.private/goose_control/lib/goose_control/goal_area.py /home/rob/NGR-Goose/mirte_ws/devel/lib/goose_control/goal_area.py
+/home/rob/NGR-Goose/mirte_ws/devel/.private/goose_control/lib/goose_control/cmake.lock /home/rob/NGR-Goose/mirte_ws/devel/lib/goose_control/cmake.lock
 /home/rob/NGR-Goose/mirte_ws/devel/.private/goose_control/lib/goose_control/pickup_wrapper.py /home/rob/NGR-Goose/mirte_ws/devel/lib/goose_control/pickup_wrapper.py
 /home/rob/NGR-Goose/mirte_ws/devel/.private/goose_control/lib/pkgconfig/goose_control.pc /home/rob/NGR-Goose/mirte_ws/devel/lib/pkgconfig/goose_control.pc
-/home/rob/NGR-Goose/mirte_ws/devel/.private/goose_control/share/goose_control/cmake/goose_controlConfig.cmake /home/rob/NGR-Goose/mirte_ws/devel/share/goose_control/cmake/goose_controlConfig.cmake
-/home/rob/NGR-Goose/mirte_ws/devel/.private/goose_control/share/goose_control/cmake/goose_controlConfig-version.cmake /home/rob/NGR-Goose/mirte_ws/devel/share/goose_control/cmake/goose_controlConfig-version.cmake

@@ -372,8 +372,8 @@ gazebo_ros_battery_simple_EXTERNAL_OBJECTS =
 /home/rob/NGR-Goose/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/lib/libgazebo_ros_battery_simple.so: /usr/lib/x86_64-linux-gnu/libccd.so
 /home/rob/NGR-Goose/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/lib/libgazebo_ros_battery_simple.so: /opt/ros/noetic/lib/x86_64-linux-gnu/libfcl.so
 /home/rob/NGR-Goose/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/lib/libgazebo_ros_battery_simple.so: /usr/lib/x86_64-linux-gnu/libassimp.so
-/home/rob/NGR-Goose/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/lib/libgazebo_ros_battery_simple.so: /opt/ros/noetic/lib/liboctomap.so.1.9.8
-/home/rob/NGR-Goose/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/lib/libgazebo_ros_battery_simple.so: /opt/ros/noetic/lib/liboctomath.so.1.9.8
+/home/rob/NGR-Goose/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/lib/libgazebo_ros_battery_simple.so: /usr/lib/x86_64-linux-gnu/liboctomap.so.1.9.3
+/home/rob/NGR-Goose/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/lib/libgazebo_ros_battery_simple.so: /usr/lib/x86_64-linux-gnu/liboctomath.so.1.9.3
 /home/rob/NGR-Goose/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/lib/libgazebo_ros_battery_simple.so: /usr/lib/x86_64-linux-gnu/libboost_atomic.so.1.71.0
 /home/rob/NGR-Goose/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/lib/libgazebo_ros_battery_simple.so: /usr/lib/x86_64-linux-gnu/libignition-transport8.so.8.3.0
 /home/rob/NGR-Goose/mirte_ws/devel/.private/gazebo_sensor_collection_plugins/lib/libgazebo_ros_battery_simple.so: /usr/lib/x86_64-linux-gnu/libignition-fuel_tools4.so.4.6.0

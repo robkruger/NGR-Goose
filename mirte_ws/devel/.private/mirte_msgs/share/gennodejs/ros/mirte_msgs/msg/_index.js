@@ -1,18 +1,18 @@
 
 "use strict";
 
-let ServoPosition = require('./ServoPosition.js');
-let color = require('./color.js');
+let Keypad = require('./Keypad.js');
 let Encoder = require('./Encoder.js');
 let IntensityDigital = require('./IntensityDigital.js');
-let Keypad = require('./Keypad.js');
+let color = require('./color.js');
+let ServoPosition = require('./ServoPosition.js');
 let Intensity = require('./Intensity.js');
 
 module.exports = {
-  ServoPosition: ServoPosition,
-  color: color,
+  Keypad: Keypad,
   Encoder: Encoder,
   IntensityDigital: IntensityDigital,
-  Keypad: Keypad,
+  color: color,
+  ServoPosition: ServoPosition,
   Intensity: Intensity,
 };
