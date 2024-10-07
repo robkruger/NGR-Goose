@@ -140,6 +140,7 @@ add_definitions(${PCL_DEFINITIONS})
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
 add_executable(pointcloud_preprocessor src/pointcloud_preprocessor.cpp)
+add_executable(publish_fake_cloud src/publish_fake_cloud.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -156,6 +157,11 @@ target_link_libraries(pointcloud_preprocessor
   ${catkin_LIBRARIES}
   ${PCL_LIBRARIES}
 )
+target_link_libraries(publish_fake_cloud
+  ${catkin_LIBRARIES}
+  ${PCL_LIBRARIES}
+)
+
 
 #############
 ## Install ##
