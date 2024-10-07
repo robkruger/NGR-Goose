@@ -4,6 +4,7 @@
 #include <pcl/point_cloud.h>
 #include <pcl/point_types.h>
 #include <pcl/filters/voxel_grid.h>
+#include <pcl/filters/passthrough.h>
 
 class PointCloudProcessor
 {
@@ -22,6 +23,18 @@ public:
         sor.setInputCloud(input_cloud);
         sor.setLeafSize(0.05f, 0.05f, 0.05f); // Change the leaf size according to your needs
         sor.filter(*output_cloud);
+        ROS_INFO("- grid filter applied");
+    }
+
+    void applyPassThroughFilter(const pcl::PCLPointCloud2::Ptr &input_cloud, const pcl::PCLPointCloud2::Ptr &output_cloud)
+    {
+        // Perform passthrough filter (clipping)
+        pcl::PassThrough<pcl::PCLPointCloud2> pass;
+        pass.setInputCloud(input_cloud);
+        pass.setFilterFieldName("z");
+        pass.setFilterLimits(0.0, 1.5);
+        pass.filter(*output_cloud);
+        ROS_INFO("- clipping applied");
     }
 
     void pointCloudCallback(const sensor_msgs::PointCloud2ConstPtr &cloud_msg)
@@ -34,13 +47,16 @@ public:
         pcl::PCLPointCloud2::Ptr pcl_cloud_filtered(new pcl::PCLPointCloud2);
         applyVoxelGridFilter(pcl_cloud, pcl_cloud_filtered);
 
+        pcl::PCLPointCloud2::Ptr pcl_cloud_clipped(new pcl::PCLPointCloud2);
+        applyPassThroughFilter(pcl_cloud_filtered, pcl_cloud_clipped);
+
         // Convert the filtered pcl/PointCloud2 back to sensor_msgs/PointCloud2
         sensor_msgs::PointCloud2 output;
-        pcl_conversions::fromPCL(*pcl_cloud_filtered, output);
+        pcl_conversions::fromPCL(*pcl_cloud_clipped, output);
 
         // Publish the data
         pointcloud_pub_.publish(output);
-        ROS_INFO("PointCloud filtered and published.");
+        ROS_INFO("PointCloud published.");
     }
 
 private:
