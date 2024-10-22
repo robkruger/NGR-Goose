@@ -127,6 +127,8 @@ if __name__ == '__main__':
     try:        
         init()
         idle()
+        place("Idle")
+        pickup("Idle")
         # pickup_listener = rospy.Subscriber('/move_base/status', GoalStatusArray, callback)
     except rospy.ROSInterruptException:
         pass
