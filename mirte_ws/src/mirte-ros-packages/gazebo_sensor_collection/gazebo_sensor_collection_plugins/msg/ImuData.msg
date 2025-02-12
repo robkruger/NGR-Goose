@@ -1,4 +1,0 @@
-time stamp
-SensorData3D accel
-SensorData3D gyro
-OrientationSensorData orientation
