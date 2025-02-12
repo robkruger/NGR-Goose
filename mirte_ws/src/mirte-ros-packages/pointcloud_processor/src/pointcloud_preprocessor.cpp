@@ -21,7 +21,7 @@ public:
         // Perform a VoxelGrid filter (downsampling)
         pcl::VoxelGrid<pcl::PCLPointCloud2> sor;
         sor.setInputCloud(input_cloud);
-        sor.setLeafSize(0.05f, 0.05f, 0.05f); // Change the leaf size according to your needs
+        sor.setLeafSize(0.01f, 0.01f, 0.01f); // Change the leaf size according to your needs
         sor.filter(*output_cloud);
         ROS_INFO("- grid filter applied");
     }
@@ -47,6 +47,7 @@ public:
         pcl::PCLPointCloud2::Ptr pcl_cloud_filtered(new pcl::PCLPointCloud2);
         applyVoxelGridFilter(pcl_cloud, pcl_cloud_filtered);
 
+        // Apply clipping
         pcl::PCLPointCloud2::Ptr pcl_cloud_clipped(new pcl::PCLPointCloud2);
         applyPassThroughFilter(pcl_cloud_filtered, pcl_cloud_clipped);
 
@@ -71,7 +72,17 @@ int main(int argc, char **argv)
 
     PointCloudProcessor processor;
 
-    ros::spin();
+    // Set the processing rate to 1 Hz
+    ros::Rate rate(1.0);  // 1 Hz -> process once per second
+
+    while (ros::ok())
+    {
+        // Process any callbacks (i.e., point cloud messages)
+        ros::spinOnce();
+
+        // Sleep to maintain the 1 Hz rate
+        rate.sleep();
+    }
 
     return 0;
 }
