@@ -1,0 +1,3 @@
+[submodule "mirte_ws/src/mirte-master-simulator"]
+	path = mirte_ws/src/mirte-master-simulator
+	url = git@github.com:diebolo/mirte-master-simulator.git
