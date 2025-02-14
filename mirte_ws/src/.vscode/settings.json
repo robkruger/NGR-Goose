@@ -1,8 +1,0 @@
-{
-    "python.autoComplete.extraPaths": [
-        "/home/tom/projects/NGR-Goose/mirte_ws/devel/lib/python3/dist-packages",
-        "/opt/ros/noetic/lib/python3/dist-packages"
-    ],
-    "cmake.sourceDirectory": "/home/tom/projects/NGR-Goose/mirte_ws/src/mirte-ros-packages/pointcloud_processor",
-    "C_Cpp.default.compilerPath": "/usr/bin/g++"
-}
