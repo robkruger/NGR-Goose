@@ -10,3 +10,6 @@
 [submodule "mirte_ws/src/flexbe_behavior_engine"]
 	path = mirte_ws/src/flexbe_behavior_engine
 	url = https://github.com/FlexBE/flexbe_behavior_engine.git
+[submodule "mirte_ws/src/ridgeback"]
+	path = mirte_ws/src/ridgeback
+	url = https://github.com/ridgeback/ridgeback.git
