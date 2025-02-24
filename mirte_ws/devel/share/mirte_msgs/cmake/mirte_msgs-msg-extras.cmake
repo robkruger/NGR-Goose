@@ -1,0 +1,1 @@
+/home/mirte/NGR-Goose/mirte_ws/devel/.private/mirte_msgs/share/mirte_msgs/cmake/mirte_msgs-msg-extras.cmake

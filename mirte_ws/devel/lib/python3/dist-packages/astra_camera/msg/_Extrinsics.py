@@ -1,0 +1,1 @@
+/home/mirte/NGR-Goose/mirte_ws/devel/.private/astra_camera/lib/python3/dist-packages/astra_camera/msg/_Extrinsics.py

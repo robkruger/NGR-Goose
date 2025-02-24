@@ -1,0 +1,1 @@
+/home/mirte/NGR-Goose/mirte_ws/devel/.private/ridgeback_msgs/share/gennodejs/ros/ridgeback_msgs/msg/RGB.js

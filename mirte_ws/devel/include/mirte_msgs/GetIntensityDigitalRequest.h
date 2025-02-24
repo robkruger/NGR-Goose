@@ -1,0 +1,1 @@
+/home/mirte/NGR-Goose/mirte_ws/devel/.private/mirte_msgs/include/mirte_msgs/GetIntensityDigitalRequest.h

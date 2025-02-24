@@ -1,0 +1,1 @@
+/home/mirte/NGR-Goose/mirte_ws/devel/.private/mirte_bringup/share/mirte_bringup/cmake/mirte_bringupConfig.cmake

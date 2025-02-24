@@ -1,0 +1,1 @@
+/home/mirte/NGR-Goose/mirte_ws/devel/.private/mirte_telemetrix/share/mirte_telemetrix/cmake/mirte_telemetrixConfig-version.cmake

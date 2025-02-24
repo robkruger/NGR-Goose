@@ -1,0 +1,4 @@
+Symlinking /home/mirte/NGR-Goose/mirte_ws/devel/share/mirte_base_control/cmake/mirte_base_controlConfig-version.cmake
+Symlinking /home/mirte/NGR-Goose/mirte_ws/devel/share/mirte_base_control/cmake/mirte_base_controlConfig.cmake
+Symlinking /home/mirte/NGR-Goose/mirte_ws/devel/lib/mirte_base_control/mirte_base_control_node
+Symlinking /home/mirte/NGR-Goose/mirte_ws/devel/lib/pkgconfig/mirte_base_control.pc

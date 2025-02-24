@@ -1,0 +1,8 @@
+prefix=/home/mirte/NGR-Goose/mirte_ws/devel/.private/ridgeback_description
+
+Name: ridgeback_description
+Description: Description of ridgeback_description
+Version: 0.3.5
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

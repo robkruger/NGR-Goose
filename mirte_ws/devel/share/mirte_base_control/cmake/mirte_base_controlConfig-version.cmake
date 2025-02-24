@@ -1,0 +1,1 @@
+/home/mirte/NGR-Goose/mirte_ws/devel/.private/mirte_base_control/share/mirte_base_control/cmake/mirte_base_controlConfig-version.cmake

@@ -1,0 +1,8 @@
+prefix=/home/mirte/NGR-Goose/mirte_ws/install
+
+Name: mirte_gazebo
+Description: Description of mirte_gazebo
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: roscpp std_msgs mirte_msgs

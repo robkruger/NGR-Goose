@@ -1,0 +1,8 @@
+prefix=/home/mirte/NGR-Goose/mirte_ws/devel/.private/flexbe_input
+
+Name: flexbe_input
+Description: Description of flexbe_input
+Version: 1.4.1
+Cflags: -I/home/mirte/NGR-Goose/mirte_ws/src/flexbe_behavior_engine/flexbe_input/src
+Libs: -L${prefix}/lib 
+Requires: 

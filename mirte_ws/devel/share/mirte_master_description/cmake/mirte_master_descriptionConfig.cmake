@@ -1,0 +1,1 @@
+/home/mirte/NGR-Goose/mirte_ws/devel/.private/mirte_master_description/share/mirte_master_description/cmake/mirte_master_descriptionConfig.cmake

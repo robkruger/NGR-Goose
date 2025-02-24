@@ -1,0 +1,8 @@
+prefix=/home/mirte/NGR-Goose/mirte_ws/install
+
+Name: ridgeback_msgs
+Description: Description of ridgeback_msgs
+Version: 0.3.5
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: std_msgs message_runtime

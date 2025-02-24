@@ -1,0 +1,8 @@
+prefix=/home/mirte/NGR-Goose/mirte_ws/devel/.private/flexbe_states
+
+Name: flexbe_states
+Description: Description of flexbe_states
+Version: 1.4.1
+Cflags: -I/home/mirte/NGR-Goose/mirte_ws/src/flexbe_behavior_engine/flexbe_states/src
+Libs: -L${prefix}/lib -lflexbe_states
+Requires: 

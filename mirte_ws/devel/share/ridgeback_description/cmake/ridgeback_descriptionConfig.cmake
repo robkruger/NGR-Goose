@@ -1,0 +1,1 @@
+/home/mirte/NGR-Goose/mirte_ws/devel/.private/ridgeback_description/share/ridgeback_description/cmake/ridgeback_descriptionConfig.cmake

@@ -1,0 +1,7 @@
+Symlinking /home/mirte/NGR-Goose/mirte_ws/devel/share/mirte_gazebo/cmake/mirte_gazeboConfig.cmake
+Symlinking /home/mirte/NGR-Goose/mirte_ws/devel/share/mirte_gazebo/cmake/mirte_gazeboConfig-version.cmake
+Symlinking /home/mirte/NGR-Goose/mirte_ws/devel/lib/mirte_gazebo/rotate
+Symlinking /home/mirte/NGR-Goose/mirte_ws/devel/lib/mirte_gazebo/convert_ir
+Symlinking /home/mirte/NGR-Goose/mirte_ws/devel/lib/mirte_gazebo/convert_encoder
+Symlinking /home/mirte/NGR-Goose/mirte_ws/devel/lib/mirte_gazebo/convert_sonar
+Symlinking /home/mirte/NGR-Goose/mirte_ws/devel/lib/pkgconfig/mirte_gazebo.pc

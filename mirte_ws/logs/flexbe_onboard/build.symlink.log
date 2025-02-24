@@ -1,0 +1,4 @@
+Symlinking /home/mirte/NGR-Goose/mirte_ws/devel/share/flexbe_onboard/cmake/flexbe_onboardConfig.cmake
+Symlinking /home/mirte/NGR-Goose/mirte_ws/devel/share/flexbe_onboard/cmake/flexbe_onboardConfig-version.cmake
+Symlinking /home/mirte/NGR-Goose/mirte_ws/devel/lib/python3/dist-packages/flexbe_onboard/__init__.py
+Symlinking /home/mirte/NGR-Goose/mirte_ws/devel/lib/pkgconfig/flexbe_onboard.pc

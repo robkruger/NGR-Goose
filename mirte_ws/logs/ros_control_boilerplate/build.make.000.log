@@ -1,0 +1,104 @@
+[  4%] [32mBuilding CXX object CMakeFiles/generic_hw_control_loop.dir/src/generic_hw_control_loop.cpp.o[0m
+[  8%] [32m[1mLinking CXX shared library /home/mirte/NGR-Goose/mirte_ws/devel/.private/ros_control_boilerplate/lib/libgeneric_hw_control_loop.so[0m
+[  8%] Built target generic_hw_control_loop
+[  8%] Built target sensor_msgs_generate_messages_py
+[  8%] Built target actionlib_generate_messages_cpp
+[  8%] Built target actionlib_generate_messages_eus
+[  8%] Built target actionlib_generate_messages_lisp
+[  8%] Built target actionlib_generate_messages_nodejs
+[  8%] Built target actionlib_generate_messages_py
+[  8%] Built target actionlib_msgs_generate_messages_cpp
+[  8%] Built target actionlib_msgs_generate_messages_eus
+[  8%] Built target actionlib_msgs_generate_messages_lisp
+[  8%] Built target actionlib_msgs_generate_messages_nodejs
+[  8%] Built target actionlib_msgs_generate_messages_py
+[  8%] Built target std_msgs_generate_messages_cpp
+[  8%] Built target std_msgs_generate_messages_eus
+[  8%] Built target std_msgs_generate_messages_lisp
+[  8%] Built target std_msgs_generate_messages_nodejs
+[  8%] Built target std_msgs_generate_messages_py
+[  8%] Built target _catkin_empty_exported_target
+[  8%] Built target roscpp_generate_messages_cpp
+[  8%] Built target roscpp_generate_messages_eus
+[  8%] Built target roscpp_generate_messages_lisp
+[  8%] Built target roscpp_generate_messages_nodejs
+[  8%] Built target roscpp_generate_messages_py
+[  8%] Built target rosgraph_msgs_generate_messages_cpp
+[  8%] Built target rosgraph_msgs_generate_messages_eus
+[  8%] Built target rosgraph_msgs_generate_messages_lisp
+[  8%] Built target rosgraph_msgs_generate_messages_nodejs
+[  8%] Built target rosgraph_msgs_generate_messages_py
+[  8%] Built target control_msgs_generate_messages_cpp
+[  8%] Built target control_msgs_generate_messages_eus
+[  8%] Built target control_msgs_generate_messages_lisp
+[  8%] Built target control_msgs_generate_messages_nodejs
+[  8%] Built target control_msgs_generate_messages_py
+[  8%] Built target geometry_msgs_generate_messages_cpp
+[  8%] Built target geometry_msgs_generate_messages_eus
+[  8%] Built target geometry_msgs_generate_messages_lisp
+[  8%] Built target geometry_msgs_generate_messages_nodejs
+[  8%] Built target geometry_msgs_generate_messages_py
+[  8%] Built target trajectory_msgs_generate_messages_cpp
+[  8%] Built target trajectory_msgs_generate_messages_eus
+[  8%] Built target trajectory_msgs_generate_messages_lisp
+[  8%] Built target trajectory_msgs_generate_messages_nodejs
+[  8%] Built target trajectory_msgs_generate_messages_py
+[  8%] Built target control_toolbox_gencfg
+[  8%] Built target control_toolbox_generate_messages_cpp
+[  8%] Built target control_toolbox_generate_messages_eus
+[  8%] Built target control_toolbox_generate_messages_lisp
+[  8%] Built target control_toolbox_generate_messages_nodejs
+[  8%] Built target control_toolbox_generate_messages_py
+[  8%] Built target dynamic_reconfigure_generate_messages_cpp
+[  8%] Built target dynamic_reconfigure_generate_messages_eus
+[  8%] Built target dynamic_reconfigure_generate_messages_lisp
+[  8%] Built target dynamic_reconfigure_generate_messages_nodejs
+[  8%] Built target dynamic_reconfigure_generate_messages_py
+[  8%] Built target dynamic_reconfigure_gencfg
+[  8%] Built target controller_manager_msgs_generate_messages_cpp
+[  8%] Built target controller_manager_msgs_generate_messages_eus
+[  8%] Built target controller_manager_msgs_generate_messages_lisp
+[  8%] Built target controller_manager_msgs_generate_messages_nodejs
+[  8%] Built target controller_manager_msgs_generate_messages_py
+[  8%] Built target mirte_msgs_generate_messages_cpp
+[  8%] Built target mirte_msgs_generate_messages_eus
+[  8%] Built target mirte_msgs_generate_messages_lisp
+[  8%] Built target mirte_msgs_generate_messages_nodejs
+[  8%] Built target mirte_msgs_generate_messages_py
+[  8%] Built target sensor_msgs_generate_messages_cpp
+[  8%] Built target sensor_msgs_generate_messages_eus
+[  8%] Built target sensor_msgs_generate_messages_lisp
+[  8%] Built target sensor_msgs_generate_messages_nodejs
+[ 12%] [32mBuilding CXX object CMakeFiles/ros_control_boilerplate_test_trajectory.dir/src/tools/test_trajectory.cpp.o[0m
+[ 16%] [32m[1mLinking CXX executable /home/mirte/NGR-Goose/mirte_ws/devel/.private/ros_control_boilerplate/lib/ros_control_boilerplate/test_trajectory[0m
+[ 16%] Built target ros_control_boilerplate_test_trajectory
+[ 20%] [32mBuilding CXX object CMakeFiles/controller_to_csv.dir/src/tools/controller_to_csv.cpp.o[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/csv_to_controller.dir/src/tools/csv_to_controller.cpp.o[0m
+[ 29%] [32m[1mLinking CXX shared library /home/mirte/NGR-Goose/mirte_ws/devel/.private/ros_control_boilerplate/lib/libcontroller_to_csv.so[0m
+[ 29%] Built target controller_to_csv
+[ 33%] [32mBuilding CXX object CMakeFiles/ros_control_boilerplate_keyboard_teleop.dir/src/tools/keyboard_teleop.cpp.o[0m
+[ 37%] [32m[1mLinking CXX executable /home/mirte/NGR-Goose/mirte_ws/devel/.private/ros_control_boilerplate/lib/ros_control_boilerplate/keyboard_teleop[0m
+[ 37%] Built target ros_control_boilerplate_keyboard_teleop
+[ 41%] [32mBuilding CXX object CMakeFiles/ros_control_boilerplate_controller_to_csv_main.dir/src/tools/controller_to_csv_main.cpp.o[0m
+[ 45%] [32mBuilding CXX object CMakeFiles/generic_hw_interface.dir/src/generic_hw_interface.cpp.o[0m
+[ 50%] [32m[1mLinking CXX shared library /home/mirte/NGR-Goose/mirte_ws/devel/.private/ros_control_boilerplate/lib/libcsv_to_controller.so[0m
+[ 50%] Built target csv_to_controller
+[ 54%] [32mBuilding CXX object CMakeFiles/ros_control_boilerplate_csv_to_controller_main.dir/src/tools/csv_to_controller_main.cpp.o[0m
+[ 58%] [32m[1mLinking CXX executable /home/mirte/NGR-Goose/mirte_ws/devel/.private/ros_control_boilerplate/lib/ros_control_boilerplate/controller_to_csv_main[0m
+[ 58%] Built target ros_control_boilerplate_controller_to_csv_main
+[ 62%] [32m[1mLinking CXX executable /home/mirte/NGR-Goose/mirte_ws/devel/.private/ros_control_boilerplate/lib/ros_control_boilerplate/csv_to_controller_main[0m
+[ 62%] Built target ros_control_boilerplate_csv_to_controller_main
+[ 66%] [32m[1mLinking CXX shared library /home/mirte/NGR-Goose/mirte_ws/devel/.private/ros_control_boilerplate/lib/libgeneric_hw_interface.so[0m
+[ 66%] Built target generic_hw_interface
+[ 75%] [32mBuilding CXX object CMakeFiles/sim_hw_interface.dir/src/sim_hw_interface.cpp.o[0m
+[ 75%] [32mBuilding CXX object rrbot_control/CMakeFiles/rrbot_hw_interface.dir/src/rrbot_hw_interface.cpp.o[0m
+[ 79%] [32m[1mLinking CXX shared library /home/mirte/NGR-Goose/mirte_ws/devel/.private/ros_control_boilerplate/lib/libsim_hw_interface.so[0m
+[ 79%] Built target sim_hw_interface
+[ 83%] [32mBuilding CXX object CMakeFiles/ros_control_boilerplate_sim_hw_main.dir/src/sim_hw_main.cpp.o[0m
+[ 87%] [32m[1mLinking CXX shared library /home/mirte/NGR-Goose/mirte_ws/devel/.private/ros_control_boilerplate/lib/librrbot_hw_interface.so[0m
+[ 87%] Built target rrbot_hw_interface
+[ 91%] [32mBuilding CXX object rrbot_control/CMakeFiles/rrbot_hw_main.dir/src/rrbot_hw_main.cpp.o[0m
+[ 95%] [32m[1mLinking CXX executable /home/mirte/NGR-Goose/mirte_ws/devel/.private/ros_control_boilerplate/lib/ros_control_boilerplate/sim_hw_main[0m
+[ 95%] Built target ros_control_boilerplate_sim_hw_main
+[100%] [32m[1mLinking CXX executable /home/mirte/NGR-Goose/mirte_ws/devel/.private/ros_control_boilerplate/lib/ros_control_boilerplate/rrbot_hw_main[0m
+[100%] Built target rrbot_hw_main

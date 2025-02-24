@@ -1,0 +1,8 @@
+prefix=/home/mirte/NGR-Goose/mirte_ws/devel/.private/flexbe_onboard
+
+Name: flexbe_onboard
+Description: Description of flexbe_onboard
+Version: 1.4.1
+Cflags: -I/home/mirte/NGR-Goose/mirte_ws/src/flexbe_behavior_engine/flexbe_onboard/src
+Libs: -L${prefix}/lib -lflexbe_onboard
+Requires: 

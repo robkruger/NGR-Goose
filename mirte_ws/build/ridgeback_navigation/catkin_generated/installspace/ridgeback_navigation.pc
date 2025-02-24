@@ -1,0 +1,8 @@
+prefix=/home/mirte/NGR-Goose/mirte_ws/install
+
+Name: ridgeback_navigation
+Description: Description of ridgeback_navigation
+Version: 0.3.5
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

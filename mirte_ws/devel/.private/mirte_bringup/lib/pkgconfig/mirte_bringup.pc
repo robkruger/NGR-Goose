@@ -1,0 +1,8 @@
+prefix=/home/mirte/NGR-Goose/mirte_ws/devel/.private/mirte_bringup
+
+Name: mirte_bringup
+Description: Description of mirte_bringup
+Version: 0.1.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

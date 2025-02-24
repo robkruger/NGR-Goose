@@ -1,0 +1,1 @@
+/home/mirte/NGR-Goose/mirte_ws/devel/.private/flexbe_msgs/share/flexbe_msgs/msg/BehaviorSynthesisResult.msg

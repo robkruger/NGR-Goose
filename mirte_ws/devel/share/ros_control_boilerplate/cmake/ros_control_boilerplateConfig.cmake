@@ -1,0 +1,1 @@
+/home/mirte/NGR-Goose/mirte_ws/devel/.private/ros_control_boilerplate/share/ros_control_boilerplate/cmake/ros_control_boilerplateConfig.cmake
