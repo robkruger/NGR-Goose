@@ -4,3 +4,6 @@
 [submodule "mirte_ws/src/mirte-ros-packages"]
 	path = mirte_ws/src/mirte-ros-packages
 	url = https://github.com/ArendJan/mirte-ros-packages.git
+[submodule "mirte_ws/src/darknet_ros"]
+	path = mirte_ws/src/darknet_ros
+	url = https://github.com/leggedrobotics/darknet_ros.git
