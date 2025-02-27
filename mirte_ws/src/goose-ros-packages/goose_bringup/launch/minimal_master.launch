@@ -1,0 +1,95 @@
+<launch>
+
+    <!-- Load parameters that match the correct
+         mcu connections -->
+    <group ns="mirte">
+        <rosparam file="$(find mirte_telemetrix)/config/mirte_master_config_goede_arm.yaml"/>
+    </group>
+
+    <!-- Telemetrix node to start all services and topics
+         for the sensors and actuators connected to the
+         mcu -->
+    <node name="mirte_telemetrix_mirte" output="screen"
+          pkg="mirte_telemetrix"
+          type="ROS_telemetrix_aio_api.py"
+          respawn="true"/>
+
+    <!-- ROS control hardware interface for mecanum
+         drive robot. -->
+
+
+   <group ns="arm">
+
+     <rosparam command="load" file="$(find ros_control_boilerplate)/rrbot_control/config/rrbot_controllers.yaml"/>  
+     <node name="mirte_arm_node" output="screen"
+          pkg="ros_control_boilerplate"
+          type="rrbot_hw_main"/>
+
+     <node name="controller_spawner_arm"
+          pkg="controller_manager"
+          type="spawner"
+          output="screen"
+          args="joint_state_controller position_trajectory_controller"/>
+
+     <param name="robot_description" textfile="$(find mirte_description)/urdf/mirte_arm.urdf"/>
+
+   </group>
+
+    <group>
+      <node name="mirte_base_node" output="screen"
+          pkg="mirte_base_control"
+          type="mirte_base_control_node"/>
+
+       <rosparam command="load" file="$(find mirte_base_control)/config/control_master.yaml"/>
+       <node name="controller_spawner"
+          pkg="controller_manager"
+          type="spawner"
+          output="screen"
+          args="mobile_base_controller"/>
+
+    </group>
+
+    <group>
+        <arg name="flag_enable" default="False" />
+        <arg name="arm_enable" default="True" />
+        <arg name="screen_enable" default="False" />
+        <arg name="front_camera_enable" default="False" />
+        <arg name="sonar_enable" default="True" />
+        <arg name="lidar_enable" default="True" />
+        <arg name="depth_camera_enable" default="True" />
+        <arg name="imu_enable" default="True" />
+
+        <arg name="use_namespace" default="False" />
+        <arg name="namespace" default="namespace" />
+
+        <!-- Add this as a default parameter to maintain compatibility-->
+        <arg name="use_correct_laser_frame" default="False"/>
+
+
+        <group if="$(arg use_namespace)">
+            <param name="robot_description"
+                command="$(find xacro)/xacro '$(find mirte_master_description)/urdf/mirte_master.xacro' flag_enable:=$(arg flag_enable) arm_enable:=$(arg arm_enable) screen_enable:=$(arg screen_enable) front_camera_enable:=$(arg front_camera_enable) sonar_enable:=$(arg sonar_enable) lidar_enable:=$(arg lidar_enable) depth_camera_enable:=$(arg depth_camera_enable) imu_enable:=$(arg imu_enable) use_namespace:=True namespace_name:=$(arg namespace) use_correct_laser_frame:=$(arg use_correct_laser_frame)" />
+        </group>
+        <group unless="$(arg use_namespace)">
+            <param name="robot_description"
+                command="$(find xacro)/xacro '$(find mirte_master_description)/urdf/mirte_master.xacro' flag_enable:=$(arg flag_enable) arm_enable:=$(arg arm_enable) screen_enable:=$(arg screen_enable) front_camera_enable:=$(arg front_camera_enable) sonar_enable:=$(arg sonar_enable) lidar_enable:=$(arg lidar_enable) depth_camera_enable:=$(arg depth_camera_enable) imu_enable:=$(arg imu_enable) use_correct_laser_frame:=$(arg use_correct_laser_frame)" />
+        </group>
+
+
+        <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
+    </group>
+
+
+    <!-- Start the lidar -->
+    <include file="$(find rplidar_ros)/launch/rplidar_c1.launch"/>
+    <node pkg="tf" type="static_transform_publisher" name="laser_transform" args="0 0 0 1.57 0 0 base_link laser 100"/> 
+
+    <include file="$(find astra_camera)/launch/astra_pro_plus.launch"/>
+    <node pkg="tf" type="static_transform_publisher" name="astra_transform_color" args="0 0 0 0 0 -1.57 base_link camera_color_optical_frame 100"/>
+    <node pkg="tf" type="static_transform_publisher" name="astra_transform_depth" args="0 0 0 0 0 -1.57 base_link camera_depth_optical_frame 100"/> 
+    <node pkg="tf" type="static_transform_publisher" name="astra_transform_ir" args="0 0 0 0 0 -1.57 base_link camera_ir_optical_frame 100"/> 
+
+    <!-- Publish joint states (wheels, arm) -->
+    <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />
+
+</launch>

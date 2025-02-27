@@ -1,6 +1,6 @@
 [submodule "mirte_ws/src/mirte-master-simulator"]
 	path = mirte_ws/src/mirte-master-simulator
-	url = git@github.com:diebolo/mirte-master-simulator.git
+	url = git@github.com:robkruger/mirte-master-simulator.git
 [submodule "mirte_ws/src/mirte-ros-packages"]
 	path = mirte_ws/src/mirte-ros-packages
 	url = https://github.com/ArendJan/mirte-ros-packages.git
