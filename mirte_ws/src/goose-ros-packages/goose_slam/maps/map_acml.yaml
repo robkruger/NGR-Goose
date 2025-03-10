@@ -1,0 +1,7 @@
+image: map_acml.pgm
+resolution: 0.050000
+origin: [-20.007773, -8.801876, 0.000000]
+negate: 0
+occupied_thresh: 0.65
+free_thresh: 0.196
+
