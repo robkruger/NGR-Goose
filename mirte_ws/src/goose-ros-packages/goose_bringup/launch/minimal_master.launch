@@ -31,7 +31,7 @@
           output="screen"
           args="joint_state_controller position_trajectory_controller"/>
 
-     <param name="robot_description" textfile="$(find mirte_description)/urdf/mirte_arm.urdf"/>
+     <!-- <param name="robot_description" textfile="$(find mirte_description)/urdf/mirte_arm.urdf"/> -->
 
    </group>
 
@@ -50,7 +50,7 @@
     </group>
 
     <group>
-        <arg name="flag_enable" default="False" />
+        <arg name="flag_enable" default="True" />
         <arg name="arm_enable" default="True" />
         <arg name="screen_enable" default="False" />
         <arg name="front_camera_enable" default="False" />
