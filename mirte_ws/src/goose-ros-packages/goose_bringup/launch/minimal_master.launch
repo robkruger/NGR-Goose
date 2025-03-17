@@ -31,7 +31,7 @@
           output="screen"
           args="joint_state_controller position_trajectory_controller"/>
 
-     <!-- <param name="robot_description" textfile="$(find mirte_description)/urdf/mirte_arm.urdf"/> -->
+     <param name="robot_description" textfile="$(find mirte_description)/urdf/mirte_arm.urdf"/>
 
    </group>
 
