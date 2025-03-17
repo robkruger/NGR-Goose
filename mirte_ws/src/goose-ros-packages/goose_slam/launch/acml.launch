@@ -13,6 +13,8 @@
         <rosparam file="$(find goose_slam)/config/local_costmap_params.yaml" command="load"/>
         <rosparam file="$(find goose_slam)/config/global_costmap_params.yaml" command="load"/>
         <rosparam file="$(find goose_slam)/config/base_local_planner_params.yaml" command="load"/>
+
+        <remap from="/cmd_vel" to="/mobile_base_controller/cmd_vel"/>
     </node>
 
 </launch>
