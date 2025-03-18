@@ -1,0 +1,11 @@
+<launch>
+    <group ns="arm">
+        <node name="move_arm" output="screen"
+            pkg="goose_arm"
+            type="move_arm_python.py"
+            respawn="true"/>
+    </group>
+
+    <include file="$(find goose_arm)/launch/move_group.launch">
+    </include>
+</launch>
