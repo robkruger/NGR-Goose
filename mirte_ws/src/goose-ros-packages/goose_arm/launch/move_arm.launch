@@ -6,6 +6,6 @@
             respawn="true"/>
     </group>
 
-    <include file="$(find mirte_moveit_config)/launch/move_group_2.launch">
+    <include file="$(find goose_arm)/launch/move_group.launch">
     </include>
 </launch>
