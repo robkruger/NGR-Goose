@@ -1,7 +1,6 @@
 <launch>
     <!-- Load the map -->
-    <param name="map_file" value="$(find goose_slam)/maps/test_map.yaml"/>
-    <node pkg="map_server" type="map_server" name="map_server" args="$(arg map_file)"/>
+    <node pkg="map_server" type="map_server" name="map_server" args="$(find goose_slam)/maps/test_map.yaml"/>
 
     <!-- Start AMCL for localization -->
     <node pkg="amcl" type="amcl" name="amcl" output="screen">
