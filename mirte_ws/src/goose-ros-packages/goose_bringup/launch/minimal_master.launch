@@ -92,4 +92,7 @@
     <!-- Publish joint states (wheels, arm) -->
     <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />
 
+    <!-- Goose Node startup -->
+    <node pkg="goose_detection" type="sheet_detector.py" name="sheet_detector" />
+
 </launch>
