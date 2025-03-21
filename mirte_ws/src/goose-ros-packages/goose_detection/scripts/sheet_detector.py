@@ -4,10 +4,15 @@ import os
 import rospy
 import cv2
 import numpy as np
+import actionlib
 from cv_bridge import CvBridge
-from sensor_msgs.msg import Image, CompressedImage
-from std_srvs.srv import SetBool, SetBoolResponse
 from ultralytics import YOLO
+# messages
+from move_base_msgs.msg import MoveBaseAction, MoveBaseGoal
+from geometry_msgs.msg import PoseStamped
+from sensor_msgs.msg import CompressedImage
+# services
+from std_srvs.srv import SetBool, SetBoolResponse
 
 
 MIN_CONFIDENCE = 0.6
@@ -39,6 +44,12 @@ class SheetDetector:
 
         # create service to pause/resume the detection
         self.pause_service = rospy.Service("~set_pause", SetBool, self.handle_pause)
+
+        # create action client for movement
+        self.client = actionlib.SimpleActionClient('/move_base', MoveBaseAction)
+        rospy.loginfo("Waiting for move_base action server...")
+        self.client.wait_for_server()
+        rospy.loginfo("Connected to move_base.")
 
         rospy.loginfo("Pausable sheet_detector node started")
 
@@ -135,18 +146,41 @@ class SheetDetector:
                 sheet_distances.append((mean_dist, std_dist))
             for point_x in sample_points:
                 cv2.circle(det_annotated, (point_x,y), 3, (0,0,255), -1)
-        # rospy.loginfo(len(sheet_distances))
-        if len(sheet_distances) > 0:
-            rospy.loginfo("Found sheets\n"+"\n".join([f"  sheet {i}: d={x[0]:.2f} std={x[1]:.2f}" for i, x in enumerate(sheet_distances)]))
-            # rospy.loginfo("\n".join([f"  sheet {i}: d={x[0]} std={x[1]}" for i, x in enumerate(sheet_distances)])) 
+        
 
         # publish to topic
         output_image = self.cv_bridge.cv2_to_compressed_imgmsg(det_annotated)
-        # output_depth = self.cv_bridge.cv2_to_imgmsg(depth_image, encoding="passthrough")
         self.det_image_pub.publish(output_image)
-        # self.det_depth_pub.publish(output_depth)
         rospy.loginfo("image published")
         self.image_queue = FPS
+
+        if len(sheet_distances) > 0:
+            rospy.loginfo("Found sheets\n"+"\n".join([f"  sheet {i}: d={x[0]:.2f} std={x[1]:.2f}" for i, x in enumerate(sheet_distances)]))
+            min_d = np.inf
+            for d, s in sheet_distances:
+                if d < min_d:
+                    min_d = d
+            
+            rospy.loginfo(min_d)
+            # self.move_to_sheet(min_d)
+
+
+
+
+    def move_to_sheet(self, distance):
+        goal = MoveBaseGoal()
+        goal.target_pose.header.frame_id = "base_link"  
+        goal.target_pose.header.stamp = rospy.Time.now()
+
+        goal.target_pose.pose.position.x = distance
+        goal.target_pose.pose.position.y = 0.0
+        goal.target_pose.pose.orientation.w = 1.0  
+
+        rospy.loginfo(f"Sending navigation goal: {distance} meters ahead...")
+        self.client.send_goal(goal)
+        self.client.wait_for_result()
+        result = self.client.get_result()
+        rospy.loginfo(f"Navigation result: {result}")
 
     def run(self):
         rospy.spin()
