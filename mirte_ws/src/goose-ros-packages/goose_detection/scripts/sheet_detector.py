@@ -10,7 +10,8 @@ from sensor_msgs.msg import Image
 from ultralytics import YOLO
 
 
-MIN_CONFIDENCE = 0.7
+MIN_CONFIDENCE = 0.6
+MAX_STD_DISTANCE = 100
 
 
 class SheetDetector:
@@ -29,7 +30,7 @@ class SheetDetector:
         self.rgb_image = rospy.Subscriber("/camera/color/image_raw", Image, self.image_callback)
 
         # create publishers
-        self.det_image_pub = rospy.Publisher("/ultralytics/detection/image", Image, queue_size=5)
+        self.det_image_pub = rospy.Publisher("/ultralytics/detection/image", Image, queue_size=10)
         # self.det_depth_pub = rospy.Publisher("/ultralytics/detection/depth", Image, queue_size=5)
 
         rospy.loginfo("sheet_detector node started")
@@ -82,9 +83,13 @@ class SheetDetector:
                 h = int(bounding_box[0][3]) 
                 
                 sample_points = self.get_sample_points(10, x, w, h)
+                distances = depth_image[y][sample_points]
+                distances  = distances[distances != 0]
+                mean_dist = np.mean(distances)
+                std_dist = np.std(distances)
                 rospy.loginfo(depth_image[y][sample_points])
+                rospy.loginfo(f"avg distance: {mean_dist}    std: {std_dist}")
                 for point_x in sample_points:
-
                     cv2.circle(det_annotated, (point_x,y), 3, (0,0,255), -1)
             
 
