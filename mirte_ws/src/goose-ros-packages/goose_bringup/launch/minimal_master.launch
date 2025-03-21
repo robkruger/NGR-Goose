@@ -92,6 +92,7 @@
     <!-- Publish joint states (wheels, arm) -->
     <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />
 
+<<<<<<< HEAD
     <group>
         <node pkg="map_server" type="map_server" name="map_server" args="$(find goose_slam)/maps/map_acml.yaml"/>
 
@@ -110,5 +111,9 @@
             <remap from="/cmd_vel" to="/mobile_base_controller/cmd_vel"/>
         </node>
     </group>
+=======
+    <!-- Goose Node startup -->
+    
+>>>>>>> 1830c85057f62da0c6f33129ebd0bbc56db5bcb7
 
 </launch>
