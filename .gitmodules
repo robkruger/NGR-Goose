@@ -19,3 +19,6 @@
 [submodule "mirte_ws/src/rplidar_ros"]
 	path = mirte_ws/src/rplidar_ros
 	url = https://github.com/Slamtec/rplidar_ros.git
+[submodule "mirte_ws/src/flexbe_app"]
+	path = mirte_ws/src/flexbe_app
+	url = https://github.com/FlexBE/flexbe_app.git
