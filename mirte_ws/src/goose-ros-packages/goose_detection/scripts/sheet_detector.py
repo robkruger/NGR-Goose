@@ -6,11 +6,12 @@ import cv2
 import numpy as np
 from cv_bridge import CvBridge
 # import ros_numpy
-from sensor_msgs.msg import Image
+from sensor_msgs.msg import Image, CompressedImage
 from ultralytics import YOLO
 
 
-MIN_CONFIDENCE = 0.7
+MIN_CONFIDENCE = 0.6
+MAX_STD_DISTANCE = 100
 
 
 class SheetDetector:
@@ -26,10 +27,14 @@ class SheetDetector:
         self.sheet_detect_model = YOLO(model_path)
 
         # create subscribers
-        self.rgb_image = rospy.Subscriber("/camera/color/image_raw", Image, self.image_callback)
+        # self.rgb_image = rospy.Subscriber("/camera/color/image_raw/compressed", CompressedImage, self.image_callback)
+
+        # create timer
+        self.timer = rospy.Timer(rospy.Duration(0.1), self.image_callback)
 
         # create publishers
-        self.det_image_pub = rospy.Publisher("/ultralytics/detection/image", Image, queue_size=5)
+        self.det_image_pub = rospy.Publisher("/ultralytics/detection/image/compressed", CompressedImage, queue_size=5)
+        # self.busy = False
         # self.det_depth_pub = rospy.Publisher("/ultralytics/detection/depth", Image, queue_size=5)
 
         rospy.loginfo("sheet_detector node started")
@@ -57,15 +62,20 @@ class SheetDetector:
         # here we take a flat line on the centre's y: the cloth with be lying flat on the floor
         return [x+(i * w//n_points) for i in range (-n_points//2 +1, n_points//2)]
 
-    def image_callback(self, msg):
-        rospy.loginfo("image received")
+    def image_callback(self, event):
+        # if self.busy:
+        #     rospy.loginfo("skipped because was busy")
+        #     return
+        # self.busy = True
+        msg = rospy.wait_for_message("/camera/color/image_raw/compressed", CompressedImage)
+        rospy.loginfo("colour image received")
 
         # wait for a corresponding depth image:
         image = rospy.wait_for_message("/camera/depth/image_raw", Image)
-
+        rospy.loginfo("depth image received") 
         # convert to numpy format
-        depth_image = self.cv_bridge.imgmsg_to_cv2(image, desired_encoding="passthrough")
-        colour_image = self.cv_bridge.imgmsg_to_cv2(msg, desired_encoding="bgr8")
+        depth_image = self.cv_bridge.imgmsg_to_cv2(image)
+        colour_image = self.cv_bridge.compressed_imgmsg_to_cv2(msg)
 
         # apply the model to colour image
         det_result = self.sheet_detect_model(colour_image, conf=MIN_CONFIDENCE, verbose=False)
@@ -82,18 +92,23 @@ class SheetDetector:
                 h = int(bounding_box[0][3]) 
                 
                 sample_points = self.get_sample_points(10, x, w, h)
+                distances = depth_image[y][sample_points]
+                distances  = distances[distances != 0]
+                mean_dist = np.mean(distances)
+                std_dist = np.std(distances)
                 rospy.loginfo(depth_image[y][sample_points])
+                rospy.loginfo(f"avg distance: {mean_dist}    std: {std_dist}")
                 for point_x in sample_points:
-
                     cv2.circle(det_annotated, (point_x,y), 3, (0,0,255), -1)
             
 
         # publish to topic
-        output_image = self.cv_bridge.cv2_to_imgmsg(det_annotated, encoding="bgr8")
+        output_image = self.cv_bridge.cv2_to_compressed_imgmsg(det_annotated)
         # output_depth = self.cv_bridge.cv2_to_imgmsg(depth_image, encoding="passthrough")
         self.det_image_pub.publish(output_image)
         # self.det_depth_pub.publish(output_depth)
         rospy.loginfo("image published")
+        # self.busy = False
 
     def run(self):
         rospy.spin()
