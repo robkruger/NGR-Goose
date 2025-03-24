@@ -90,6 +90,7 @@
     <node pkg="tf" type="static_transform_publisher" name="astra_transform_ir" args="0 0 0 0 0 -1.57 base_link camera_ir_optical_frame 100"/> 
 
     <!-- Publish joint states (wheels, arm) -->
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
     <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />
 
     <!-- <node pkg="map_server" type="map_server" name="map_server" args="$(find goose_slam)/maps/map_acml.yaml"/>
