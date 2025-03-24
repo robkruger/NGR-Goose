@@ -162,17 +162,18 @@ class SheetDetector:
                     min_d = d
             
             rospy.loginfo(min_d)
-            # self.move_to_sheet(min_d)
+            self.move_to_sheet(min_d)
+            self.paused = True
 
 
 
 
     def move_to_sheet(self, distance):
         goal = MoveBaseGoal()
-        goal.target_pose.header.frame_id = "base_link"  
+        goal.target_pose.header.frame_id = "map"  
         goal.target_pose.header.stamp = rospy.Time.now()
 
-        goal.target_pose.pose.position.x = distance
+        goal.target_pose.pose.position.x = distance / 1000
         goal.target_pose.pose.position.y = 0.0
         goal.target_pose.pose.orientation.w = 1.0  
 
