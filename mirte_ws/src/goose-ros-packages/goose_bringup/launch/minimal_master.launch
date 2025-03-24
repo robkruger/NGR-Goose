@@ -92,7 +92,7 @@
     <!-- Publish joint states (wheels, arm) -->
     <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />
 
-    <node pkg="map_server" type="map_server" name="map_server" args="$(find goose_slam)/maps/map_acml.yaml"/>
+    <!-- <node pkg="map_server" type="map_server" name="map_server" args="$(find goose_slam)/maps/map_acml.yaml"/>
 
     <node pkg="amcl" type="amcl" name="amcl" output="screen">
         <param name="odom_frame_id" value="odom"/>
@@ -107,6 +107,6 @@
         <rosparam file="$(find goose_slam)/config/base_local_planner_params.yaml" command="load"/>
 
         <remap from="/cmd_vel" to="/mobile_base_controller/cmd_vel"/>
-    </node>
+    </node> -->
 
 </launch>
