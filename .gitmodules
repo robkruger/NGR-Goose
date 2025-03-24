@@ -25,3 +25,6 @@
 [submodule "mirte_ws/src/generic_flexbe_states"]
 	path = mirte_ws/src/generic_flexbe_states
 	url = https://github.com/FlexBE/generic_flexbe_states.git
+[submodule "mirte_ws/src/goose_behaviors"]
+	path = mirte_ws/src/goose_behaviors
+	url = https://github.com/robkruger/goose_behaviors.git
