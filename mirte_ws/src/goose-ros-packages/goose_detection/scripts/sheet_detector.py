@@ -46,7 +46,7 @@ class SheetDetector:
         self.pause_service = rospy.Service("~set_pause", SetBool, self.handle_pause)
 
         # create action client for movement
-        self.client = actionlib.SimpleActionClient('/move_base', MoveBaseAction)
+        self.client = actionlib.SimpleActionClient('move_base', MoveBaseAction)
         rospy.loginfo("Waiting for move_base action server...")
         self.client.wait_for_server()
         rospy.loginfo("Connected to move_base.")

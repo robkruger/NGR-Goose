@@ -55,6 +55,10 @@
   <depend>ros_numpy</depend>
   <depend>python3-numpy</depend>
   <depend>ultralytics</depend>
+  <build_depend>actionlib</build_depend>
+  <build_depend>actionlib_msgs</build_depend>
+  <exec_depend>actionlib</exec_depend>
+  <exec_depend>actionlib_msgs</exec_depend>
 
 
   <!-- The export tag contains other, unspecified, tags -->
