@@ -13,6 +13,8 @@ from geometry_msgs.msg import PoseStamped
 from sensor_msgs.msg import CompressedImage
 # services
 from std_srvs.srv import SetBool, SetBoolResponse
+import tf2_ros
+import tf2_geometry_msgs
 
 
 MIN_CONFIDENCE = 0.6
@@ -169,19 +171,42 @@ class SheetDetector:
 
 
     def move_to_sheet(self, distance):
-        goal = MoveBaseGoal()
-        goal.target_pose.header.frame_id = "map"  
-        goal.target_pose.header.stamp = rospy.Time.now()
+        goal = PoseStamped()
+        goal.header.frame_id = "base_link"  
+        goal.header.stamp = rospy.Time.now()
 
-        goal.target_pose.pose.position.x = distance / 1000
-        goal.target_pose.pose.position.y = 0.0
-        goal.target_pose.pose.orientation.w = 1.0  
+        goal.pose.position.x = (distance / 1000) - 0.2
+        goal.pose.position.y = 0.0
+        goal.pose.orientation.w = 1.0  
 
-        rospy.loginfo(f"Sending navigation goal: {distance} meters ahead...")
-        self.client.send_goal(goal)
-        self.client.wait_for_result()
-        result = self.client.get_result()
-        rospy.loginfo(f"Navigation result: {result}")
+        # Transform goal from base_link to map
+        try:
+            tf_buffer = tf2_ros.Buffer()
+            listener = tf2_ros.TransformListener(tf_buffer)
+            
+            # Wait for the transform (timeout 1s)
+            rospy.sleep(1.0)  
+            transform = tf_buffer.lookup_transform("map", "base_link", rospy.Time(0), rospy.Duration(1.0))
+            
+            transformed_goal = tf2_geometry_msgs.do_transform_pose(goal, transform)
+            transformed_goal.header.stamp = rospy.Time.now()
+
+            # Send transformed goal to move_base
+            goal = MoveBaseGoal()
+            goal.target_pose = transformed_goal
+
+            rospy.loginfo(f"Sending navigation goal: {distance}mm ahead in map frame...")
+            self.client.send_goal(goal)
+            self.client.wait_for_result()
+            result = self.client.get_result()
+            rospy.loginfo(f"Navigation result: {result}")
+
+        except tf2_ros.LookupException as e:
+            rospy.logerr(f"Transform lookup failed: {e}")
+        except tf2_ros.ConnectivityException as e:
+            rospy.logerr(f"Transform connectivity issue: {e}")
+        except tf2_ros.ExtrapolationException as e:
+            rospy.logerr(f"Transform extrapolation error: {e}")
 
     def run(self):
         rospy.spin()
