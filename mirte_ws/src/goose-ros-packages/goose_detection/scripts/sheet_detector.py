@@ -15,11 +15,14 @@ from sensor_msgs.msg import CompressedImage
 from std_srvs.srv import SetBool, SetBoolResponse
 import tf2_ros
 import tf2_geometry_msgs
+import math
 
 
 MIN_CONFIDENCE = 0.6
 MAX_STD_DISTANCE = 100
 FPS = 30
+WIDTH = 640
+HORIZONTAL_FOV = 58.4
 
 
 class SheetDetector:
@@ -145,7 +148,7 @@ class SheetDetector:
             if pixel_distances.size > 0:
                 mean_dist = np.mean(pixel_distances)
                 std_dist = np.std(pixel_distances)
-                sheet_distances.append((mean_dist, std_dist))
+                sheet_distances.append((mean_dist, std_dist, x))
             for point_x in sample_points:
                 cv2.circle(det_annotated, (point_x,y), 3, (0,0,255), -1)
         
@@ -159,24 +162,49 @@ class SheetDetector:
         if len(sheet_distances) > 0:
             rospy.loginfo("Found sheets\n"+"\n".join([f"  sheet {i}: d={x[0]:.2f} std={x[1]:.2f}" for i, x in enumerate(sheet_distances)]))
             min_d = np.inf
-            for d, s in sheet_distances:
+            used_x = 0
+            for d, s, x in sheet_distances:
                 if d < min_d:
                     min_d = d
+                    used_x = x
             
             rospy.loginfo(min_d)
-            self.move_to_sheet(min_d)
+            self.move_to_sheet(min_d, used_x)
             self.paused = True
 
 
+    # def move_to_sheet(self, distance, x_center):
+    #     self.paused = True
+    #     self.move_to_goal(distance / 2, x_center)
+    #     old_distance = distance
+    #     self.new_distance = distance
+    #     self.new_x_center = x_center
+    #     while old_distance > 300:
+    #         self.paused = False
+    #         # wait for the robot to get a new image
+    #         rospy.loginfo("Waiting for new image...")
+    #         while old_distance == self.new_distance:
+    #             rospy.sleep(0.1)
 
+    #         self.paused = True
 
-    def move_to_sheet(self, distance):
+    #         # go to new goal
+    #         self.move_to_goal(self.new_distance / 2, self.new_x_center)
+
+    #         old_distance = self.new_distance
+
+    #     rospy.loginfo("Sheet is close enough, stopping movement.")
+        
+    def move_to_sheet(self, distance, x_center):
         goal = PoseStamped()
         goal.header.frame_id = "base_link"  
         goal.header.stamp = rospy.Time.now()
 
-        goal.pose.position.x = (distance / 1000) - 0.2
-        goal.pose.position.y = 0.0
+        angle = (x_center - WIDTH / 2) * HORIZONTAL_FOV / WIDTH
+        rospy.loginfo(f"Angle: {angle} degrees")
+        goal.pose.position.x = math.cos(angle * math.pi / 180) * (distance / 1000)
+        goal.pose.position.y = -math.sin(angle * math.pi / 180) * (distance / 1000)
+        rospy.loginfo(f"Goal position: {goal.pose.position.x}m, {goal.pose.position.y}m")
         goal.pose.orientation.w = 1.0  
 
         # Transform goal from base_link to map
@@ -195,11 +223,12 @@ class SheetDetector:
             goal = MoveBaseGoal()
             goal.target_pose = transformed_goal
 
-            rospy.loginfo(f"Sending navigation goal: {distance}mm ahead in map frame...")
+            rospy.loginfo(f"Sending navigation goal: {distance/10}cm ahead in map frame...")
             self.client.send_goal(goal)
             self.client.wait_for_result()
             result = self.client.get_result()
             rospy.loginfo(f"Navigation result: {result}")
+            rospy.loginfo(f"move_to_goal finished")
 
         except tf2_ros.LookupException as e:
             rospy.logerr(f"Transform lookup failed: {e}")

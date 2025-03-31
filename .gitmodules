@@ -1,6 +1,3 @@
-[submodule "mirte_ws/src/mirte-master-simulator"]
-	path = mirte_ws/src/mirte-master-simulator
-	url = git@github.com:robkruger/mirte-master-simulator.git
 [submodule "mirte_ws/src/mirte-ros-packages"]
 	path = mirte_ws/src/mirte-ros-packages
 	url = https://github.com/ArendJan/mirte-ros-packages.git
@@ -28,3 +25,6 @@
 [submodule "mirte_ws/src/goose_behaviors"]
 	path = mirte_ws/src/goose_behaviors
 	url = https://github.com/robkruger/goose_behaviors.git
+[submodule "mirte_ws/src/mirte-master-simulator"]
+	path = mirte_ws/src/mirte-master-simulator
+	url = git@github.com:robkruger/mirte-master-simulator.git
