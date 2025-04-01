@@ -6,6 +6,6 @@
             respawn="true"/>
     </group>
 
-    <include file="$(find goose_arm)/launch/move_group.launch">
-    </include>
+    <!-- <include file="$(find goose_arm)/launch/move_group.launch">
+    </include> -->
 </launch>

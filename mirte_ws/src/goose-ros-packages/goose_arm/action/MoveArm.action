@@ -1,0 +1,12 @@
+# MoveArm.action
+
+# Goal definition
+float64[] joint_positions
+
+---
+# Result definition
+string final_state
+
+---
+# Feedback definition
+string feedback
