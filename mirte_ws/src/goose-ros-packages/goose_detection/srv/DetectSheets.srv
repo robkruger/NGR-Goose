@@ -1,4 +1,3 @@
-# ImageProcessing.srv
 ---
 float64 distance
 float64 bbox_x_center

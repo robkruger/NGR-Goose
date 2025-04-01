@@ -4,12 +4,9 @@ import os
 import rospy
 import cv2
 import numpy as np
-import actionlib
 from cv_bridge import CvBridge
 from ultralytics import YOLO
 # messages
-from move_base_msgs.msg import MoveBaseAction, MoveBaseGoal
-from geometry_msgs.msg import PoseStamped
 from sensor_msgs.msg import CompressedImage
 # services
 from std_srvs.srv import SetBool, SetBoolResponse
@@ -19,7 +16,6 @@ from goose_detection.srv import DetectSheets
 
 MIN_CONFIDENCE = 0.6
 MAX_STD_DISTANCE = 100
-FPS = 30
 WIDTH = 640
 HORIZONTAL_FOV = 58.4
 
@@ -27,7 +23,7 @@ HORIZONTAL_FOV = 58.4
 class SheetDetector:
     def __init__(self):
         # initialise ros node
-        rospy.init_node('sheet_detector_srv')
+        rospy.init_node('sheet_detector')
 
 
         # initialise cv bridge
@@ -39,14 +35,13 @@ class SheetDetector:
 
         # create subscribers
         self.rgb_image = rospy.Subscriber("/camera/color/image_raw/compressed", CompressedImage, self.image_callback)
-        self.image_queue = FPS
 
         # create publishers
         self.det_image_pub = rospy.Publisher("/ultralytics/detection/image/compressed", CompressedImage, queue_size=5)
 
         # create service to pause/resume the detection
         self.pause_service = rospy.Service("~set_pause", SetBool, self.handle_pause)
-        self.detect_service = rospy.Service("/detect_sheets", DetectSheets, self.execute_action)
+        self.detect_service = rospy.Service("~detect_sheets", DetectSheets, self.execute_action)
 
         self._latest_colour_img = None
         self._latest_depth_img = None
@@ -115,7 +110,7 @@ class SheetDetector:
         if self._latest_colour_img is None:
             rospy.logwarn("No image received yet.")
             # Optionally, you could wait for an image, but here we return zeros.
-            return DetectSheets(distance=0.0, bbox_x_center=0.0)
+            return [0.0, 0.0]
 
 
         # convert to numpy format
@@ -157,9 +152,9 @@ class SheetDetector:
                     min_d = d
                     used_x = x
             
-            return DetectSheets(distance=min_d, bbox_x_center=used_x)
+            return [min_d, used_x]
             # self.paused = True
-        return DetectSheets(distance=0.0, bbox_x_center=0.0)
+        return [0.0, 0.0]
 
 
         
