@@ -4,9 +4,10 @@ import sys
 import rospy
 import moveit_commander
 import actionlib
-from goose_arm.msg import MoveArmAction, MoveArmActionFeedback, MoveArmActionResult
+from goose_arm.msg import MoveArmAction, MoveArmFeedback, MoveArmResult
 from moveit_msgs.msg import MoveGroupActionFeedback
 from actionlib_msgs.msg import GoalStatusArray
+import time
 
 
 class MoveArmActionServer:
@@ -18,50 +19,69 @@ class MoveArmActionServer:
         self.scene = moveit_commander.PlanningSceneInterface()
         self.move_group = moveit_commander.MoveGroupCommander("manipulator")
         
-        self.move_group.set_max_velocity_scaling_factor(.1)
+        self.vel_scale = 0.75
+        self.move_group.set_max_velocity_scaling_factor(self.vel_scale)
 
         self.action_server = actionlib.SimpleActionServer('move_arm_action', MoveArmAction, self.execute, False)
         self.action_server.start()
 
-        self.feedback_subscriber = rospy.Subscriber('/arm/move_group/feedback', MoveGroupActionFeedback, self.feedback_callback)
-        self.result_subscriber = rospy.Subscriber('/arm/move_group/status', GoalStatusArray, self.result_callback)
-
         self.latest_feedback = None
         self.latest_result = None
-
-    def feedback_callback(self, feedback):
-        self.latest_feedback = feedback
-        rospy.loginfo("Feedback received: %s", feedback.feedback.state)
-
-    def result_callback(self, result):
-        self.latest_result = result
-        rospy.loginfo("Result received: %s", result)
     
     def execute(self, goal):
-        feedback = MoveArmActionFeedback()
-        result = MoveArmActionResult()
+        feedback = MoveArmFeedback()
+        result = MoveArmResult()
         
         rospy.loginfo("Received goal: %s", goal.joint_positions)
 
-        self.move_group.go(goal.joint_positions, wait=False)
+        plan = self.move_group.plan(goal.joint_positions)
+        if isinstance(plan, tuple):
+            plan_success = plan[0]
+            plan = plan[1]
 
-        # rospy.loginfo(self.move_group.get_state())
+        if plan_success:
+            duration = plan.joint_trajectory.points[-1].time_from_start.secs + plan.joint_trajectory.points[-1].time_from_start.nsecs / 1e9
 
-        # while self.arm.get_current_state() not in [moveit_commander.MoveItErrorCodes.SUCCESS,
-        #                                           moveit_commander.MoveItErrorCodes.MOTION_PLAN_INVALIDATED]:
-        #     if self.action_server.is_preempt_requested():
-        #         rospy.loginfo("Goal Preempted")
-        #         self.action_server.set_preempted()
-        #         self.move_group.stop()
-        #         return
-            
-        #     feedback.feedback = str(self.move_group.get_current_state())
-        #     self.action_server.publish_feedback(feedback)
-        #     rospy.sleep(0.2)
-        
-        # result.result = self.move_group.get_current_state()
-        # self.server.set_succeeded(result.result == moveit_commander.MoveItErrorCodes.SUCCESS)
-        # self.move_group.stop()
+            feedback.duration = duration
+            feedback.plan_success = True
+            feedback.stage = "Planning"
+            self.action_server.publish_feedback(feedback)
+
+            success = self.move_group.execute(plan, wait=False)
+            execution_start = time.time()
+            positions = []
+
+            while (time.time() - execution_start) < duration:
+                positions.append(self.move_group.get_current_state().joint_state.position)
+                if len(positions) > 1:
+                    difference = [abs(p1 - p2) for p1, p2 in zip(positions[-1], positions[-2])]
+                    magnitude = sum(d ** 2 for d in difference) ** 0.5
+                    if magnitude > 0.01 * self.vel_scale:
+                        feedback.stage = "Executing"
+                        feedback.execution_progress = (time.time() - execution_start) / duration
+                    else:
+                        feedback.stage = "Stalled"
+                        feedback.execution_progress = -1.0
+
+                    self.action_server.publish_feedback(feedback)
+
+                rospy.sleep(0.1)
+
+            rospy.sleep(0.5)
+            self.move_group.stop()
+   
+            positions.append(self.move_group.get_current_state().joint_state.position)
+            final_difference = [abs(gp - pp) for gp, pp in zip(goal.joint_positions, positions[-1])]
+            final_magnitude = sum(d ** 2 for d in final_difference) ** 0.5
+
+            if final_magnitude < 0.02:
+                result.success = True
+            else:
+                result.success = False
+
+            result.difference = final_magnitude
+
+            self.action_server.set_succeeded(result)
 
 
 if __name__ == '__main__':

@@ -2,10 +2,10 @@
 
 import rospy
 import actionlib
-from goose_arm.msg import MoveArmAction, MoveArmActionFeedback, MoveArmActionResult, MoveArmGoal
+from goose_arm.msg import MoveArmAction, MoveArmGoal
 
 def feedback_cb(feedback):
-    rospy.loginfo(f"Feedback: {feedback.feedback}")
+    rospy.loginfo(f"Feedback: {feedback}")
 
 if __name__ == "__main__":
     rospy.init_node("my_action_client")
@@ -14,10 +14,12 @@ if __name__ == "__main__":
     client.wait_for_server()
 
     goal = MoveArmGoal()
-    goal.joint_positions = [0, 0, 0, 0]  # Set goal value
+    goal.joint_positions = [-0.8, 0, 0, 0]  # Set goal value
 
     client.send_goal(goal, feedback_cb=feedback_cb)
     rospy.loginfo("Waiting for result...")
     client.wait_for_result()
 
-    rospy.loginfo(f"Result: {client.get_result().final_state}")
+    rospy.loginfo(f"Result: {client.get_result()}")
+
+    rospy.sleep(1)

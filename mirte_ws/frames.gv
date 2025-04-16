@@ -1,0 +1,12 @@
+digraph G {
+"base_link" -> "camera_ir_optical_frame"[label="Broadcaster: /astra_transform_ir\nAverage rate: 10.188 Hz\nMost recent transform: 1744812174.748 ( -0.131 sec old)\nBuffer length: 4.908 sec\n"];
+"odom" -> "base_link"[label="Broadcaster: /mirte_base_node\nAverage rate: 10.208 Hz\nMost recent transform: 1744812174.591 ( 0.026 sec old)\nBuffer length: 4.800 sec\n"];
+"base_link" -> "camera_color_optical_frame"[label="Broadcaster: /astra_transform_color\nAverage rate: 10.192 Hz\nMost recent transform: 1744812174.678 ( -0.062 sec old)\nBuffer length: 4.808 sec\n"];
+"base_link" -> "laser"[label="Broadcaster: /laser_transform\nAverage rate: 10.191 Hz\nMost recent transform: 1744812174.681 ( -0.064 sec old)\nBuffer length: 4.808 sec\n"];
+"map" -> "odom"[label="Broadcaster: /amcl\nAverage rate: 10.216 Hz\nMost recent transform: 1744812174.581 ( 0.035 sec old)\nBuffer length: 4.797 sec\n"];
+"base_link" -> "camera_depth_optical_frame"[label="Broadcaster: /astra_transform_depth\nAverage rate: 10.191 Hz\nMost recent transform: 1744812174.706 ( -0.090 sec old)\nBuffer length: 4.808 sec\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1744812174.616"[ shape=plaintext ] ;
+ }->"map";
+}
