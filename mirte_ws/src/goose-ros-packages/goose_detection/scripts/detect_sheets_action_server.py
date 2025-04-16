@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 
+
 import os
-import rospy
 import cv2
+import rospy
+import actionlib
 import numpy as np
 from cv_bridge import CvBridge
 from ultralytics import YOLO
@@ -10,17 +12,15 @@ from ultralytics import YOLO
 from sensor_msgs.msg import CompressedImage
 # services
 from std_srvs.srv import SetBool, SetBoolResponse
-from goose_detection.srv import DetectSheets
-
+# actions
+from goose_detection.msg import DetectSheetsAction, DetectSheetsResult
 
 
 MIN_CONFIDENCE = 0.6
 MAX_STD_DISTANCE = 100
-WIDTH = 640
-HORIZONTAL_FOV = 58.4
 
 
-class SheetDetector:
+class DetectSheetsActionServer(object):
     def __init__(self):
         # initialise ros node
         rospy.init_node('sheet_detector')
@@ -41,21 +41,24 @@ class SheetDetector:
 
         # create service to pause/resume the detection
         self.pause_service = rospy.Service("~set_pause", SetBool, self.handle_pause)
-        self.detect_service = rospy.Service("~detect_sheets", DetectSheets, self.execute_action)
 
+        # create action server for state machine
+        self.server = actionlib.SimpleActionServer('~detect_sheets', DetectSheetsAction, self.execute)
+        self.server.start()
+
+        # initialise variables
         self._latest_colour_img = None
         self._latest_depth_img = None
         self.paused = False
 
-        rospy.loginfo("pausable sheet detection service started")
+        rospy.loginfo("pausable sheet detection action server started")
 
     def handle_pause(self, req):
         self.paused = req.data
         state = "paused" if self.paused else "resumed"
         rospy.loginfo(f"Sheet Detection has been {state}.")
         return SetBoolResponse(success=True, message=f"sheet_detector {state}.")
-
-
+    
     def get_sample_points(self, n_points, x, w, h):
         # get some sample points: 
                 #   options:
@@ -105,18 +108,22 @@ class SheetDetector:
         self._latest_depth_img = rospy.wait_for_message("/camera/depth/image_raw/compressedDepth", CompressedImage)
         # rospy.loginfo("depth image received") 
 
-    def execute_action(self, req):
-        # Check if an image has been received yet
+    def execute(self, goal):
+        # Ensure an image has been received.
         if self._latest_colour_img is None:
-            rospy.logwarn("No image received yet.")
-            # Optionally, you could wait for an image, but here we return zeros.
-            return [0.0, 0.0]
+            rospy.logwarn("No image received yet; aborting action.")
+            self.server.set_aborted()
+            return
 
-
-        # convert to numpy format
-        colour_image = self.cv_bridge.compressed_imgmsg_to_cv2(self._latest_colour_img)
-        depth_image = self.convert_compressedDepth_to_cv2(self._latest_depth_img)
-
+        # try convert images
+        try:
+            colour_image = self.cv_bridge.compressed_imgmsg_to_cv2(self._latest_colour_img)
+            depth_image = self.convert_compressedDepth_to_cv2(self._latest_depth_img)
+        except Exception as e:
+            rospy.logerr("Failed to convert images: %s", str(e))
+            self.server.set_aborted()
+            return
+        
         # apply the model to colour image
         det_result = self.sheet_detect_model(colour_image, conf=MIN_CONFIDENCE, verbose=False)
 
@@ -142,7 +149,12 @@ class SheetDetector:
                 std_dist = np.std(pixel_distances)
                 sheet_distances.append((mean_dist, std_dist, x))
             
+        # Create and populate the default result message.
+        result = DetectSheetsResult()
+        result.distance = 0.0
+        result.bbox_x_center = 0.0
 
+        # populate result message with outputs if they are valid
         if len(sheet_distances) > 0:
             rospy.loginfo("Found sheets\n"+"\n".join([f"  sheet {i}: d={x[0]:.2f} std={x[1]:.2f}" for i, x in enumerate(sheet_distances)]))
             min_d = np.inf
@@ -152,19 +164,20 @@ class SheetDetector:
                     min_d = d
                     used_x = x
             
-            return [min_d, used_x]
-            # self.paused = True
-        return [0.0, 0.0]
+            result.distance = min_d
+            result.bbox_x_center = used_x
+            self.server.set_succeeded(result)
+            return
+        self.server.set_aborted()
+        return
 
-
-        
 
     def run(self):
-        rospy.spin()
+            rospy.spin()
 
 if __name__ == '__main__':
     try:
-        node = SheetDetector()
+        node = DetectSheetsActionServer()
         node.run()
     except rospy.ROSInterruptException:
         pass
