@@ -1,6 +1,6 @@
 <launch>
 
-    <node pkg="map_server" type="map_server" name="map_server" args="$(find goose_slam)/maps/map_om_de_hoek.yaml"/>
+    <node pkg="map_server" type="map_server" name="map_server" args="$(find goose_slam)/maps/map_final.yaml"/>
 
     <node pkg="amcl" type="amcl" name="amcl" output="screen">
         <param name="odom_frame_id" value="odom"/>
@@ -13,6 +13,7 @@
         <rosparam file="$(find goose_slam)/config/local_costmap_params.yaml" command="load"/>
         <rosparam file="$(find goose_slam)/config/global_costmap_params.yaml" command="load"/>
         <rosparam file="$(find goose_slam)/config/base_local_planner_params.yaml" command="load"/>
+        <param name="transform_tolerance" value="0.2" />
 
         <remap from="/cmd_vel" to="/mobile_base_controller/cmd_vel"/>
     </node>
