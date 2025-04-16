@@ -5,8 +5,12 @@ float64[] joint_positions
 
 ---
 # Result definition
-string final_state
+bool success
+float64 difference
 
 ---
 # Feedback definition
-string feedback
+float64 duration
+bool plan_success
+float64 execution_progress
+string stage
