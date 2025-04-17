@@ -43,7 +43,7 @@ class DetectSheetsActionServer(object):
         self.pause_service = rospy.Service("~set_pause", SetBool, self.handle_pause)
 
         # create action server for state machine
-        self.server = actionlib.SimpleActionServer('~detect_sheets', DetectSheetsAction, self.execute)
+        self.server = actionlib.SimpleActionServer('~detect_sheets', DetectSheetsAction, self.execute, auto_start=False)
         self.server.start()
 
         # initialise variables
