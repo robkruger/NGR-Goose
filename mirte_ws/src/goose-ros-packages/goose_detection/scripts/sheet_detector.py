@@ -31,7 +31,7 @@ class SheetDetector:
         rospy.init_node('sheet_detector')
 
         # flag variable to pause the detection when not needed
-        self.paused = True
+        self.paused = False
 
         # initialise cv bridge
         self.cv_bridge = CvBridge()
@@ -51,10 +51,10 @@ class SheetDetector:
         self.pause_service = rospy.Service("~set_pause", SetBool, self.handle_pause)
 
         # create action client for movement
-        self.client = actionlib.SimpleActionClient('move_base', MoveBaseAction)
-        rospy.loginfo("Waiting for move_base action server...")
-        self.client.wait_for_server()
-        rospy.loginfo("Connected to move_base.")
+        # self.client = actionlib.SimpleActionClient('move_base', MoveBaseAction)
+        # rospy.loginfo("Waiting for move_base action server...")
+        # self.client.wait_for_server()
+        # rospy.loginfo("Connected to move_base.")
 
         rospy.loginfo("Pausable sheet_detector node started")
 
@@ -169,8 +169,8 @@ class SheetDetector:
                     used_x = x
             
             rospy.loginfo(min_d)
-            self.move_to_sheet(min_d, used_x)
-            self.paused = True
+            # self.move_to_sheet(min_d, used_x)
+            # self.paused = True
 
 
     # def move_to_sheet(self, distance, x_center):
@@ -195,47 +195,47 @@ class SheetDetector:
 
     #     rospy.loginfo("Sheet is close enough, stopping movement.")
         
-    def move_to_sheet(self, distance, x_center):
-        goal = PoseStamped()
-        goal.header.frame_id = "base_link"  
-        goal.header.stamp = rospy.Time.now()
+    # def move_to_sheet(self, distance, x_center):
+    #     goal = PoseStamped()
+    #     goal.header.frame_id = "base_link"  
+    #     goal.header.stamp = rospy.Time.now()
 
-        angle = (x_center - WIDTH / 2) * HORIZONTAL_FOV / WIDTH
-        rospy.loginfo(f"Angle: {angle} degrees")
-        goal.pose.position.x = math.cos(angle * math.pi / 180) * (distance / 1000)
-        goal.pose.position.y = -math.sin(angle * math.pi / 180) * (distance / 1000)
-        rospy.loginfo(f"Goal position: {goal.pose.position.x}m, {goal.pose.position.y}m")
-        goal.pose.orientation.w = 1.0  
+    #     angle = (x_center - WIDTH / 2) * HORIZONTAL_FOV / WIDTH
+    #     rospy.loginfo(f"Angle: {angle} degrees")
+    #     goal.pose.position.x = math.cos(angle * math.pi / 180) * (distance / 1000)
+    #     goal.pose.position.y = -math.sin(angle * math.pi / 180) * (distance / 1000)
+    #     rospy.loginfo(f"Goal position: {goal.pose.position.x}m, {goal.pose.position.y}m")
+    #     goal.pose.orientation.w = 1.0  
 
-        # Transform goal from base_link to map
-        try:
-            tf_buffer = tf2_ros.Buffer()
-            listener = tf2_ros.TransformListener(tf_buffer)
+    #     # Transform goal from base_link to map
+    #     try:
+    #         tf_buffer = tf2_ros.Buffer()
+    #         listener = tf2_ros.TransformListener(tf_buffer)
             
-            # Wait for the transform (timeout 1s)
-            rospy.sleep(1.0)  
-            transform = tf_buffer.lookup_transform("map", "base_link", rospy.Time(0), rospy.Duration(1.0))
+    #         # Wait for the transform (timeout 1s)
+    #         rospy.sleep(1.0)  
+    #         transform = tf_buffer.lookup_transform("map", "base_link", rospy.Time(0), rospy.Duration(1.0))
             
-            transformed_goal = tf2_geometry_msgs.do_transform_pose(goal, transform)
-            transformed_goal.header.stamp = rospy.Time.now()
+    #         transformed_goal = tf2_geometry_msgs.do_transform_pose(goal, transform)
+    #         transformed_goal.header.stamp = rospy.Time.now()
 
-            # Send transformed goal to move_base
-            goal = MoveBaseGoal()
-            goal.target_pose = transformed_goal
+    #         # Send transformed goal to move_base
+    #         goal = MoveBaseGoal()
+    #         goal.target_pose = transformed_goal
 
-            rospy.loginfo(f"Sending navigation goal: {distance/10}cm ahead in map frame...")
-            self.client.send_goal(goal)
-            self.client.wait_for_result()
-            result = self.client.get_result()
-            rospy.loginfo(f"Navigation result: {result}")
-            rospy.loginfo(f"move_to_goal finished")
+    #         rospy.loginfo(f"Sending navigation goal: {distance/10}cm ahead in map frame...")
+    #         self.client.send_goal(goal)
+    #         self.client.wait_for_result()
+    #         result = self.client.get_result()
+    #         rospy.loginfo(f"Navigation result: {result}")
+    #         rospy.loginfo(f"move_to_goal finished")
 
-        except tf2_ros.LookupException as e:
-            rospy.logerr(f"Transform lookup failed: {e}")
-        except tf2_ros.ConnectivityException as e:
-            rospy.logerr(f"Transform connectivity issue: {e}")
-        except tf2_ros.ExtrapolationException as e:
-            rospy.logerr(f"Transform extrapolation error: {e}")
+    #     except tf2_ros.LookupException as e:
+    #         rospy.logerr(f"Transform lookup failed: {e}")
+    #     except tf2_ros.ConnectivityException as e:
+    #         rospy.logerr(f"Transform connectivity issue: {e}")
+    #     except tf2_ros.ExtrapolationException as e:
+    #         rospy.logerr(f"Transform extrapolation error: {e}")
 
     def run(self):
         rospy.spin()
