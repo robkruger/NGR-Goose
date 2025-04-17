@@ -14,10 +14,13 @@ from sensor_msgs.msg import CompressedImage
 from std_srvs.srv import SetBool, SetBoolResponse
 # actions
 from goose_detection.msg import DetectSheetsAction, DetectSheetsResult
+from std_msgs.msg import Float32
 
 
 MIN_CONFIDENCE = 0.6
 MAX_STD_DISTANCE = 100
+FPS = 30
+SHOW_RVIZ = True
 
 
 class DetectSheetsActionServer(object):
@@ -37,7 +40,8 @@ class DetectSheetsActionServer(object):
         self.rgb_image = rospy.Subscriber("/camera/color/image_raw/compressed", CompressedImage, self.image_callback)
 
         # create publishers
-        self.det_image_pub = rospy.Publisher("/ultralytics/detection/image/compressed", CompressedImage, queue_size=5)
+        if SHOW_RVIZ:
+            self.det_image_pub = rospy.Publisher("/ultralytics/detection/image/compressed", CompressedImage, queue_size=5)
 
         # create service to pause/resume the detection
         self.pause_service = rospy.Service("~set_pause", SetBool, self.handle_pause)
@@ -49,6 +53,7 @@ class DetectSheetsActionServer(object):
         # initialise variables
         self._latest_colour_img = None
         self._latest_depth_img = None
+        self.image_queue = FPS
         self.paused = False
 
         rospy.loginfo("pausable sheet detection action server started")
@@ -102,11 +107,21 @@ class DetectSheetsActionServer(object):
             # rospy.loginfo("paused...")
             return
         
+        self.image_queue -= 1
+        if self.image_queue > 0:
+            # rospy.loginfo("dropped image")
+            return
+        
         # rospy.loginfo("colour image received")
         self._latest_colour_img = colour_msg
         # wait for a corresponding depth image:
         self._latest_depth_img = rospy.wait_for_message("/camera/depth/image_raw/compressedDepth", CompressedImage)
-        # rospy.loginfo("depth image received") 
+        # rospy.loginfo("Most recent images updated") 
+
+        self.image_queue = FPS
+
+        if SHOW_RVIZ:
+            self.det_image_pub.publish(self._latest_colour_img)
 
     def execute(self, goal):
         # Ensure an image has been received.
@@ -168,6 +183,7 @@ class DetectSheetsActionServer(object):
             result.bbox_x_center = used_x
             self.server.set_succeeded(result)
             return
+        rospy.loginfo("No Sheets detected in image")
         self.server.set_aborted()
         return
 

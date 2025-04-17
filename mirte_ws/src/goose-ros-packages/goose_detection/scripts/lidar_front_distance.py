@@ -29,6 +29,15 @@ class FrontDistancePublisher(object):
         rospy.loginfo("FrontDistancePublisher: listening on '%s', publishing on '%s' (±%.1f°)",
                       self.scan_topic, self.distance_topic, angle_width_deg)
 
+    def remove_outliers(self, data, k=1.5):
+        # remove outliers from distance data using IQR method
+        data = np.array(data)
+        q1, q3 = np.percentile(data, [25, 75])
+        iqr    = q3 - q1
+        lower  = q1 - k * iqr
+        upper  = q3 + k * iqr
+        return data[(data >= lower) & (data <= upper)]
+
     def scan_callback(self, scan):
         if scan is None:
             mean_dist = np.inf
@@ -52,10 +61,15 @@ class FrontDistancePublisher(object):
             out.intensities     = scan.intensities[start_i:end_i]
             self.pub_rviz.publish(out)
 
-        # publish 
-        lidar_distance = np.mean(scan.ranges[start_i:end_i])
-        if np.isfinite(lidar_distance):
-            self.pub.publish(lidar_distance)
+        # remove infinities
+        lidar_distances = [x for x in scan.ranges[start_i:end_i] if x < scan.range_max]
+        # remove outliers
+        # len_inital = len(lidar_distances)
+        lidar_distances = self.remove_outliers(lidar_distances)
+        # num_outliers = len_inital - len(lidar_distances)
+        lidar_distance = np.mean(lidar_distances)
+        # rospy.loginfo(num_outliers)
+        self.pub.publish(lidar_distance)
         # rospy.loginfo("Front mean distance: %.3f m", np.mean(out.ranges))
 
 if __name__ == '__main__':

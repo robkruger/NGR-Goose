@@ -145,6 +145,7 @@ class SheetDetector:
 
             # remove all zeros which could skew mean
             pixel_distances  = pixel_distances[pixel_distances != 0]
+            print(pixel_distances)
             if pixel_distances.size > 0:
                 mean_dist = np.mean(pixel_distances)
                 std_dist = np.std(pixel_distances)
@@ -159,6 +160,7 @@ class SheetDetector:
         rospy.loginfo("image published")
         self.image_queue = FPS
 
+        print(sheet_distances)
         if len(sheet_distances) > 0:
             rospy.loginfo("Found sheets\n"+"\n".join([f"  sheet {i}: d={x[0]:.2f} std={x[1]:.2f}" for i, x in enumerate(sheet_distances)]))
             min_d = np.inf
@@ -171,6 +173,8 @@ class SheetDetector:
             rospy.loginfo(min_d)
             # self.move_to_sheet(min_d, used_x)
             # self.paused = True
+        else:
+            rospy.loginfo("Nothing found")
 
 
     # def move_to_sheet(self, distance, x_center):
